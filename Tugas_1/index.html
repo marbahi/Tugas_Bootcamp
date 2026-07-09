@@ -3,121 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        #biodata tr th p{
-            font-weight: 100;
-        }
-    </style>
     <title>Profil Sederhana</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- SECTION 1 : MENU -->
-    <table border="1" width="100%" cellpadding="10">
-        <tr align="center">
-            <td><b>Brand</b></td>
-            <td><a href="#home">Header</a></td>
-            <td><a href="#biodata">Biodata</a></td>
-            <td><a href="#portofolio">Portofolio</a></td>
-        </tr>
-    </table>
+    <!-- NAV -->
+    <nav>
+        <div class="nav-container">
+            <div class="brand">Brand</div>
+            <ul class="nav-links">
+                <li><a href="#home">Header</a></li>
+                <li><a href="#biodata">Biodata</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <br>
+    <!-- HERO -->
+    <section id="home">
+        <div class="hero-text">
+            <h1>Selamat Datang di Website Saya</h1>
+            <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini</p>
+            <button>Pelajari Lebih Lanjut</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://placehold.co/600x400" alt="Foto Profil">
+        </div>
+    </section>
 
-    <!-- SECTION 2 : JUDUL DAN GAMBAR -->
-    <table border="1" width="100%" cellpadding="20" id="home">
-        <tr>
-            <td width="60%">
-                <h1>Selamat Datang di Website Saya</h1>
-                <p>
-                    Ini adalah contoh header dengan dua kolom. kolom kiri berisi teks seperti ini
-                </p>
-                <button>Pelajari Lebih Lanjut</button>
-            </td>
+    <!-- BIODATA -->
+    <div class="section-title">
+        <h2>About Me</h2>
+        <p>A brief introduction about myself</p>
+    </div>
+    <section id="biodata">
+        <div class="biodata-grid">
+            <div class="bio-card">
+                <div class="icon">👤</div>
+                <b>Fullname</b>
+                <span><!-- John Doe --></span>
+            </div>
+            <div class="bio-card">
+                <div class="icon">🎓</div>
+                <b>Education</b>
+                <span><!-- Jakarta --></span>
+            </div>
+            <div class="bio-card">
+                <div class="icon">💼</div>
+                <b>Pekerjaan</b>
+                <span><!-- 1 Januari 2000 --></span>
+            </div>
+            <div class="bio-card">
+                <div class="icon">📞</div>
+                <b>Contact</b>
+                <span><!-- S1 Informatika --></span>
+            </div>
+            <div class="bio-card">
+                <div class="icon">⚽</div>
+                <b>Hobi</b>
+                <span><!-- john@email.com --></span>
+            </div>
+            <div class="bio-card">
+                <div class="icon">📍</div>
+                <b>Alamat</b>
+                <span><!-- Coding --></span>
+            </div>
+        </div>
+    </section>
 
-            <td align="center" width="40%">
-                <img src="https://placehold.co/600x400"
-                     alt="Foto Profil">
-            </td>
-        </tr>
-    </table>
-
-    <br>
-
-    <!-- SECTION 3 : BIODATA -->
-    <table border="1" width="100%" cellpadding="10" id="biodata">
-        <tr>
-            <th colspan="3">
-                <h2>About me</h2>
-                <p>A brief introduction about myself</p>
-            </th>
-        </tr>
-
-        <tr align="center">
-            <td>
-                <b>Fullname</b><br>
-                <!-- John Doe -->
-            </td>
-
-            <td>
-                <b>Education</b><br>
-                <!-- Jakarta -->
-            </td>
-
-            <td>
-                <b>Pekerjaan</b><br>
-                <!-- 1 Januari 2000 -->
-            </td>
-        </tr>
-
-        <tr align="center">
-            <td>
-                <b>Contact</b><br>
-                <!-- S1 Informatika -->
-            </td>
-
-            <td>
-                <b>Hobi</b><br>
-                <!-- john@email.com -->
-            </td>
-
-            <td>
-                <b>Alamat</b><br>
-                <!-- Coding -->
-            </td>
-        </tr>
-    </table>
-
-    <br>
-
-    <!-- SECTION 4 : PORTOFOLIO -->
-    <table border="1" width="100%" cellpadding="10" id="portofolio">
-        <tr>
-            <th colspan="3">
-                <h2>Portofolio</h2>
-            </th>
-        </tr>
-
-        <tr align="center">
-            <td width="33%">
-                <img src="https://placehold.co/350x200" alt="Project 1"><br><br>
-                <b>Project 1</b><br>
-                Website Company Profile
-            </td>
-
-            <td width="33%">
-                <img src="https://placehold.co/350x200" alt="Project 2"><br><br>
-                <b>Project 2</b><br>
-                Aplikasi Mobile
-            </td>
-
-            <td width="33%">
-                <img src="https://placehold.co/350x200" alt="Project 3"><br><br>
-                <b>Project 3</b><br>
-                Dashboard Admin
-            </td>
-        </tr>
-    </table>
+    <!-- PORTOFOLIO -->
+    <div class="section-title">
+        <h2>Portofolio</h2>
+    </div>
+    <section id="portofolio">
+        <div class="portofolio-grid">
+            <div class="porto-card">
+                <img src="https://placehold.co/350x200" alt="Project 1">
+                <div class="porto-info">
+                    <b>Project 1</b>
+                    <span>Website Company Profile</span>
+                </div>
+            </div>
+            <div class="porto-card">
+                <img src="https://placehold.co/350x200" alt="Project 2">
+                <div class="porto-info">
+                    <b>Project 2</b>
+                    <span>Aplikasi Mobile</span>
+                </div>
+            </div>
+            <div class="porto-card">
+                <img src="https://placehold.co/350x200" alt="Project 3">
+                <div class="porto-info">
+                    <b>Project 3</b>
+                    <span>Dashboard Admin</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
