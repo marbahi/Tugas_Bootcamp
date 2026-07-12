@@ -33,7 +33,7 @@
                 <h1>Selamat Datang di Website Saya</h1>
                 <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini</p>
                 <img src="./assets/orang.jpg" alt="Foto Profil" class="img-fluid" id="foto">
-                <button class="btn btn-lg border-0">Pelajari Lebih Lanjut</button>
+                <button class="btn btn-lg border-0" data-bs-toggle="modal" data-bs-target="#modalBelajar">Pelajari Lebih Lanjut</button>
             </div>
         </div>
     </section>
@@ -125,6 +125,32 @@
             </div>
         </div>
     </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalBelajar" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tentang Website Ini</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Website profil ini dibuat untuk memperkenalkan diri secara profesional. Berisi informasi tentang latar belakang, pendidikan, pengalaman, dan portofolio proyek yang pernah dikerjakan.</p>
+                    <hr>
+                    <h6>Yang bisa Anda temukan:</h6>
+                    <ul class="mb-0">
+                        <li>Biodata lengkap</li>
+                        <li>Riwayat pendidikan dan pekerjaan</li>
+                        <li>Proyek-proyek yang telah diselesaikan</li>
+                        <li>Informasi kontak</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
