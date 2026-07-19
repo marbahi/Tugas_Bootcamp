@@ -1,0 +1,53 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.card .card-title {
+  font-size: 1.35rem;
+}
+
+.card .card-text {
+  font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .card .card-text {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+  }
+}
+
+.card .btn {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+@media (max-width: 767.98px) {
+  .container.py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .card-img-top {
+    height: 180px !important;
+  }
+
+  #navbarNav .d-flex {
+    padding-bottom: 0.75rem;
+  }
+
+  #navbarNav .dropdown .btn {
+    width: 100%;
+  }
+}
