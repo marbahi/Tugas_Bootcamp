@@ -1,26 +1,54 @@
 <?php
+require_once '../Tugas_8/koneksi.php';
+
 $errors = [];
-$data = [];
+$success = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nama = trim($_POST['nama'] ?? '');
     $harga = trim($_POST['harga'] ?? '');
     $deskripsi = trim($_POST['deskripsi'] ?? '');
+    $stok = trim($_POST['stok'] ?? '');
+    $kategori = $_POST['kategori'] ?? '';
 
     if ($nama === '') $errors[] = 'Nama produk harus diisi.';
     if ($harga === '') $errors[] = 'Harga produk harus diisi.';
+    if (!is_numeric($harga) && $harga !== '') $errors[] = 'Harga harus berupa angka.';
     if ($deskripsi === '') $errors[] = 'Deskripsi produk harus diisi.';
+    if ($stok === '') $errors[] = 'Stok harus diisi.';
+    if (!ctype_digit($stok) && $stok !== '') $errors[] = 'Stok harus berupa angka positif.';
+    if ($kategori === '') $errors[] = 'Kategori harus dipilih.';
+    if (!in_array($kategori, ['Elektronik', 'Pakaian', 'Makanan', 'Lainnya']) && $kategori !== '') {
+        $errors[] = 'Kategori tidak valid.';
+    }
+
+    $gambar = null;
+    if (isset($_FILES['gambar']) && $_FILES['gambar']['error'] === UPLOAD_ERR_OK) {
+        $file = $_FILES['gambar'];
+        $ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
+        $allowed = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+        if (!in_array($ext, $allowed)) {
+            $errors[] = 'Format gambar harus JPG, PNG, GIF, atau WEBP.';
+        } elseif ($file['size'] > 5 * 1024 * 1024) {
+            $errors[] = 'Ukuran gambar maksimal 5MB.';
+        } else {
+            $gambar = uniqid('prod_') . '.' . $ext;
+        }
+    }
 
     if (empty($errors)) {
-        $data = [
-            'nama' => $nama,
-            'harga' => $harga,
-            'deskripsi' => $deskripsi,
-        ];
+        $stmt = $pdo->prepare("INSERT INTO produk (nama_produk, harga, deskripsi, stok, kategori, gambar) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->execute([$nama, $harga, $deskripsi, $stok, $kategori, $gambar]);
+
+        if ($gambar) {
+            move_uploaded_file($file['tmp_name'], __DIR__ . '/../Tugas_8/uploads/' . $gambar);
+        }
+
+        header('Location: ../Tugas_8/index.php?sukses=1');
+        exit;
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -29,7 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Tambah Produk Baru</title>
     <style>
         * { box-sizing: border-box; }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #f1f5f9;
@@ -40,12 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             flex-direction: column;
             align-items: center;
         }
-
-        .container {
-            width: 100%;
-            max-width: 540px;
-        }
-
+        .container { width: 100%; max-width: 540px; }
         .card {
             background: #fff;
             border-radius: 12px;
@@ -53,19 +75,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 24px 20px;
             margin-bottom: 20px;
         }
-
-        h1 {
-            font-size: 1.35rem;
-            margin: 0 0 20px;
-            color: #0f172a;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            margin: 0 0 12px;
-            color: #0f172a;
-        }
-
+        h1 { font-size: 1.35rem; margin: 0 0 20px; color: #0f172a; }
+        h2 { font-size: 1.1rem; margin: 0 0 12px; color: #0f172a; }
         label {
             display: block;
             font-size: .875rem;
@@ -74,8 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: #1e293b;
         }
         label:first-of-type { margin-top: 0; }
-
-        input, textarea {
+        input, textarea, select {
             width: 100%;
             padding: 10px 12px;
             margin-top: 6px;
@@ -86,13 +96,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             outline: none;
             transition: border-color .2s, box-shadow .2s;
         }
-        input:focus, textarea:focus {
+        input:focus, textarea:focus, select:focus {
             border-color: #6366f1;
             box-shadow: 0 0 0 3px rgba(99,102,241,.15);
         }
-
         textarea { height: 100px; resize: vertical; }
-
+        .file-upload {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 6px;
+        }
+        .file-upload input[type="file"] {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: .9rem;
+            cursor: pointer;
+        }
+        .file-upload input[type="file"]:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99,102,241,.15);
+        }
+        .preview-img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            display: none;
+        }
         button {
             width: 100%;
             margin-top: 20px;
@@ -107,7 +141,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             transition: background .2s;
         }
         button:hover { background: #4f46e5; }
-
+        .btn-secondary {
+            display: block;
+            width: 100%;
+            margin-top: 12px;
+            padding: 11px 0;
+            background: #fff;
+            color: #6366f1;
+            border: 2px solid #6366f1;
+            font-size: .95rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background .2s, color .2s;
+        }
+        .btn-secondary:hover { background: #6366f1; color: #fff; }
         .alert {
             background: #fef2f2;
             border: 1px solid #fecaca;
@@ -115,27 +165,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 12px 16px;
             margin-bottom: 20px;
         }
-        .alert p {
-            margin: 4px 0;
-            font-size: .875rem;
-            color: #b91c1c;
-        }
-
-        .output-card {
-            background: #0f172a;
-            border-radius: 8px;
-            padding: 16px;
-            margin-top: 20px;
-        }
-        .output-card pre {
-            margin: 0;
-            color: #e2e8f0;
-            font-size: .85rem;
-            font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
-            white-space: pre-wrap;
-            word-break: break-word;
-        }
-
+        .alert p { margin: 4px 0; font-size: .875rem; color: #b91c1c; }
+        .row { display: flex; gap: 12px; }
+        .row > div { flex: 1; }
         @media (min-width: 600px) {
             body { padding: 40px 24px; }
             .card { padding: 32px; }
@@ -155,28 +187,59 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             <?php endif; ?>
 
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
                 <label for="nama">Nama Produk</label>
-                <input type="text" id="nama" name="nama" value="<?= htmlspecialchars($_POST['nama'] ?? '') ?>">
+                <input type="text" id="nama" name="nama" value="<?= htmlspecialchars($_POST['nama'] ?? '') ?>" placeholder="Masukkan nama produk">
 
-                <label for="harga">Harga</label>
-                <input type="text" id="harga" name="harga" value="<?= htmlspecialchars($_POST['harga'] ?? '') ?>">
+                <div class="row">
+                    <div>
+                        <label for="harga">Harga (Rp)</label>
+                        <input type="text" id="harga" name="harga" value="<?= htmlspecialchars($_POST['harga'] ?? '') ?>" placeholder="Contoh: 75000">
+                    </div>
+                    <div>
+                        <label for="stok">Stok</label>
+                        <input type="number" id="stok" name="stok" value="<?= htmlspecialchars($_POST['stok'] ?? '') ?>" min="0" placeholder="Jumlah stok">
+                    </div>
+                </div>
+
+                <label for="kategori">Kategori</label>
+                <select id="kategori" name="kategori">
+                    <option value="">-- Pilih Kategori --</option>
+                    <?php
+                    $kategoriList = ['Elektronik', 'Pakaian', 'Makanan', 'Lainnya'];
+                    $selected = $_POST['kategori'] ?? '';
+                    foreach ($kategoriList as $kat):
+                    ?>
+                        <option value="<?= $kat ?>" <?= $selected === $kat ? 'selected' : '' ?>><?= $kat ?></option>
+                    <?php endforeach; ?>
+                </select>
+
+                <label for="gambar">Gambar Produk</label>
+                <div class="file-upload">
+                    <input type="file" id="gambar" name="gambar" accept="image/*" onchange="previewGambar(event)">
+                    <img id="preview" class="preview-img" alt="Preview">
+                </div>
 
                 <label for="deskripsi">Deskripsi</label>
-                <textarea id="deskripsi" name="deskripsi"><?= htmlspecialchars($_POST['deskripsi'] ?? '') ?></textarea>
+                <textarea id="deskripsi" name="deskripsi" placeholder="Deskripsi singkat produk..."><?= htmlspecialchars($_POST['deskripsi'] ?? '') ?></textarea>
 
-                <button type="submit">Simpan</button>
+                <button type="submit">Simpan Produk</button>
             </form>
-        </div>
 
-        <?php if (!empty($data)): ?>
-            <div class="card">
-                <h2>Data Produk</h2>
-                <div class="output-card">
-                    <pre><?php print_r($data); ?></pre>
-                </div>
-            </div>
-        <?php endif; ?>
+            <a href="../Tugas_8/index.php" class="btn-secondary">Lihat Daftar Produk</a>
+        </div>
     </div>
+
+    <script>
+        function previewGambar(event) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                const img = document.getElementById('preview');
+                img.src = reader.result;
+                img.style.display = 'block';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
 </body>
 </html>
