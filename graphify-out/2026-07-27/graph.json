@@ -1,0 +1,87 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "Tugas_7/index.php",
+      "file_type": "code",
+      "source_file": "Tugas_7/index.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_7_index",
+      "community": 0,
+      "community_name": "Tugas_7/index.php",
+      "norm_label": "tugas_7/index.php"
+    },
+    {
+      "label": "footer.php",
+      "file_type": "code",
+      "source_file": "Tugas_8/footer.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_8_footer",
+      "community": 1,
+      "community_name": "footer.php",
+      "norm_label": "footer.php"
+    },
+    {
+      "label": "form.php",
+      "file_type": "code",
+      "source_file": "Tugas_8/form.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_8_form",
+      "community": 2,
+      "community_name": "form.php",
+      "norm_label": "form.php"
+    },
+    {
+      "label": "header.php",
+      "file_type": "code",
+      "source_file": "Tugas_8/header.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_8_header",
+      "community": 3,
+      "community_name": "header.php",
+      "norm_label": "header.php"
+    },
+    {
+      "label": "Tugas_8/index.php",
+      "file_type": "code",
+      "source_file": "Tugas_8/index.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_8_index",
+      "community": 4,
+      "community_name": "Tugas_8/index.php",
+      "norm_label": "tugas_8/index.php"
+    },
+    {
+      "label": "koneksi.php",
+      "file_type": "code",
+      "source_file": "Tugas_8/koneksi.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_8_koneksi",
+      "community": 5,
+      "community_name": "koneksi.php",
+      "norm_label": "koneksi.php"
+    },
+    {
+      "label": "setup.php",
+      "file_type": "code",
+      "source_file": "Tugas_8/setup.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_8_setup",
+      "community": 6,
+      "community_name": "setup.php",
+      "norm_label": "setup.php"
+    }
+  ],
+  "links": [],
+  "hyperedges": [],
+  "built_at_commit": "d08fa844c3bfd3a0da59b25d009d8948659fe8ff"
+}

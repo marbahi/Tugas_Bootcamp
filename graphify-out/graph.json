@@ -4,48 +4,312 @@
   "graph": {},
   "nodes": [
     {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Tugas 9 - TokoKu (E-Commerce)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_tugas_9_tokoku_e_commerce",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "tugas 9 - tokoku (e-commerce)"
+    },
+    {
+      "label": "Halaman",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "readme_halaman",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "halaman"
+    },
+    {
+      "label": "Akses Admin",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "readme_akses_admin",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "akses admin"
+    },
+    {
+      "label": "Database",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "readme_database",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "database"
+    },
+    {
+      "label": "Fitur",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "readme_fitur",
+      "community": 8,
+      "community_name": "Fitur",
+      "norm_label": "fitur"
+    },
+    {
+      "label": "Customer",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "readme_customer",
+      "community": 8,
+      "community_name": "Fitur",
+      "norm_label": "customer"
+    },
+    {
+      "label": "Admin (Seller)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "readme_admin_seller",
+      "community": 8,
+      "community_name": "Fitur",
+      "norm_label": "admin (seller)"
+    },
+    {
+      "label": "Cara Menjalankan",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan"
+    },
+    {
+      "label": "Teknologi",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "readme_teknologi",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "teknologi"
+    },
+    {
+      "label": "checkout.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/checkout.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_checkout",
+      "community": 9,
+      "community_name": "checkout.php",
+      "norm_label": "checkout.php"
+    },
+    {
+      "label": "Tugas_9/footer.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/footer.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_footer",
+      "community": 10,
+      "community_name": "Tugas_9/footer.php",
+      "norm_label": "tugas_9/footer.php"
+    },
+    {
+      "label": "Tugas_9/form.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/form.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_form",
+      "community": 11,
+      "community_name": "Tugas_9/form.php",
+      "norm_label": "tugas_9/form.php"
+    },
+    {
+      "label": "Tugas_9/header.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/header.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_header",
+      "community": 12,
+      "community_name": "Tugas_9/header.php",
+      "norm_label": "tugas_9/header.php"
+    },
+    {
+      "label": "Tugas_9/index.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/index.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_index",
+      "community": 13,
+      "community_name": "Tugas_9/index.php",
+      "norm_label": "tugas_9/index.php"
+    },
+    {
+      "label": "keranjang.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/keranjang.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_keranjang",
+      "community": 14,
+      "community_name": "keranjang.php",
+      "norm_label": "keranjang.php"
+    },
+    {
+      "label": "Tugas_9/koneksi.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/koneksi.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_koneksi",
+      "community": 15,
+      "community_name": "Tugas_9/koneksi.php",
+      "norm_label": "tugas_9/koneksi.php"
+    },
+    {
+      "label": "login.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/login.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_login",
+      "community": 16,
+      "community_name": "login.php",
+      "norm_label": "login.php"
+    },
+    {
+      "label": "logout.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/logout.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_logout",
+      "community": 17,
+      "community_name": "logout.php",
+      "norm_label": "logout.php"
+    },
+    {
+      "label": "order.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/order.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_order",
+      "community": 18,
+      "community_name": "order.php",
+      "norm_label": "order.php"
+    },
+    {
+      "label": "order_detail.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/order_detail.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_order_detail",
+      "community": 19,
+      "community_name": "order_detail.php",
+      "norm_label": "order_detail.php"
+    },
+    {
+      "label": "produk.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/produk.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_produk",
+      "community": 20,
+      "community_name": "produk.php",
+      "norm_label": "produk.php"
+    },
+    {
+      "label": "seller.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/seller.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_seller",
+      "community": 21,
+      "community_name": "seller.php",
+      "norm_label": "seller.php"
+    },
+    {
+      "label": "Tugas_9/setup.php",
+      "file_type": "code",
+      "source_file": "Tugas_9/setup.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tugas_9_setup",
+      "community": 22,
+      "community_name": "Tugas_9/setup.php",
+      "norm_label": "tugas_9/setup.php"
+    },
+    {
       "label": "Tugas_7/index.php",
       "file_type": "code",
       "source_file": "Tugas_7/index.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tugas_7_index",
       "community": 0,
       "community_name": "Tugas_7/index.php",
-      "norm_label": "tugas_7/index.php"
+      "norm_label": "tugas_7/index.php",
+      "id": "tugas_7_index"
     },
     {
-      "label": "footer.php",
+      "label": "Tugas_8/footer.php",
       "file_type": "code",
       "source_file": "Tugas_8/footer.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tugas_8_footer",
       "community": 1,
       "community_name": "footer.php",
-      "norm_label": "footer.php"
+      "norm_label": "tugas_8/footer.php",
+      "id": "tugas_8_footer"
     },
     {
-      "label": "form.php",
+      "label": "Tugas_8/form.php",
       "file_type": "code",
       "source_file": "Tugas_8/form.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tugas_8_form",
       "community": 2,
       "community_name": "form.php",
-      "norm_label": "form.php"
+      "norm_label": "tugas_8/form.php",
+      "id": "tugas_8_form"
     },
     {
-      "label": "header.php",
+      "label": "Tugas_8/header.php",
       "file_type": "code",
       "source_file": "Tugas_8/header.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tugas_8_header",
       "community": 3,
       "community_name": "header.php",
-      "norm_label": "header.php"
+      "norm_label": "tugas_8/header.php",
+      "id": "tugas_8_header"
     },
     {
       "label": "Tugas_8/index.php",
@@ -53,35 +317,135 @@
       "source_file": "Tugas_8/index.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tugas_8_index",
       "community": 4,
       "community_name": "Tugas_8/index.php",
-      "norm_label": "tugas_8/index.php"
+      "norm_label": "tugas_8/index.php",
+      "id": "tugas_8_index"
     },
     {
-      "label": "koneksi.php",
+      "label": "Tugas_8/koneksi.php",
       "file_type": "code",
       "source_file": "Tugas_8/koneksi.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tugas_8_koneksi",
       "community": 5,
       "community_name": "koneksi.php",
-      "norm_label": "koneksi.php"
+      "norm_label": "tugas_8/koneksi.php",
+      "id": "tugas_8_koneksi"
     },
     {
-      "label": "setup.php",
+      "label": "Tugas_8/setup.php",
       "file_type": "code",
       "source_file": "Tugas_8/setup.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tugas_8_setup",
       "community": 6,
       "community_name": "setup.php",
-      "norm_label": "setup.php"
+      "norm_label": "tugas_8/setup.php",
+      "id": "tugas_8_setup"
     }
   ],
-  "links": [],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "readme_tugas_9_tokoku_e_commerce",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_tugas_9_tokoku_e_commerce",
+      "target": "readme_akses_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_tugas_9_tokoku_e_commerce",
+      "target": "readme_cara_menjalankan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_tugas_9_tokoku_e_commerce",
+      "target": "readme_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_tugas_9_tokoku_e_commerce",
+      "target": "readme_fitur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_tugas_9_tokoku_e_commerce",
+      "target": "readme_halaman",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_tugas_9_tokoku_e_commerce",
+      "target": "readme_teknologi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_fitur",
+      "target": "readme_admin_seller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_fitur",
+      "target": "readme_customer",
+      "confidence_score": 1.0
+    }
+  ],
   "hyperedges": [],
-  "built_at_commit": "d08fa844c3bfd3a0da59b25d009d8948659fe8ff"
+  "built_at_commit": "98eee14799423467d655c2d66fc6d9f34ebf7a52"
 }
