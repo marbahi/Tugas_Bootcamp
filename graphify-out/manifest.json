@@ -253,5 +253,395 @@
     "mtime": 1785152839.4280207,
     "ast_hash": "78e98d10e7a5b1dca51ad7de95141f67",
     "semantic_hash": ""
+  },
+  "Tugas_10/app/Http/Controllers/Controller.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "25a307335c0719bc9a91b3f7babd186d",
+    "semantic_hash": ""
+  },
+  "Tugas_10/app/Http/Controllers/OrderController.php": {
+    "mtime": 1785328084.8047633,
+    "ast_hash": "955d1c76e00ba2a998ba9cb298ba5ad7",
+    "semantic_hash": ""
+  },
+  "Tugas_10/app/Http/Controllers/ProductController.php": {
+    "mtime": 1785328082.6979756,
+    "ast_hash": "341ea0486de9b73b457916304674c121",
+    "semantic_hash": ""
+  },
+  "Tugas_10/app/Models/Order.php": {
+    "mtime": 1785328083.944881,
+    "ast_hash": "015df8e328dd8e0fe14d13af6546084a",
+    "semantic_hash": ""
+  },
+  "Tugas_10/app/Models/Product.php": {
+    "mtime": 1785328082.711547,
+    "ast_hash": "ff146a68cddb77483b6c50b2f82908ca",
+    "semantic_hash": ""
+  },
+  "Tugas_10/app/Models/User.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "7e97fadb5151a214850c6566f879990e",
+    "semantic_hash": ""
+  },
+  "Tugas_10/app/Providers/AppServiceProvider.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "c0094f35cad6bba7636002a62186dae4",
+    "semantic_hash": ""
+  },
+  "Tugas_10/artisan": {
+    "mtime": 1737752106.0,
+    "ast_hash": "6db4e64ab2d4fa6230e6dad951a79530",
+    "semantic_hash": ""
+  },
+  "Tugas_10/bootstrap/app.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "3f8974b9195d258cbf6f924c79a66c41",
+    "semantic_hash": ""
+  },
+  "Tugas_10/bootstrap/providers.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "d18593472c5e35d8ab5add4240fc95f6",
+    "semantic_hash": ""
+  },
+  "Tugas_10/composer.json": {
+    "mtime": 1785322745.0183625,
+    "ast_hash": "4e74d79666c942c0fb0fc2d2ecc4f29b",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/app.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "04bad29c587cf3fe5f1c7b7f63262c19",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/auth.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "b65c6daa01e89ecd22338a88fbae40ce",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/cache.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "488b21f09c887ceb3306242d0500736f",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/database.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "b7b09d68f8893547a7e5fbd5207fc8fa",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/filesystems.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "717e65d7bb8f32a4f298ea769891734a",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/logging.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "fbb56a82ae25fc5d2ce556acf26838ad",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/mail.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "2dbee371fe64fc29d4447d5b29c2f8e9",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/queue.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "fa588a4871790fca01d6a90af9208d15",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/services.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "e3185f8bf937203123588b3884abf896",
+    "semantic_hash": ""
+  },
+  "Tugas_10/config/session.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "ea6b486e3eb14eb3994165631160bd31",
+    "semantic_hash": ""
+  },
+  "Tugas_10/database/factories/UserFactory.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "e863c5e59a1728c6fd033e87269acda7",
+    "semantic_hash": ""
+  },
+  "Tugas_10/database/migrations/0001_01_01_000000_create_users_table.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "138280095e9d19f2ba6fb830415602e2",
+    "semantic_hash": ""
+  },
+  "Tugas_10/database/migrations/0001_01_01_000001_create_cache_table.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "6803c10a1aa695d40633ec8bea5576d5",
+    "semantic_hash": ""
+  },
+  "Tugas_10/database/migrations/0001_01_01_000002_create_jobs_table.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "ead9cce2650b36345454f85e8c0214a0",
+    "semantic_hash": ""
+  },
+  "Tugas_10/database/migrations/2026_07_29_122301_create_products_table.php": {
+    "mtime": 1785327819.3373184,
+    "ast_hash": "eebfc72a87c0c0844f015a9046ebf134",
+    "semantic_hash": ""
+  },
+  "Tugas_10/database/migrations/2026_07_29_122353_create_orders_table.php": {
+    "mtime": 1785328078.4489262,
+    "ast_hash": "63f047cdcd227dfc2e338b403fc96f56",
+    "semantic_hash": ""
+  },
+  "Tugas_10/database/seeders/DatabaseSeeder.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "203551b514520168139f67a8c8fb418f",
+    "semantic_hash": ""
+  },
+  "Tugas_10/package.json": {
+    "mtime": 1737752106.0,
+    "ast_hash": "50579904e56c24aabb3b6bfa8d4217a4",
+    "semantic_hash": ""
+  },
+  "Tugas_10/postcss.config.js": {
+    "mtime": 1737752106.0,
+    "ast_hash": "40617f13f9f0033c23f7830f6344cfd8",
+    "semantic_hash": ""
+  },
+  "Tugas_10/public/index.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "f9b5759b193d6bcb41ce28e59781fc47",
+    "semantic_hash": ""
+  },
+  "Tugas_10/resources/js/app.js": {
+    "mtime": 1737752106.0,
+    "ast_hash": "1ccf2b9101110f40ecaab1608a6f91cf",
+    "semantic_hash": ""
+  },
+  "Tugas_10/resources/js/bootstrap.js": {
+    "mtime": 1737752106.0,
+    "ast_hash": "78f909acc19aea4717eddca5a87c1ba3",
+    "semantic_hash": ""
+  },
+  "Tugas_10/resources/views/welcome.blade.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "c3cc46536fea38a344791488e7106cf3",
+    "semantic_hash": ""
+  },
+  "Tugas_10/routes/console.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "3c6ce2e6d16444282b24a9aa63885563",
+    "semantic_hash": ""
+  },
+  "Tugas_10/routes/web.php": {
+    "mtime": 1785328307.6177275,
+    "ast_hash": "7c914ba5d574ce3faaeaadf87054f62d",
+    "semantic_hash": ""
+  },
+  "Tugas_10/tailwind.config.js": {
+    "mtime": 1737752106.0,
+    "ast_hash": "48eb44c9e53844088439bf11dd6076cc",
+    "semantic_hash": ""
+  },
+  "Tugas_10/tests/Feature/ExampleTest.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "0f4d91c9c5bbcd4e2f46cf885acb7fb6",
+    "semantic_hash": ""
+  },
+  "Tugas_10/tests/TestCase.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "7e567dc27e68d5b57bae16af07f68907",
+    "semantic_hash": ""
+  },
+  "Tugas_10/tests/Unit/ExampleTest.php": {
+    "mtime": 1737752106.0,
+    "ast_hash": "3f679e9508c834f0ad95943455fcd836",
+    "semantic_hash": ""
+  },
+  "Tugas_10/vite.config.js": {
+    "mtime": 1737752106.0,
+    "ast_hash": "804b9fdf6105c34a0a14bed82a9d6026",
+    "semantic_hash": ""
+  },
+  "Tugas_11/app/Http/Controllers/Controller.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "25a307335c0719bc9a91b3f7babd186d",
+    "semantic_hash": ""
+  },
+  "Tugas_11/app/Models/User.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "ca00ef9e587df52eeb3f687855f5c234",
+    "semantic_hash": ""
+  },
+  "Tugas_11/app/Providers/AppServiceProvider.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "c0094f35cad6bba7636002a62186dae4",
+    "semantic_hash": ""
+  },
+  "Tugas_11/artisan": {
+    "mtime": 1779700312.0,
+    "ast_hash": "e66bb13691f6184c762c196427d8e685",
+    "semantic_hash": ""
+  },
+  "Tugas_11/bootstrap/app.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "1af409508a89bf168e42816535a9503b",
+    "semantic_hash": ""
+  },
+  "Tugas_11/bootstrap/providers.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "888c810b5a4720916f07aa05dd2c2dd3",
+    "semantic_hash": ""
+  },
+  "Tugas_11/composer.json": {
+    "mtime": 1779700312.0,
+    "ast_hash": "871b92a760af295d61023a8b74e9fd6d",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/app.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "276578ad68424be59d0998379ae7d4cb",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/auth.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "26354511ab860b301f2a3554bc388b91",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/cache.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "399c7a3b4bca7e3cb9b622828682ab56",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/database.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "594a01554ab7583541a8fb05a69f935f",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/filesystems.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "bde1aa1027f0448f17348dbd93f3d7ea",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/logging.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "d8255a5c07d3da72c7c9363f0c44bddd",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/mail.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "18601a927b48d38337ba2077426a7d60",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/queue.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "f98ce92e7bf51db1fabaf8a30e12fc5a",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/services.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "534a1b7af7009c373ea4ebfa18823d57",
+    "semantic_hash": ""
+  },
+  "Tugas_11/config/session.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "5ea7169252ec3cc7fad471f5cd0d7678",
+    "semantic_hash": ""
+  },
+  "Tugas_11/database/factories/UserFactory.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "1c9f381f9c2bc3027971a3bfdbe99164",
+    "semantic_hash": ""
+  },
+  "Tugas_11/database/migrations/0001_01_01_000000_create_users_table.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "138280095e9d19f2ba6fb830415602e2",
+    "semantic_hash": ""
+  },
+  "Tugas_11/database/migrations/0001_01_01_000001_create_cache_table.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "6952fb360e8d8b84e6f47573e4459d48",
+    "semantic_hash": ""
+  },
+  "Tugas_11/database/migrations/0001_01_01_000002_create_jobs_table.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "b0603b9fa0a27473971da76bb0c42ee1",
+    "semantic_hash": ""
+  },
+  "Tugas_11/database/seeders/DatabaseSeeder.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "ab1e985d74209458e33e0f4eb89fb77e",
+    "semantic_hash": ""
+  },
+  "Tugas_11/package.json": {
+    "mtime": 1779700312.0,
+    "ast_hash": "0cdafb1ed5ed16e0ad8d871d33e3eafc",
+    "semantic_hash": ""
+  },
+  "Tugas_11/public/index.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "d8eda274115af5fd2aaa8230af329ef7",
+    "semantic_hash": ""
+  },
+  "Tugas_11/resources/js/app.js": {
+    "mtime": 1779700312.0,
+    "ast_hash": "b519d08ef66fd54910edbedba6181ec2",
+    "semantic_hash": ""
+  },
+  "Tugas_11/resources/views/welcome.blade.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "1a03818ea91deb4f3989c6c994e5867c",
+    "semantic_hash": ""
+  },
+  "Tugas_11/routes/console.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "3c6ce2e6d16444282b24a9aa63885563",
+    "semantic_hash": ""
+  },
+  "Tugas_11/routes/web.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "84625c52e743b1a4178bb27b7afb3615",
+    "semantic_hash": ""
+  },
+  "Tugas_11/tests/Feature/ExampleTest.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "0f4d91c9c5bbcd4e2f46cf885acb7fb6",
+    "semantic_hash": ""
+  },
+  "Tugas_11/tests/TestCase.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "7e567dc27e68d5b57bae16af07f68907",
+    "semantic_hash": ""
+  },
+  "Tugas_11/tests/Unit/ExampleTest.php": {
+    "mtime": 1779700312.0,
+    "ast_hash": "3f679e9508c834f0ad95943455fcd836",
+    "semantic_hash": ""
+  },
+  "Tugas_11/vite.config.js": {
+    "mtime": 1779700312.0,
+    "ast_hash": "8ef22d264079dab94f6d36526b0cb1bc",
+    "semantic_hash": ""
+  },
+  "composer-setup.php": {
+    "mtime": 1785322645.4151585,
+    "ast_hash": "454ed70df56cec5c73b2aa38e673350f",
+    "semantic_hash": ""
+  },
+  "Tugas_10/README.md": {
+    "mtime": 1737752106.0,
+    "ast_hash": "44f71f9a1e06ebf78e85bd630460a8f0",
+    "semantic_hash": ""
+  },
+  "Tugas_10/public/robots.txt": {
+    "mtime": 1737752106.0,
+    "ast_hash": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "semantic_hash": ""
+  },
+  "Tugas_11/README.md": {
+    "mtime": 1779700312.0,
+    "ast_hash": "d2661a31fed7f254f5b7d3b6fe19330a",
+    "semantic_hash": ""
+  },
+  "Tugas_11/public/robots.txt": {
+    "mtime": 1779700312.0,
+    "ast_hash": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "semantic_hash": ""
   }
 }
