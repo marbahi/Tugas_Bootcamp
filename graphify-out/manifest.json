@@ -595,8 +595,8 @@
     "semantic_hash": ""
   },
   "Tugas_11/routes/web.php": {
-    "mtime": 1779700312.0,
-    "ast_hash": "84625c52e743b1a4178bb27b7afb3615",
+    "mtime": 1785498087.673597,
+    "ast_hash": "a4188229abcfe20f4009ad22db02f116",
     "semantic_hash": ""
   },
   "Tugas_11/tests/Feature/ExampleTest.php": {
@@ -642,6 +642,36 @@
   "Tugas_11/public/robots.txt": {
     "mtime": 1779700312.0,
     "ast_hash": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "semantic_hash": ""
+  },
+  "Tugas_11/app/Http/Controllers/HomeController.php": {
+    "mtime": 1785499601.8990898,
+    "ast_hash": "f37c985a45ae7a61e76dd8f755a8cb8f",
+    "semantic_hash": ""
+  },
+  "Tugas_11/app/Http/Controllers/ProductController.php": {
+    "mtime": 1785497893.8662739,
+    "ast_hash": "d17c56d34bc6f95d2c6ea3a29ad67427",
+    "semantic_hash": ""
+  },
+  "Tugas_11/resources/views/home.blade.php": {
+    "mtime": 1785499675.6261446,
+    "ast_hash": "e2972463b4d4311785c3b86c3c28990f",
+    "semantic_hash": ""
+  },
+  "Tugas_11/resources/views/template/body.blade.php": {
+    "mtime": 1785500244.7242534,
+    "ast_hash": "82818f5b064c2e1590d9d05e7ad797dd",
+    "semantic_hash": ""
+  },
+  "Tugas_11/resources/views/template/footer.blade.php": {
+    "mtime": 1785497689.8651807,
+    "ast_hash": "9c6c2ed4ebbcedd6b61b3acadd3edaaa",
+    "semantic_hash": ""
+  },
+  "Tugas_11/resources/views/template/header.blade.php": {
+    "mtime": 1785499870.7789867,
+    "ast_hash": "f4ed4fd50f91f1f16a06cb86cd78a8b9",
     "semantic_hash": ""
   }
 }

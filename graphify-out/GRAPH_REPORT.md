@@ -1,16 +1,16 @@
 # Graph Report - Tugas_Bootcamp  (2026-07-31)
 
 ## Corpus Check
-- 102 files · ~768,217 words
+- 108 files · ~768,416 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 417 nodes · 436 edges · 88 communities (87 shown, 1 thin omitted)
+- 429 nodes · 444 edges · 91 communities (89 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c5800fbe`
+- Built from commit: `79d0a925`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -35,6 +35,7 @@
 - PHPUnit\Framework\TestCase
 - config
 - Tugas_11/app/Http/Controllers/Controller.php
+- Tugas_11/routes/web.php
 
 ## God Nodes (most connected - your core abstractions)
 1. `Installer` - 22 edges
@@ -61,7 +62,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (88 total, 1 thin omitted)
+## Communities (91 total, 2 thin omitted)
 
 ### Community 7 - "Tugas 9 - TokoKu (E-Commerce)"
 Cohesion: 0.20
@@ -76,8 +77,8 @@ Cohesion: 0.06
 Nodes (33): autoload, autoload-dev, psr-4, psr-4, description, extra, laravel, framework (+25 more)
 
 ### Community 24 - "Tugas_11/composer.json"
-Cohesion: 0.06
-Nodes (33): autoload, autoload-dev, psr-4, psr-4, description, extra, laravel, framework (+25 more)
+Cohesion: 0.05
+Nodes (40): pestphp/pest-plugin, php-http/discovery, autoload, autoload-dev, psr-4, psr-4, config, allow-plugins (+32 more)
 
 ### Community 25 - "scripts"
 Cohesion: 0.08
@@ -135,29 +136,29 @@ Nodes (7): About Laravel, Agentic Development, Code of Conduct, Contributing, Le
 Cohesion: 0.38
 Nodes (3): PHPUnit\Framework\TestCase, ExampleTest, ExampleTest
 
-### Community 39 - "config"
+### Community 86 - "Tugas_11/routes/web.php"
 Cohesion: 0.29
-Nodes (7): pestphp/pest-plugin, php-http/discovery, config, allow-plugins, optimize-autoloader, preferred-install, sort-packages
+Nodes (3): Controller, HomeController, ProductController
 
 ## Knowledge Gaps
-- **128 isolated node(s):** `About Laravel`, `Learning Laravel`, `Premium Partners`, `Contributing`, `Code of Conduct` (+123 more)
+- **130 isolated node(s):** `template.header`, `template.footer`, `About Laravel`, `Learning Laravel`, `Premium Partners` (+125 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `scripts` connect `scripts` to `Tugas_11/composer.json`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `scripts` connect `scripts` to `Tugas_10/composer.json`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **What connects `About Laravel`, `Learning Laravel`, `Premium Partners` to the rest of the system?**
-  _128 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **What connects `template.header`, `template.footer`, `About Laravel` to the rest of the system?**
+  _130 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Fitur` be split into smaller, more focused modules?**
   _Cohesion score 0.09898989898989899 - nodes in this community are weakly interconnected._
 - **Should `Tugas_10/composer.json` be split into smaller, more focused modules?**
   _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._
 - **Should `Tugas_11/composer.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04878048780487805 - nodes in this community are weakly interconnected._
 - **Should `scripts` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._

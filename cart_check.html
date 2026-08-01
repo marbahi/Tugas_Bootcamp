@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | My E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .site-navbar { background: #0f172a; padding: .75rem 1.25rem; }
+        .site-navbar .navbar-row { display: grid; grid-template-columns: 1fr minmax(240px, 640px) 1fr; align-items: center; gap: .5rem 1rem; width: 100%; }
+        .site-navbar .navbar-brand { color: #fff; font-weight: 700; justify-self: start; }
+        .site-navbar .nav-link { color: #94a3b8; font-size: .875rem; font-weight: 500; padding: 6px 14px; border-radius: 6px; transition: background .2s, color .2s; }
+        .site-navbar .nav-link:hover { color: #fff; background: rgba(255,255,255,.1); }
+        .site-navbar .cart-link { justify-self: end; font-size: 1.25rem; }
+        .site-navbar .search-form { display: flex; gap: .5rem; width: 100%; }
+        .site-navbar .search-form .form-control { flex: 1 1 auto; background: #1e293b; border-color: #334155; color: #f1f5f9; }
+        .site-navbar .search-form .form-control::placeholder { color: #64748b; }
+        .site-navbar .search-form .form-control:focus { border-color: #6366f1; box-shadow: none; }
+        .site-navbar .btn-icon { background: transparent; border: none; color: #94a3b8; font-size: 1rem; padding: 6px 8px; border-radius: 6px; transition: background .2s, color .2s; }
+        .site-navbar .btn-icon:hover { color: #fff; background: rgba(255,255,255,.1); }
+        .site-footer { background: #0f172a; color: #94a3b8; }
+        .site-footer .nav-link { color: #94a3b8; }
+        .site-footer .nav-link:hover { color: #fff; }
+        .site-footer .copyright { color: #94a3b8; }
+        .rekomendasi, .cart-section { margin-left: .75rem; margin-right: .75rem; }
+        @media (min-width: 768px) {
+            .rekomendasi, .cart-section { margin-left: 1.5rem; margin-right: 1.5rem; }
+        }
+        @media (min-width: 992px) {
+            .rekomendasi, .cart-section { margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+        }
+        @media (max-width: 767.98px) {
+            .site-navbar .navbar-row { grid-template-columns: 1fr auto; grid-template-areas: "brand cart" "search search"; }
+            .site-navbar .navbar-brand { grid-area: brand; }
+            .site-navbar .cart-link { grid-area: cart; }
+            .site-navbar .search-form { grid-area: search; }
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-dark site-navbar">
+  <div class="navbar-row">
+    <a class="navbar-brand" href="/">TokoKu</a>
+    <form class="search-form" role="search">
+      <input class="form-control" type="search" placeholder="Cari produk..." aria-label="Search"/>
+      <button class="btn btn-icon" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+    <a class="nav-link cart-link" href="/cart"><i class="bi bi-cart3"></i></a>
+  </div>
+</nav>    <main class="flex-grow-1">
+            <section class="cart-section mt-4 mb-4" style="max-width: 1400px;">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <h2 class="fw-bold mb-0">Keranjang</h2>
+            <span class="text-muted" id="cartCount">5 barang</span>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="d-flex align-items-center mb-3 ps-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="selectAll">
+                        <label class="form-check-label" for="selectAll">Pilih Semua</label>
+                    </div>
+                </div>
+
+                                    <div class="card rounded-4 mb-3 cart-item" data-id="1" data-price="150000" data-name="Produk 1">
+                        <div class="card-body d-flex flex-wrap align-items-center gap-3">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input item-check" type="checkbox" checked>
+                            </div>
+
+                            <img src="https://placehold.co/300x200/e2e8f0/0f172a?text=Produk+1" alt="Produk 1" class="rounded-3" width="80" height="80" style="object-fit: cover;">
+
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1 fw-semibold">Produk 1</h6>
+                                <span class="text-primary fw-bold">Rp150.000</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-minus">-</button>
+                                <input type="number" class="form-control form-control-sm text-center qty-input" style="width: 60px;" value="1" min="1">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-plus">+</button>
+                            </div>
+
+                            <div class="text-end" style="min-width: 110px;">
+                                <div class="fw-bold line-total">Rp150.000</div>
+                                <button type="button" class="btn btn-link text-danger p-0 btn-delete mt-1" style="font-size: .8rem;">
+                                    <i class="bi bi-trash"></i> Hapus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="card rounded-4 mb-3 cart-item" data-id="2" data-price="100000" data-name="Produk 2">
+                        <div class="card-body d-flex flex-wrap align-items-center gap-3">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input item-check" type="checkbox" checked>
+                            </div>
+
+                            <img src="https://placehold.co/300x200/e2e8f0/0f172a?text=Produk+2" alt="Produk 2" class="rounded-3" width="80" height="80" style="object-fit: cover;">
+
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1 fw-semibold">Produk 2</h6>
+                                <span class="text-primary fw-bold">Rp100.000</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-minus">-</button>
+                                <input type="number" class="form-control form-control-sm text-center qty-input" style="width: 60px;" value="2" min="1">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-plus">+</button>
+                            </div>
+
+                            <div class="text-end" style="min-width: 110px;">
+                                <div class="fw-bold line-total">Rp200.000</div>
+                                <button type="button" class="btn btn-link text-danger p-0 btn-delete mt-1" style="font-size: .8rem;">
+                                    <i class="bi bi-trash"></i> Hapus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="card rounded-4 mb-3 cart-item" data-id="3" data-price="250000" data-name="Produk 3">
+                        <div class="card-body d-flex flex-wrap align-items-center gap-3">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input item-check" type="checkbox" checked>
+                            </div>
+
+                            <img src="https://placehold.co/300x200/e2e8f0/0f172a?text=Produk+3" alt="Produk 3" class="rounded-3" width="80" height="80" style="object-fit: cover;">
+
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1 fw-semibold">Produk 3</h6>
+                                <span class="text-primary fw-bold">Rp250.000</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-minus">-</button>
+                                <input type="number" class="form-control form-control-sm text-center qty-input" style="width: 60px;" value="1" min="1">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-plus">+</button>
+                            </div>
+
+                            <div class="text-end" style="min-width: 110px;">
+                                <div class="fw-bold line-total">Rp250.000</div>
+                                <button type="button" class="btn btn-link text-danger p-0 btn-delete mt-1" style="font-size: .8rem;">
+                                    <i class="bi bi-trash"></i> Hapus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="card rounded-4 mb-3 cart-item" data-id="4" data-price="75000" data-name="Produk 4">
+                        <div class="card-body d-flex flex-wrap align-items-center gap-3">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input item-check" type="checkbox" checked>
+                            </div>
+
+                            <img src="https://placehold.co/300x200/e2e8f0/0f172a?text=Produk+4" alt="Produk 4" class="rounded-3" width="80" height="80" style="object-fit: cover;">
+
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1 fw-semibold">Produk 4</h6>
+                                <span class="text-primary fw-bold">Rp75.000</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-minus">-</button>
+                                <input type="number" class="form-control form-control-sm text-center qty-input" style="width: 60px;" value="3" min="1">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-plus">+</button>
+                            </div>
+
+                            <div class="text-end" style="min-width: 110px;">
+                                <div class="fw-bold line-total">Rp225.000</div>
+                                <button type="button" class="btn btn-link text-danger p-0 btn-delete mt-1" style="font-size: .8rem;">
+                                    <i class="bi bi-trash"></i> Hapus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="card rounded-4 mb-3 cart-item" data-id="5" data-price="500000" data-name="Produk 5">
+                        <div class="card-body d-flex flex-wrap align-items-center gap-3">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input item-check" type="checkbox" checked>
+                            </div>
+
+                            <img src="https://placehold.co/300x200/e2e8f0/0f172a?text=Produk+5" alt="Produk 5" class="rounded-3" width="80" height="80" style="object-fit: cover;">
+
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1 fw-semibold">Produk 5</h6>
+                                <span class="text-primary fw-bold">Rp500.000</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-minus">-</button>
+                                <input type="number" class="form-control form-control-sm text-center qty-input" style="width: 60px;" value="1" min="1">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-qty-plus">+</button>
+                            </div>
+
+                            <div class="text-end" style="min-width: 110px;">
+                                <div class="fw-bold line-total">Rp500.000</div>
+                                <button type="button" class="btn btn-link text-danger p-0 btn-delete mt-1" style="font-size: .8rem;">
+                                    <i class="bi bi-trash"></i> Hapus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+
+            <div class="col-lg-4">
+                <div class="card rounded-4 sticky-lg-top" style="top: 1rem;">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3">Ringkasan Belanja</h5>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">Total barang</span>
+                            <span id="summaryCount">0</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="fw-semibold">Subtotal</span>
+                            <span class="fw-bold text-primary" id="summarySubtotal">Rp0</span>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 rounded-3 fw-semibold" id="btnCheckout" disabled>Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="site-footer mt-auto">
+    <div class="container py-3">
+        <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Products</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Asks</a></li>
+        </ul>
+        <p class="text-center copyright mb-0">© 2025 Company, Inc</p>
+    </div>
+</footer>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        const items = document.querySelectorAll('.cart-item');
+        const selectAll = document.getElementById('selectAll');
+        const summaryCount = document.getElementById('summaryCount');
+        const summarySubtotal = document.getElementById('summarySubtotal');
+        const btnCheckout = document.getElementById('btnCheckout');
+        const cartCount = document.getElementById('cartCount');
+
+        const formatRupiah = (num) => 'Rp' + num.toLocaleString('id-ID');
+
+        function lineTotal(item) {
+            const price = parseInt(item.dataset.price);
+            const qty = parseInt(item.querySelector('.qty-input').value);
+            const total = price * qty;
+            item.querySelector('.line-total').textContent = formatRupiah(total);
+            return total;
+        }
+
+        function recalc() {
+            let subtotal = 0;
+            let count = 0;
+            items.forEach((item) => {
+                if (item.querySelector('.item-check').checked) {
+                    subtotal += lineTotal(item);
+                    count++;
+                }
+            });
+            summarySubtotal.textContent = formatRupiah(subtotal);
+            summaryCount.textContent = count;
+            btnCheckout.disabled = count === 0;
+        }
+
+        items.forEach((item) => {
+            const check = item.querySelector('.item-check');
+            const qtyInput = item.querySelector('.qty-input');
+            const minus = item.querySelector('.btn-qty-minus');
+            const plus = item.querySelector('.btn-qty-plus');
+            const del = item.querySelector('.btn-delete');
+
+            check.addEventListener('change', recalc);
+            qtyInput.addEventListener('change', () => {
+                qtyInput.value = Math.max(1, parseInt(qtyInput.value) || 1);
+                recalc();
+            });
+            minus.addEventListener('click', () => {
+                qtyInput.value = Math.max(1, parseInt(qtyInput.value) - 1);
+                recalc();
+            });
+            plus.addEventListener('click', () => {
+                qtyInput.value = parseInt(qtyInput.value) + 1;
+                recalc();
+            });
+            del.addEventListener('click', () => {
+                item.remove();
+                cartCount.textContent = document.querySelectorAll('.cart-item').length + ' barang';
+                recalc();
+            });
+        });
+
+        selectAll.addEventListener('change', () => {
+            items.forEach((item) => {
+                item.querySelector('.item-check').checked = selectAll.checked;
+            });
+            recalc();
+        });
+
+        btnCheckout.addEventListener('click', () => {
+            const selected = [...items]
+                .filter((item) => item.querySelector('.item-check').checked)
+                .map((item) => item.dataset.name)
+                .join(', ');
+            alert('Checkout: ' + (selected || 'tidak ada'));
+        });
+
+        recalc();
+    </script>
+</body>
+</html>

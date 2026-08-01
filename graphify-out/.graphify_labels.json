@@ -86,5 +86,8 @@
   "84": "Tugas_11/resources/views/welcome.blade.php",
   "85": "Tugas_11/routes/console.php",
   "86": "Tugas_11/routes/web.php",
-  "87": "Tugas_11/vite.config.js"
+  "87": "Tugas_11/vite.config.js",
+  "88": "home.blade.php",
+  "89": "footer.blade.php",
+  "90": "header.blade.php"
 }
