@@ -1,60 +1,44 @@
-# Tugas 9 - TokoKu (E-Commerce)
+# Project - E-Commerce
 
-Projek e-commerce sederhana menggunakan PHP & MySQL dengan fitur:
-- Halaman belanja untuk customer (grid produk, pencarian, filter)
-- Keranjang belanja (session-based)
-- Checkout & simulasi pembayaran
-- Halaman admin untuk kelola produk & pesanan
+---
 
-## Halaman
+## Sesi 13 - E-Commerce Laravel (Database Migration & Dummy Data)
 
-| URL | Fungsi | Akses |
-|-----|--------|-------|
-| `index.php` | Grid produk (belanja) | Public |
-| `produk.php?id=X` | Detail produk + add to cart | Public |
-| `keranjang.php` | Keranjang belanja | Public |
-| `checkout.php` | Checkout & pembayaran | Public |
-| `login.php` | Login admin | Public |
-| `seller.php` | CRUD produk | Admin |
-| `order.php` | Kelola pesanan | Admin |
-| `logout.php` | Logout | Admin |
+### Yang sudah dikerjakan:
 
-## Akses Admin
+1. **Database Migration**
+   - Membuat tabel `product_categories` untuk kategori produk
+   - Membuat tabel `products` untuk data produk dengan foreign key ke kategori
+   - Membuat tabel `orders` untuk data pesanan
+   - Membuat tabel `order_items` untuk detail item pesanan
+   - Membuat tabel `cart_items` untuk keranjang belanja
+   - Memperbaiki urutan migrasi agar foreign key tidak error (errno 150)
 
-- **Username:** `admin`
-- **Password:** `admin123`
+2. **Seeder & Dummy Data**
+   - `CategorySeeder` - 8 kategori produk (Elektronik, Fashion, Makanan & Minuman, Kesehatan, Olahraga, Rumah Tangga, Aksesoris, Buku)
+   - `ProductSeeder` - 80 produk dummy (10 produk per kategori)
+   - Semua seeder menggunakan `firstOrCreate` agar aman dijalankan berulang kali
 
-## Database
+### Cara menjalankan:
 
-Tabel otomatis dibuat saat pertama kali koneksi:
-- `produk` (dari Tugas 8)
-- `orders` (data pesanan)
-- `order_items` (detail item pesanan)
+```bash
+# Masuk ke folder project
+cd e-commerce
 
-## Fitur
+# Reset database dan jalankan semua seeder
+php artisan migrate:fresh --seed
 
-### Customer
-- Browse produk (grid card, gambar, harga, stok)
-- Filter berdasarkan nama, kategori, harga
-- Detail produk dengan jumlah beli
-- Keranjang belanja (session)
-- Checkout dengan form nama, alamat, pengiriman, pembayaran
-- Konfirmasi via WhatsApp (simulasi)
+# Atau jalankan seeder saja (tanpa reset)
+php artisan db:seed
+```
 
-### Admin (Seller)
-- Login / Logout
-- Kelola produk (Tambah, Edit, Hapus)
-- Kelola pesanan (lihat semua order, ubah status: pending → diproses → dikirim → selesai)
-- Filter pesanan berdasarkan status
-- Detail pesanan via modal
+### Struktur Database:
 
-## Cara Menjalankan
-
-1. Pastikan XAMPP/PHP & MySQL sudah berjalan
-2. Buka `Tugas_9/` di browser (misal: `http://localhost/Tugas_Bootcamp/Tugas_9/`)
-
-## Teknologi
-
-- PHP (vanilla)
-- MySQL / MariaDB
-- HTML, CSS, JavaScript (tanpa framework)
+| Tabel | Keterangan |
+|-------|------------|
+| `users` | Data pengguna (bawaan Laravel) |
+| `product_categories` | Kategori produk |
+| `products` | Data produk |
+| `orders` | Data pesanan |
+| `order_items` | Detail item pesanan |
+| `cart_items` | Keranjang belanja |
