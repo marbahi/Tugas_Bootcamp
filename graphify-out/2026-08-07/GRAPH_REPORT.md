@@ -5,12 +5,12 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 844 nodes · 894 edges · 168 communities (157 shown, 11 thin omitted)
+- 843 nodes · 895 edges · 166 communities (157 shown, 9 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `91b905fc`
+- Built from commit: `243db7e7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -52,20 +52,18 @@
 - devDependencies
 - script.js
 - e-commerce/app/Http/Controllers/Controller.php
-- Controller
-- CartController
 
 ## God Nodes (most connected - your core abstractions)
 1. `Installer` - 22 edges
-2. `Controller` - 13 edges
+2. `Controller` - 14 edges
 3. `TestCase` - 13 edges
 4. `process()` - 10 edges
 5. `out()` - 10 edges
 6. `ProductCategories` - 10 edges
-7. `Product` - 9 edges
-8. `scripts` - 9 edges
+7. `Products` - 10 edges
+8. `Product` - 9 edges
 9. `scripts` - 9 edges
-10. `HttpClient` - 9 edges
+10. `scripts` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `CartItemsController` --inherits--> `Controller`  [EXTRACTED]
@@ -76,13 +74,13 @@
   e-commerce/app/Http/Controllers/OrdersController.php → Tugas_10/app/Http/Controllers/Controller.php
 - `ProductCategoriesController` --inherits--> `Controller`  [EXTRACTED]
   e-commerce/app/Http/Controllers/ProductCategoriesController.php → Tugas_10/app/Http/Controllers/Controller.php
-- `ProductsController` --inherits--> `Controller`  [EXTRACTED]
-  e-commerce/app/Http/Controllers/ProductsController.php → Tugas_10/app/Http/Controllers/Controller.php
+- `ProductController` --inherits--> `Controller`  [EXTRACTED]
+  Tugas_11/app/Http/Controllers/ProductController.php → Tugas_10/app/Http/Controllers/Controller.php
 
 ## Import Cycles
 - None detected.
 
-## Communities (168 total, 11 thin omitted)
+## Communities (166 total, 9 thin omitted)
 
 ### Community 7 - "Tugas 9 - TokoKu (E-Commerce)"
 Cohesion: 0.33
@@ -104,10 +102,6 @@ Nodes (40): pestphp/pest-plugin, php-http/discovery, autoload, autoload-dev, psr
 Cohesion: 0.08
 Nodes (26): Composer\\Config::disableProcessTimeout, composer install, Illuminate\\Foundation\\ComposerScripts::postAutoloadDump, Illuminate\\Foundation\\ComposerScripts::prePackageUninstall, npm install --ignore-scripts, npm run build, npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1 --timeout=0\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others, @php artisan config:clear --ansi @no_additional_args (+18 more)
 
-### Community 26 - "Product"
-Cohesion: 0.33
-Nodes (3): Illuminate\Http\Request, OrderController, Order
-
 ### Community 27 - "devDependencies"
 Cohesion: 0.10
 Nodes (20): autoprefixer, axios, postcss, devDependencies, autoprefixer, axios, concurrently, laravel-vite-plugin (+12 more)
@@ -117,8 +111,8 @@ Cohesion: 0.11
 Nodes (17): devDependencies, concurrently, laravel-vite-plugin, tailwindcss, @tailwindcss/vite, vite, concurrently, laravel-vite-plugin (+9 more)
 
 ### Community 29 - "User"
-Cohesion: 0.10
-Nodes (15): User, CategorySeeder, DatabaseSeeder, ProductSeeder, Illuminate\Database\Console\Seeds\WithoutModelEvents, Illuminate\Database\Eloquent\Factories\HasFactory, Illuminate\Database\Seeder, Illuminate\Foundation\Auth\User (+7 more)
+Cohesion: 0.12
+Nodes (14): User, DatabaseSeeder, ProductSeeder, Illuminate\Database\Console\Seeds\WithoutModelEvents, Illuminate\Database\Eloquent\Factories\HasFactory, Illuminate\Database\Seeder, Illuminate\Foundation\Auth\User, Illuminate\Notifications\Notifiable (+6 more)
 
 ### Community 30 - "scripts"
 Cohesion: 0.13
@@ -168,9 +162,17 @@ Nodes (7): About Laravel, Agentic Development, Code of Conduct, Contributing, Le
 Cohesion: 0.11
 Nodes (17): devDependencies, concurrently, laravel-vite-plugin, tailwindcss, @tailwindcss/vite, vite, concurrently, laravel-vite-plugin (+9 more)
 
+### Community 122 - "ProductCategories"
+Cohesion: 0.18
+Nodes (3): ProductCategoriesController, ProductCategories, CategorySeeder
+
 ### Community 123 - "Illuminate\Http\Request"
-Cohesion: 0.16
-Nodes (4): Controller, HomeController, ProductsController, Products
+Cohesion: 0.07
+Nodes (9): HomeController, ProductsController, Products, Controller, HomeController, ProductController, CartController, HomeController (+1 more)
+
+### Community 125 - "CartItemsController"
+Cohesion: 0.26
+Nodes (3): CartItemsController, CartItems, Illuminate\Http\Request
 
 ### Community 128 - "Sesi 13 - Database Migration & Dummy Data"
 Cohesion: 0.29
@@ -192,23 +194,19 @@ Nodes (17): devDependencies, concurrently, laravel-vite-plugin, tailwindcss, @ta
 Cohesion: 0.60
 Nodes (4): formatRupiah(), products, renderFiltered(), renderProducts()
 
-### Community 166 - "Controller"
-Cohesion: 0.15
-Nodes (5): Controller, HomeController, ProductController, HomeController, ProductController
-
 ## Knowledge Gaps
 - **250 isolated node(s):** `$schema`, `name`, `type`, `description`, `laravel` (+245 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ProductCategories` connect `ProductCategories` to `Illuminate\Database\Eloquent\Model`, `User`?**
+- **Why does `ProductCategories` connect `ProductCategories` to `Illuminate\Database\Eloquent\Model`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `Controller` connect `Controller` to `Product`, `CartController`, `ProductCategories`, `Illuminate\Http\Request`, `OrderItemsController`, `CartItemsController`, `OrdersController`, `Product`?**
+- **Why does `Controller` connect `Illuminate\Http\Request` to `Product`, `ProductCategories`, `OrderItemsController`, `CartItemsController`, `OrdersController`, `Product`?**
   _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **Why does `ProductCategoriesController` connect `ProductCategories` to `Controller`?**
+- **Why does `ProductCategoriesController` connect `ProductCategories` to `Illuminate\Http\Request`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `$schema`, `name`, `type` to the rest of the system?**
   _250 weakly-connected nodes found - possible documentation gaps or missing edges._

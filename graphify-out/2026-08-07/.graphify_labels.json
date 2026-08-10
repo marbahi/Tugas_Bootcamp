@@ -164,7 +164,5 @@
   "162": "e-commerce/resources/views/components/footer.blade.php",
   "163": "components/header.blade.php",
   "164": "e-commerce/resources/views/home.blade.php",
-  "165": "e-commerce/resources/views/template/body.blade.php",
-  "166": "Controller",
-  "167": "CartController"
+  "165": "e-commerce/resources/views/template/body.blade.php"
 }
