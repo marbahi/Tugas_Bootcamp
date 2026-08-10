@@ -47,14 +47,16 @@
         <div class="row row-cols-2 row-cols-lg-4 g-3 g-lg-4">
             @foreach ($products as $product)
                 <div class="col">
-                    <div class="card product-card h-100">
-                        <img src="https://placehold.co/600x450/EAF1EC/1B2A27?text=Produk+{{ $product->image }}" class="card-img-top" alt="Produk {{ $product->image }}">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fs-6 fw-semibold">Produk {{ $product->name }}</h5>
-                            <p class="card-price mt-1 mb-3">Rp{{ number_format($product->price, 0, ',', '.') }}</p>
-                            <button type="button" class="btn btn-primary btn-pill w-100 mt-auto">Beli</button>
+                    <a href="{{ route('products.show', $product) }}" class="text-decoration-none">
+                        <div class="card product-card h-100">
+                            <img src="https://placehold.co/600x450/EAF1EC/1B2A27?text=Produk+{{ $product->image }}" class="card-img-top" alt="Produk {{ $product->image }}">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fs-6 fw-semibold text-body">Produk {{ $product->name }}</h5>
+                                <p class="card-price mt-1 mb-3">Rp{{ number_format($product->price, 0, ',', '.') }}</p>
+                                <button type="button" class="btn btn-primary btn-pill w-100 mt-auto">Beli</button>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>

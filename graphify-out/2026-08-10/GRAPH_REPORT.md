@@ -1,4 +1,4 @@
-# Graph Report - Tugas_Bootcamp  (2026-08-10)
+# Graph Report - Tugas_Bootcamp  (2026-08-07)
 
 ## Corpus Check
 - 210 files · ~793,540 words
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1de0c3e5`
+- Built from commit: `91b905fc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

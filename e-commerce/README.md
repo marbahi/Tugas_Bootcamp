@@ -46,6 +46,52 @@ php artisan db:seed
 
 ---
 
+## Sesi 14 - Display Product (Home Page) & Detail Product
+
+### Yang sudah dikerjakan:
+
+1. **Home Page (Display Product)**
+   - `HomeController@index` mengambil produk dari database dengan `paginate(8)` (8 produk per halaman) lalu dikirim ke view `home`
+   - `home.blade.php` menampilkan produk sebagai kartu (`product-card`) yang berisi gambar, nama, dan harga (format `Rp1.234.567`)
+   - Setiap kartu produk dibungkus link ke halaman detail, jadi klik kard bisa membuka detail produk
+   - Menambahkan pagination di bagian bawah grid produk
+
+2. **Halaman Detail Product**
+   - Route baru `GET /product/{product}` dengan nama `products.show` yang mengarah ke `ProductsController@show`
+   - `ProductsController@show` mengirim data: objek produk, 3 gambar dummy (placehold.co), dan 8 produk rekomendasi dari kategori yang sama (acak, selain produk yang sedang dibuka)
+   - View baru `resources/views/products/show.blade.php` berisi:
+     - Galeri produk (carousel Bootstrap) dengan thumbnail yang bisa diklik untuk ganti slide
+     - Badge stok (`Stok: N` jika tersedia, `Stok Habis` jika kosong) + nama kategori
+     - Harga produk tampil besar dengan font monospace
+     - Deskripsi produk
+     - Tombol **Beli** (auto-disable jika stok habis)
+     - Section **Rekomendasi Produk** berisi 8 produk sejenis yang juga bisa diklik ke detail masing-masing
+
+3. **Styling**
+   - Menambahkan style galeri (`.product-gallery`, `.gallery-thumb`), badge stok (`.stock-badge--in` / `--out`), harga detail (`.detail-price`), dan deskripsi (`.detail-description`) di `public/css/custom.css`
+
+### Cara menjalankan:
+
+```bash
+# Pastikan database & seeder sudah jalan (lihat Sesi 13)
+php artisan migrate --seed
+
+# Jalankan server dan buka http://localhost:8000
+php artisan serve
+```
+
+- Buka `http://localhost:8000` → home page menampilkan grid produk
+- Klik salah satu kartu produk → halaman detail produk
+
+### Struktur Rute:
+
+| Metode | URL | Controller | Keterangan |
+|--------|-----|------------|------------|
+| `GET` | `/` | `HomeController@index` | Home page dengan grid produk |
+| `GET` | `/product/{product}` | `ProductsController@show` | Detail produk + rekomendasi |
+
+---
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

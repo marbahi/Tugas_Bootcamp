@@ -246,6 +246,76 @@ select:focus-visible {
     transition: border-color 0.15s ease, color 0.15s ease;
 }
 
+.product-gallery .gallery-main {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    background-color: var(--pine-soft);
+}
+
+.gallery-thumbs {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.gallery-thumb {
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: none;
+    transition: border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.gallery-thumb img {
+    display: block;
+    width: 72px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 0.55rem;
+}
+
+.gallery-thumb:hover {
+    opacity: 0.8;
+}
+
+.gallery-thumb.active {
+    border-color: var(--pine);
+    opacity: 1;
+}
+
+.stock-badge {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.45rem 0.9rem;
+}
+
+.stock-badge--in {
+    background-color: var(--pine-soft);
+    color: var(--pine);
+}
+
+.stock-badge--out {
+    background-color: #FBE9E7;
+    color: #B3261E;
+}
+
+.detail-price {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-weight: 700;
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin: 0;
+}
+
+.detail-description {
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
 .see-more:hover {
     color: var(--pine);
     border-color: var(--pine);

@@ -34,9 +34,23 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Products $products)
+    public function show(Products $product)
     {
-        //
+        $title = $product->name;
+
+        $productImages = [
+            'https://placehold.co/900x675/EAF1EC/1B2A27?text=' . rawurlencode($product->name),
+            'https://placehold.co/900x675/F3E8D6/1B2A27?text=' . rawurlencode($product->name),
+            'https://placehold.co/900x675/E3EAF3/1B2A27?text=' . rawurlencode($product->name),
+        ];
+
+        $recommendations = Products::where('product_category_id', $product->product_category_id)
+            ->where('id', '!=', $product->id)
+            ->inRandomOrder()
+            ->take(8)
+            ->get();
+
+        return view('products.show', compact('title', 'product', 'productImages', 'recommendations'));
     }
 
     /**
