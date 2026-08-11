@@ -92,6 +92,69 @@ php artisan serve
 
 ---
 
+## Sesi 15 - Penambahan Autentikasi (Laravel Breeze)
+
+### Yang sudah dikerjakan:
+
+1. **Install Laravel Breeze (Blade stack)**
+   - `composer require laravel/breeze --dev` lalu `php artisan breeze:install blade`
+   - Menambahkan sistem login/register, reset password, dan verifikasi email
+   - Testing framework: PHPUnit (konsisten dengan project)
+
+2. **Route Autentikasi**
+   - Route storefront tetap (home & detail produk publik)
+   - `/dashboard` dan `/profile` dilindungi middleware `auth` + `verified`
+   - Setelah login/register diarahkan ke dashboard; logout kembali ke `/`
+
+3. **Desain Ulang Auth → Bootstrap**
+   - Semua halaman auth Breeze (login, register, lupa/reset password, verifikasi email, konfirmasi password) dikonversi dari Tailwind default ke Bootstrap agar konsisten dengan storefront
+   - `layouts/guest.blade.php` & `layouts/app.blade.php` memakai shell Bootstrap (bg-paper, header/footer toko)
+   - Dashboard dibuat dengan kartu `.panel-card`, avatar user, dan aksi (Lihat Toko / Kelola Profil / Logout)
+   - Halaman profile (update informasi, ganti password, hapus akun) memakai form Bootstrap + modal konfirmasi hapus (Bootstrap native)
+   - Komponen Blade dikonversi: `text-input` (→ `form-control`), `input-label`, `input-error`, `auth-session-status` (→ alert), tombol (→ `btn-pill`)
+   - Header toko kini `@guest/@auth`: guest melihat Login/Sign up, member melihat Dashboard + dropdown nama (Profile/Logout)
+   - CSS baru di `custom.css`: `.auth-card`, `.panel-card`, `.avatar-user`, styling dropdown
+
+4. **Catatan**
+   - Tabel `users` sudah ada sejak awal (tidak diubah Breeze)
+   - Komponen Tailwind Breeze yang tidak terpakai dibiarkan namun tidak dirender
+
+### Cara menjalankan:
+
+```bash
+# Pastikan database & seeder sudah jalan (lihat Sesi 13)
+php artisan migrate
+npm install
+npm run build
+
+# Jalankan server dan buka http://localhost:8000
+php artisan serve
+```
+
+- Buka `http://localhost:8000`, klik **Sign up** untuk membuat akun
+- Login lalu akses Dashboard via menu di header
+
+### Struktur Rute Autentikasi:
+
+| Metode | URL | Controller | Keterangan |
+|--------|-----|------------|------------|
+| `GET/POST` | `/login` | `Auth\AuthenticatedSessionController` | Login |
+| `GET/POST` | `/register` | `Auth\RegisteredUserController` | Registrasi |
+| `POST` | `/logout` | `Auth\AuthenticatedSessionController@destroy` | Logout |
+| `GET/POST` | `/forgot-password`, `/reset-password/{token}` | `Auth\Password*Controller` | Reset password |
+| `GET` | `/dashboard` | closure | Halaman member (auth + verified) |
+| `GET/PATCH/DELETE` | `/profile` | `ProfileController` | Kelola profil |
+| `GET` | `/verify-email` | `Auth\EmailVerificationPromptController` | Verifikasi email |
+
+### Verifikasi:
+
+```bash
+php artisan route:list   # 21 route terdaftar
+php artisan test         # 25 tes lolos (termasuk tes auth Breeze)
+```
+
+---
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
