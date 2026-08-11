@@ -154,7 +154,6 @@
   "152": "e-commerce/resources/js/app.js",
   "153": "e-commerce/resources/views/welcome.blade.php",
   "154": "e-commerce/routes/console.php",
-  "155": "e-commerce/routes/web.php",
   "156": "e-commerce/vite.config.js",
   "157": "scripts",
   "158": "scripts",
@@ -165,6 +164,5 @@
   "163": "components/header.blade.php",
   "164": "e-commerce/resources/views/home.blade.php",
   "165": "e-commerce/resources/views/template/body.blade.php",
-  "166": "Controller",
-  "167": "CartController"
+  "166": "Controller"
 }

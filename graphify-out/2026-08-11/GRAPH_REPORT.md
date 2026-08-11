@@ -1,16 +1,16 @@
-# Graph Report - Tugas_Bootcamp  (2026-08-10)
+# Graph Report - Tugas_Bootcamp  (2026-08-11)
 
 ## Corpus Check
-- 210 files · ~793,540 words
+- 211 files · ~794,137 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 844 nodes · 894 edges · 168 communities (157 shown, 11 thin omitted)
+- 851 nodes · 900 edges · 166 communities (158 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1de0c3e5`
+- Built from commit: `4c234e19`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -44,7 +44,6 @@
 - OrderItemsController
 - CartItemsController
 - OrdersController
-- Product
 - Sesi 13 - Database Migration & Dummy Data
 - Illuminate\Database\Eloquent\Model
 - scripts
@@ -53,19 +52,18 @@
 - script.js
 - e-commerce/app/Http/Controllers/Controller.php
 - Controller
-- CartController
 
 ## God Nodes (most connected - your core abstractions)
 1. `Installer` - 22 edges
-2. `Controller` - 13 edges
-3. `TestCase` - 13 edges
+2. `TestCase` - 13 edges
+3. `Controller` - 12 edges
 4. `process()` - 10 edges
 5. `out()` - 10 edges
 6. `ProductCategories` - 10 edges
-7. `Product` - 9 edges
-8. `scripts` - 9 edges
+7. `ProductsController` - 9 edges
+8. `Product` - 9 edges
 9. `scripts` - 9 edges
-10. `HttpClient` - 9 edges
+10. `scripts` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `CartItemsController` --inherits--> `Controller`  [EXTRACTED]
@@ -76,13 +74,13 @@
   e-commerce/app/Http/Controllers/OrdersController.php → Tugas_10/app/Http/Controllers/Controller.php
 - `ProductCategoriesController` --inherits--> `Controller`  [EXTRACTED]
   e-commerce/app/Http/Controllers/ProductCategoriesController.php → Tugas_10/app/Http/Controllers/Controller.php
-- `ProductsController` --inherits--> `Controller`  [EXTRACTED]
-  e-commerce/app/Http/Controllers/ProductsController.php → Tugas_10/app/Http/Controllers/Controller.php
+- `ProductController` --inherits--> `Controller`  [EXTRACTED]
+  Tugas_11/app/Http/Controllers/ProductController.php → Tugas_10/app/Http/Controllers/Controller.php
 
 ## Import Cycles
 - None detected.
 
-## Communities (168 total, 11 thin omitted)
+## Communities (166 total, 8 thin omitted)
 
 ### Community 7 - "Tugas 9 - TokoKu (E-Commerce)"
 Cohesion: 0.33
@@ -103,10 +101,6 @@ Nodes (40): pestphp/pest-plugin, php-http/discovery, autoload, autoload-dev, psr
 ### Community 25 - "scripts"
 Cohesion: 0.08
 Nodes (26): Composer\\Config::disableProcessTimeout, composer install, Illuminate\\Foundation\\ComposerScripts::postAutoloadDump, Illuminate\\Foundation\\ComposerScripts::prePackageUninstall, npm install --ignore-scripts, npm run build, npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1 --timeout=0\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others, @php artisan config:clear --ansi @no_additional_args (+18 more)
-
-### Community 26 - "Product"
-Cohesion: 0.33
-Nodes (3): Illuminate\Http\Request, OrderController, Order
 
 ### Community 27 - "devDependencies"
 Cohesion: 0.10
@@ -168,13 +162,21 @@ Nodes (7): About Laravel, Agentic Development, Code of Conduct, Contributing, Le
 Cohesion: 0.11
 Nodes (17): devDependencies, concurrently, laravel-vite-plugin, tailwindcss, @tailwindcss/vite, vite, concurrently, laravel-vite-plugin (+9 more)
 
+### Community 122 - "ProductCategories"
+Cohesion: 0.26
+Nodes (3): ProductCategoriesController, ProductCategories, Illuminate\Http\Request
+
 ### Community 123 - "Illuminate\Http\Request"
-Cohesion: 0.16
-Nodes (4): Controller, HomeController, ProductsController, Products
+Cohesion: 0.23
+Nodes (3): App\Models\Products, ProductsController, Products
 
 ### Community 128 - "Sesi 13 - Database Migration & Dummy Data"
-Cohesion: 0.29
-Nodes (6): Cara menjalankan:, E-Commerce - Tugas Bootcamp, License, Sesi 13 - Database Migration & Dummy Data, Struktur Database:, Yang sudah dikerjakan:
+Cohesion: 0.18
+Nodes (10): Cara menjalankan:, Cara menjalankan:, E-Commerce - Tugas Bootcamp, License, Sesi 13 - Database Migration & Dummy Data, Sesi 14 - Display Product (Home Page) & Detail Product, Struktur Database:, Struktur Rute: (+2 more)
+
+### Community 129 - "Illuminate\Database\Eloquent\Model"
+Cohesion: 0.22
+Nodes (4): Controller, HomeController, Products, Illuminate\Database\Eloquent\Model
 
 ### Community 157 - "scripts"
 Cohesion: 0.08
@@ -193,25 +195,25 @@ Cohesion: 0.60
 Nodes (4): formatRupiah(), products, renderFiltered(), renderProducts()
 
 ### Community 166 - "Controller"
-Cohesion: 0.15
-Nodes (5): Controller, HomeController, ProductController, HomeController, ProductController
+Cohesion: 0.09
+Nodes (8): Controller, ProductController, Product, HomeController, ProductController, CartController, HomeController, ProductController
 
 ## Knowledge Gaps
-- **250 isolated node(s):** `$schema`, `name`, `type`, `description`, `laravel` (+245 more)
+- **253 isolated node(s):** `Yang sudah dikerjakan:`, `Cara menjalankan:`, `Struktur Database:`, `Yang sudah dikerjakan:`, `Cara menjalankan:` (+248 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ProductCategories` connect `ProductCategories` to `Illuminate\Database\Eloquent\Model`, `User`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `Controller` connect `Controller` to `Product`, `CartController`, `ProductCategories`, `Illuminate\Http\Request`, `OrderItemsController`, `CartItemsController`, `OrdersController`, `Product`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `Controller` connect `Controller` to `Product`, `ProductCategories`, `OrderItemsController`, `CartItemsController`, `OrdersController`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Why does `ProductCategoriesController` connect `ProductCategories` to `Controller`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **What connects `$schema`, `name`, `type` to the rest of the system?**
-  _250 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Yang sudah dikerjakan:`, `Cara menjalankan:`, `Struktur Database:` to the rest of the system?**
+  _253 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Fitur` be split into smaller, more focused modules?**
   _Cohesion score 0.07597402597402597 - nodes in this community are weakly interconnected._
 - **Should `Tugas_10/composer.json` be split into smaller, more focused modules?**

@@ -4,26 +4,147 @@
   "graph": {},
   "nodes": [
     {
-      "label": "e-commerce/app/Http/Controllers/HomeController.php",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
+      "label": "e-commerce/README.md",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_homecontroller",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "e-commerce/app/http/controllers/homecontroller.php"
+      "id": "e_commerce_readme",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "e-commerce/readme.md"
     },
     {
-      "label": "HomeController",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
-      "source_location": "L8",
+      "label": "E-Commerce - Tugas Bootcamp",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L3",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_homecontroller_homecontroller",
+      "id": "e_commerce_readme_e_commerce_tugas_bootcamp",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "e-commerce - tugas bootcamp"
+    },
+    {
+      "label": "Sesi 13 - Database Migration & Dummy Data",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "e_commerce_readme_sesi_13_database_migration_dummy_data",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "sesi 13 - database migration & dummy data"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "e_commerce_readme_cara_menjalankan",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Database:",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "e_commerce_readme_struktur_database",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "struktur database:"
+    },
+    {
+      "label": "Sesi 14 - Display Product (Home Page) & Detail Product",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "sesi 14 - display product (home page) & detail product"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_51",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "e_commerce_readme_cara_menjalankan_73",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Rute:",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "e_commerce_readme_struktur_rute",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "struktur rute:"
+    },
+    {
+      "label": "License",
+      "file_type": "document",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "e_commerce_readme_license",
+      "community": 128,
+      "community_name": "Sesi 13 - Database Migration & Dummy Data",
+      "norm_label": "license"
+    },
+    {
+      "label": "ProductsController.php",
+      "file_type": "code",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "e_commerce_app_http_controllers_productscontroller",
       "community": 123,
       "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "homecontroller"
+      "norm_label": "productscontroller.php"
+    },
+    {
+      "label": "ProductsController",
+      "file_type": "code",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "productscontroller"
     },
     {
       "label": "Controller",
@@ -32,97 +153,97 @@
       "source_location": "",
       "_origin": "ast",
       "id": "controller",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
+      "community": 129,
+      "community_name": "Illuminate\\Database\\Eloquent\\Model",
       "norm_label": "controller"
     },
     {
       "label": ".index()",
       "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
-      "source_location": "L10",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L13",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_homecontroller_homecontroller_index",
+      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_index",
       "community": 123,
       "community_name": "Illuminate\\Http\\Request",
       "norm_label": ".index()"
     },
     {
-      "label": "Components/footer.php",
+      "label": ".create()",
       "file_type": "code",
-      "source_file": "e-commerce/app/View/Components/footer.php",
-      "source_location": "L1",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L21",
       "_origin": "ast",
-      "id": "e_commerce_app_view_components_footer",
-      "community": 92,
-      "community_name": "Closure",
-      "norm_label": "components/footer.php"
+      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_create",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": ".create()"
     },
     {
-      "label": "footer",
+      "label": ".store()",
       "file_type": "code",
-      "source_file": "e-commerce/app/View/Components/footer.php",
-      "source_location": "L9",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "e_commerce_app_view_components_footer_footer",
-      "community": 92,
-      "community_name": "Closure",
-      "norm_label": "footer"
+      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_store",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": ".store()"
     },
     {
-      "label": ".__construct()",
+      "label": ".show()",
       "file_type": "code",
-      "source_file": "e-commerce/app/View/Components/footer.php",
-      "source_location": "L14",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L37",
       "_origin": "ast",
-      "id": "e_commerce_app_view_components_footer_footer_construct",
-      "community": 92,
-      "community_name": "Closure",
-      "norm_label": ".__construct()"
+      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_show",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": ".show()"
     },
     {
-      "label": ".render()",
-      "file_type": "code",
-      "source_file": "e-commerce/app/View/Components/footer.php",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "e_commerce_app_view_components_footer_footer_render",
-      "community": 92,
-      "community_name": "Closure",
-      "norm_label": ".render()"
-    },
-    {
-      "label": "Closure",
+      "label": "Products",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "closure",
-      "community": 92,
-      "community_name": "Closure",
-      "norm_label": "closure"
+      "id": "products",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "products"
     },
     {
-      "label": "e-commerce/resources/views/components/footer.blade.php",
+      "label": ".edit()",
       "file_type": "code",
-      "source_file": "e-commerce/resources/views/components/footer.blade.php",
-      "source_location": null,
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L59",
       "_origin": "ast",
-      "id": "e_commerce_resources_views_components_footer_blade",
-      "community": 162,
-      "community_name": "e-commerce/resources/views/components/footer.blade.php",
-      "norm_label": "e-commerce/resources/views/components/footer.blade.php"
+      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_edit",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": ".edit()"
     },
     {
-      "label": "components/header.blade.php",
+      "label": ".update()",
       "file_type": "code",
-      "source_file": "e-commerce/resources/views/components/header.blade.php",
-      "source_location": null,
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L67",
       "_origin": "ast",
-      "id": "e_commerce_resources_views_components_header_blade",
-      "community": 163,
-      "community_name": "components/header.blade.php",
-      "norm_label": "components/header.blade.php"
+      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_update",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".destroy()",
+      "file_type": "code",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_destroy",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": ".destroy()"
     },
     {
       "label": "e-commerce/resources/views/home.blade.php",
@@ -136,15 +257,169 @@
       "norm_label": "e-commerce/resources/views/home.blade.php"
     },
     {
+      "label": "show.blade.php",
+      "file_type": "code",
+      "source_file": "e-commerce/resources/views/products/show.blade.php",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "e_commerce_resources_views_products_show_blade",
+      "community": 127,
+      "community_name": "Product",
+      "norm_label": "show.blade.php"
+    },
+    {
+      "label": "e-commerce/routes/web.php",
+      "file_type": "code",
+      "source_file": "e-commerce/routes/web.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "e_commerce_routes_web",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "e-commerce/routes/web.php"
+    },
+    {
+      "label": "App\\Models\\Products",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "app_models_products",
+      "community": 123,
+      "community_name": "Illuminate\\Http\\Request",
+      "norm_label": "app\\models\\products"
+    },
+    {
+      "label": "Illuminate\\Http\\Request",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "illuminate_http_request",
+      "community": 122,
+      "community_name": "ProductCategories",
+      "norm_label": "illuminate\\http\\request"
+    },
+    {
+      "label": "e-commerce/app/Http/Controllers/HomeController.php",
+      "file_type": "code",
+      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 129,
+      "community_name": "Illuminate\\Database\\Eloquent\\Model",
+      "norm_label": "e-commerce/app/http/controllers/homecontroller.php",
+      "id": "e_commerce_app_http_controllers_homecontroller"
+    },
+    {
+      "label": "HomeController",
+      "file_type": "code",
+      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 129,
+      "community_name": "Illuminate\\Database\\Eloquent\\Model",
+      "norm_label": "homecontroller",
+      "id": "e_commerce_app_http_controllers_homecontroller_homecontroller"
+    },
+    {
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 129,
+      "community_name": "Illuminate\\Database\\Eloquent\\Model",
+      "norm_label": ".index()",
+      "id": "e_commerce_app_http_controllers_homecontroller_homecontroller_index"
+    },
+    {
+      "label": "Components/footer.php",
+      "file_type": "code",
+      "source_file": "e-commerce/app/View/Components/footer.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 92,
+      "community_name": "Closure",
+      "norm_label": "components/footer.php",
+      "id": "e_commerce_app_view_components_footer"
+    },
+    {
+      "label": "footer",
+      "file_type": "code",
+      "source_file": "e-commerce/app/View/Components/footer.php",
+      "source_location": "L9",
+      "_origin": "ast",
+      "community": 92,
+      "community_name": "Closure",
+      "norm_label": "footer",
+      "id": "e_commerce_app_view_components_footer_footer"
+    },
+    {
+      "label": ".__construct()",
+      "file_type": "code",
+      "source_file": "e-commerce/app/View/Components/footer.php",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 92,
+      "community_name": "Closure",
+      "norm_label": ".__construct()",
+      "id": "e_commerce_app_view_components_footer_footer_construct"
+    },
+    {
+      "label": ".render()",
+      "file_type": "code",
+      "source_file": "e-commerce/app/View/Components/footer.php",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 92,
+      "community_name": "Closure",
+      "norm_label": ".render()",
+      "id": "e_commerce_app_view_components_footer_footer_render"
+    },
+    {
+      "label": "Closure",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 92,
+      "community_name": "Closure",
+      "norm_label": "closure",
+      "id": "closure"
+    },
+    {
+      "label": "e-commerce/resources/views/components/footer.blade.php",
+      "file_type": "code",
+      "source_file": "e-commerce/resources/views/components/footer.blade.php",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 162,
+      "community_name": "e-commerce/resources/views/components/footer.blade.php",
+      "norm_label": "e-commerce/resources/views/components/footer.blade.php",
+      "id": "e_commerce_resources_views_components_footer_blade"
+    },
+    {
+      "label": "components/header.blade.php",
+      "file_type": "code",
+      "source_file": "e-commerce/resources/views/components/header.blade.php",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 163,
+      "community_name": "components/header.blade.php",
+      "norm_label": "components/header.blade.php",
+      "id": "e_commerce_resources_views_components_header_blade"
+    },
+    {
       "label": "e-commerce/resources/views/template/body.blade.php",
       "file_type": "code",
       "source_file": "e-commerce/resources/views/template/body.blade.php",
       "source_location": null,
       "_origin": "ast",
-      "id": "e_commerce_resources_views_template_body_blade",
       "community": 165,
       "community_name": "e-commerce/resources/views/template/body.blade.php",
-      "norm_label": "e-commerce/resources/views/template/body.blade.php"
+      "norm_label": "e-commerce/resources/views/template/body.blade.php",
+      "id": "e_commerce_resources_views_template_body_blade"
     },
     {
       "label": "Illuminate\\Contracts\\View\\View",
@@ -152,10 +427,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_contracts_view_view",
       "community": 92,
       "community_name": "Closure",
-      "norm_label": "illuminate\\contracts\\view\\view"
+      "norm_label": "illuminate\\contracts\\view\\view",
+      "id": "illuminate_contracts_view_view"
     },
     {
       "label": "Illuminate\\View\\Component",
@@ -163,10 +438,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_view_component",
       "community": 92,
       "community_name": "Closure",
-      "norm_label": "illuminate\\view\\component"
+      "norm_label": "illuminate\\view\\component",
+      "id": "illuminate_view_component"
     },
     {
       "label": "e-commerce/app/Providers/AppServiceProvider.php",
@@ -301,17 +576,6 @@
       "id": "e_commerce_app_view_components_template_template_render"
     },
     {
-      "label": "e-commerce/routes/web.php",
-      "file_type": "code",
-      "source_file": "e-commerce/routes/web.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 155,
-      "community_name": "e-commerce/routes/web.php",
-      "norm_label": "e-commerce/routes/web.php",
-      "id": "e_commerce_routes_web"
-    },
-    {
       "label": "Illuminate\\Support\\ServiceProvider",
       "file_type": "code",
       "source_file": "",
@@ -416,8 +680,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": "tugas_10/app/http/controllers/productcontroller.php",
       "id": "tugas_10_app_http_controllers_productcontroller"
     },
@@ -427,8 +691,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": "productcontroller",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller"
     },
@@ -438,8 +702,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": ".index()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_index"
     },
@@ -449,8 +713,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": ".store()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_store"
     },
@@ -460,8 +724,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": ".show()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_show"
     },
@@ -471,8 +735,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": ".update()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_update"
     },
@@ -482,8 +746,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": ".destroy()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_destroy"
     },
@@ -526,8 +790,8 @@
       "source_file": "Tugas_10/app/Models/Product.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": "product.php",
       "id": "tugas_10_app_models_product"
     },
@@ -537,8 +801,8 @@
       "source_file": "Tugas_10/app/Models/Product.php",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": "product",
       "id": "tugas_10_app_models_product_product"
     },
@@ -548,8 +812,8 @@
       "source_file": "Tugas_10/app/Models/Product.php",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 127,
-      "community_name": "Product",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": ".orders()",
       "id": "tugas_10_app_models_product_product_orders"
     },
@@ -3771,8 +4035,8 @@
       "source_file": "Tugas_12/app/Http/Controllers/CartController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 167,
-      "community_name": "CartController",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": "cartcontroller.php",
       "id": "tugas_12_app_http_controllers_cartcontroller"
     },
@@ -3782,8 +4046,8 @@
       "source_file": "Tugas_12/app/Http/Controllers/CartController.php",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 167,
-      "community_name": "CartController",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": "cartcontroller",
       "id": "tugas_12_app_http_controllers_cartcontroller_cartcontroller"
     },
@@ -3793,8 +4057,8 @@
       "source_file": "Tugas_12/app/Http/Controllers/CartController.php",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 167,
-      "community_name": "CartController",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": ".index()",
       "id": "tugas_12_app_http_controllers_cartcontroller_cartcontroller_index"
     },
@@ -5432,8 +5696,8 @@
       "source_file": "Tugas_12/routes/web.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 167,
-      "community_name": "CartController",
+      "community": 166,
+      "community_name": "Controller",
       "norm_label": "tugas_12/routes/web.php",
       "id": "tugas_12_routes_web"
     },
@@ -6857,105 +7121,6 @@
       "id": "e_commerce_app_http_controllers_productcategoriescontroller_productcategoriescontroller_destroy"
     },
     {
-      "label": "ProductsController.php",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "productscontroller.php",
-      "id": "e_commerce_app_http_controllers_productscontroller"
-    },
-    {
-      "label": "ProductsController",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": "productscontroller",
-      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller"
-    },
-    {
-      "label": ".index()",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".index()",
-      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_index"
-    },
-    {
-      "label": ".create()",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".create()",
-      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_create"
-    },
-    {
-      "label": ".store()",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".store()",
-      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_store"
-    },
-    {
-      "label": ".show()",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".show()",
-      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_show"
-    },
-    {
-      "label": ".edit()",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".edit()",
-      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_edit"
-    },
-    {
-      "label": ".update()",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L53",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".update()",
-      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_update"
-    },
-    {
-      "label": ".destroy()",
-      "file_type": "code",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L61",
-      "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
-      "norm_label": ".destroy()",
-      "id": "e_commerce_app_http_controllers_productscontroller_productscontroller_destroy"
-    },
-    {
       "label": "CartItems.php",
       "file_type": "code",
       "source_file": "e-commerce/app/Models/CartItems.php",
@@ -6983,8 +7148,8 @@
       "source_file": "e-commerce/app/Models/OrderItems.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 129,
-      "community_name": "Illuminate\\Database\\Eloquent\\Model",
+      "community": 124,
+      "community_name": "OrderItemsController",
       "norm_label": "orderitems.php",
       "id": "e_commerce_app_models_orderitems"
     },
@@ -7060,8 +7225,8 @@
       "source_file": "e-commerce/app/Models/Products.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
+      "community": 129,
+      "community_name": "Illuminate\\Database\\Eloquent\\Model",
       "norm_label": "products.php",
       "id": "e_commerce_app_models_products"
     },
@@ -7071,8 +7236,8 @@
       "source_file": "e-commerce/app/Models/Products.php",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
+      "community": 129,
+      "community_name": "Illuminate\\Database\\Eloquent\\Model",
       "norm_label": "products",
       "id": "e_commerce_app_models_products_products"
     },
@@ -7082,8 +7247,8 @@
       "source_file": "e-commerce/app/Models/Products.php",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 123,
-      "community_name": "Illuminate\\Http\\Request",
+      "community": 129,
+      "community_name": "Illuminate\\Database\\Eloquent\\Model",
       "norm_label": ".category()",
       "id": "e_commerce_app_models_products_products_category"
     },
@@ -9101,94 +9266,6 @@
       "id": "tugas_12_readme_license"
     },
     {
-      "label": "e-commerce/README.md",
-      "file_type": "document",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 128,
-      "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "e-commerce/readme.md",
-      "id": "e_commerce_readme"
-    },
-    {
-      "label": "E-Commerce - Tugas Bootcamp",
-      "file_type": "document",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 128,
-      "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "e-commerce - tugas bootcamp",
-      "id": "e_commerce_readme_e_commerce_tugas_bootcamp"
-    },
-    {
-      "label": "Sesi 13 - Database Migration & Dummy Data",
-      "file_type": "document",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 128,
-      "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 13 - database migration & dummy data",
-      "id": "e_commerce_readme_sesi_13_database_migration_dummy_data"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 128,
-      "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L26",
-      "_origin": "ast",
-      "community": 128,
-      "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:",
-      "id": "e_commerce_readme_cara_menjalankan"
-    },
-    {
-      "label": "Struktur Database:",
-      "file_type": "document",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 128,
-      "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur database:",
-      "id": "e_commerce_readme_struktur_database"
-    },
-    {
-      "label": "License",
-      "file_type": "document",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "community": 128,
-      "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "license",
-      "id": "e_commerce_readme_license"
-    },
-    {
-      "label": "Illuminate\\Http\\Request",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "Product",
-      "norm_label": "illuminate\\http\\request",
-      "id": "illuminate_http_request"
-    },
-    {
       "label": "Illuminate\\Database\\Eloquent\\Model",
       "file_type": "code",
       "source_file": "",
@@ -9292,24 +9369,246 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
-      "source_location": "L8",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "e_commerce_app_http_controllers_homecontroller",
-      "target": "e_commerce_app_http_controllers_homecontroller_homecontroller",
+      "source": "e_commerce_readme",
+      "target": "e_commerce_readme_e_commerce_tugas_bootcamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
+      "target": "e_commerce_readme_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
+      "target": "e_commerce_readme_sesi_13_database_migration_dummy_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
+      "target": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
+      "target": "e_commerce_readme_cara_menjalankan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
+      "target": "e_commerce_readme_struktur_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
+      "target": "e_commerce_readme_yang_sudah_dikerjakan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
+      "target": "e_commerce_readme_cara_menjalankan_73",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
+      "target": "e_commerce_readme_struktur_rute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/README.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_51",
       "confidence_score": 1.0
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "e_commerce_app_http_controllers_homecontroller",
-      "target": "e_commerce_app_models_products",
+      "source": "e_commerce_app_http_controllers_productscontroller",
+      "target": "app_models_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller",
+      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller",
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/routes/web.php",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_routes_web",
+      "target": "e_commerce_app_http_controllers_productscontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "target": "controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_create",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_edit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_store",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
+      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_update",
       "confidence_score": 1.0
     },
     {
@@ -9319,9 +9618,332 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_homecontroller_homecontroller",
-      "target": "controller",
+      "target": "controller"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_store",
+      "target": "illuminate_http_request",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_show",
+      "target": "app_models_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_show",
+      "target": "products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L59",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_edit",
+      "target": "app_models_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_update",
+      "target": "app_models_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_update",
+      "target": "illuminate_http_request",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
+      "source_location": "L75",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_destroy",
+      "target": "app_models_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_cartitemscontroller",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_store",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_update",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/OrderItemsController.php",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_orderitemscontroller",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/OrderItemsController.php",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_orderitemscontroller_orderitemscontroller_store",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/OrderItemsController.php",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_orderitemscontroller_orderitemscontroller_update",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/OrdersController.php",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_orderscontroller",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/OrdersController.php",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_orderscontroller_orderscontroller_store",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/OrdersController.php",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_orderscontroller_orderscontroller_update",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductCategoriesController.php",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_productcategoriescontroller",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductCategoriesController.php",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_productcategoriescontroller_productcategoriescontroller_store",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/ProductCategoriesController.php",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_productcategoriescontroller_productcategoriescontroller_update",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Tugas_10/app/Http/Controllers/OrderController.php",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tugas_10_app_http_controllers_ordercontroller",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Tugas_10/app/Http/Controllers/OrderController.php",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tugas_10_app_http_controllers_ordercontroller_ordercontroller_store",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Tugas_10/app/Http/Controllers/OrderController.php",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tugas_10_app_http_controllers_ordercontroller_ordercontroller_update",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tugas_10_app_http_controllers_productcontroller",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tugas_10_app_http_controllers_productcontroller_productcontroller_store",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tugas_10_app_http_controllers_productcontroller_productcontroller_update",
+      "target": "illuminate_http_request"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_homecontroller",
+      "target": "e_commerce_app_http_controllers_homecontroller_homecontroller"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "e-commerce/app/Http/Controllers/HomeController.php",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "e_commerce_app_http_controllers_homecontroller",
+      "target": "e_commerce_app_models_products"
     },
     {
       "relation": "method",
@@ -9330,9 +9952,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_homecontroller_homecontroller",
-      "target": "e_commerce_app_http_controllers_homecontroller_homecontroller_index",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_homecontroller_homecontroller_index"
     },
     {
       "relation": "imports",
@@ -9342,9 +9964,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer",
-      "target": "closure",
-      "confidence_score": 1.0
+      "target": "closure"
     },
     {
       "relation": "contains",
@@ -9353,9 +9975,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer",
-      "target": "e_commerce_app_view_components_footer_footer",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_view_components_footer_footer"
     },
     {
       "relation": "imports",
@@ -9365,9 +9987,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer",
-      "target": "illuminate_contracts_view_view",
-      "confidence_score": 1.0
+      "target": "illuminate_contracts_view_view"
     },
     {
       "relation": "imports",
@@ -9377,9 +9999,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer",
-      "target": "illuminate_view_component",
-      "confidence_score": 1.0
+      "target": "illuminate_view_component"
     },
     {
       "relation": "method",
@@ -9388,9 +10010,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer_footer",
-      "target": "e_commerce_app_view_components_footer_footer_construct",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_view_components_footer_footer_construct"
     },
     {
       "relation": "method",
@@ -9399,9 +10021,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer_footer",
-      "target": "e_commerce_app_view_components_footer_footer_render",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_view_components_footer_footer_render"
     },
     {
       "relation": "inherits",
@@ -9410,9 +10032,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer_footer",
-      "target": "illuminate_view_component",
-      "confidence_score": 1.0
+      "target": "illuminate_view_component"
     },
     {
       "relation": "references",
@@ -9422,9 +10044,9 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer_footer_render",
-      "target": "closure",
-      "confidence_score": 1.0
+      "target": "closure"
     },
     {
       "relation": "references",
@@ -9434,9 +10056,9 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_view_components_footer_footer_render",
-      "target": "illuminate_contracts_view_view",
-      "confidence_score": 1.0
+      "target": "illuminate_contracts_view_view"
     },
     {
       "relation": "imports",
@@ -9971,17 +10593,6 @@
     {
       "relation": "inherits",
       "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
-      "target": "tugas_10_app_http_controllers_controller_controller"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
       "source_file": "Tugas_10/app/Http/Controllers/OrderController.php",
       "source_location": "L8",
       "weight": 1.0,
@@ -10055,18 +10666,6 @@
       "confidence_score": 1.0,
       "source": "tugas_12_app_http_controllers_productcontroller_productcontroller",
       "target": "tugas_10_app_http_controllers_controller_controller"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "Tugas_10/app/Http/Controllers/OrderController.php",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tugas_10_app_http_controllers_ordercontroller",
-      "target": "illuminate_http_request"
     },
     {
       "relation": "contains",
@@ -10160,18 +10759,6 @@
       "target": "tugas_10_app_models_order_order"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Tugas_10/app/Http/Controllers/OrderController.php",
-      "source_location": "L16",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tugas_10_app_http_controllers_ordercontroller_ordercontroller_store",
-      "target": "illuminate_http_request"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -10205,31 +10792,7 @@
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "tugas_10_app_http_controllers_ordercontroller_ordercontroller_update",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Tugas_10/app/Http/Controllers/OrderController.php",
-      "source_location": "L40",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tugas_10_app_http_controllers_ordercontroller_ordercontroller_update",
       "target": "tugas_10_app_models_order_order"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tugas_10_app_http_controllers_productcontroller",
-      "target": "illuminate_http_request"
     },
     {
       "relation": "contains",
@@ -10322,18 +10885,6 @@
       "target": "tugas_10_app_models_product_product"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
-      "source_location": "L16",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tugas_10_app_http_controllers_productcontroller_productcontroller_store",
-      "target": "illuminate_http_request"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -10356,18 +10907,6 @@
       "confidence_score": 1.0,
       "source": "tugas_10_app_http_controllers_productcontroller_productcontroller_show",
       "target": "tugas_10_app_models_product_product"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
-      "source_location": "L35",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tugas_10_app_http_controllers_productcontroller_productcontroller_update",
-      "target": "illuminate_http_request"
     },
     {
       "relation": "references",
@@ -16393,18 +16932,6 @@
       "target": "e_commerce_app_models_cartitems_cartitems"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_cartitemscontroller",
-      "target": "illuminate_http_request"
-    },
-    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
@@ -16485,18 +17012,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
-      "source_location": "L29",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_store",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L37",
       "weight": 1.0,
       "context": "parameter_type",
@@ -16528,18 +17043,6 @@
       "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_update",
       "target": "e_commerce_app_models_cartitems_cartitems"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
-      "source_location": "L53",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_update",
-      "target": "illuminate_http_request"
     },
     {
       "relation": "references",
@@ -16586,18 +17089,6 @@
       "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_orderitemscontroller",
       "target": "e_commerce_app_models_orderitems_orderitems"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/OrderItemsController.php",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_orderitemscontroller",
-      "target": "illuminate_http_request"
     },
     {
       "relation": "method",
@@ -16680,18 +17171,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "e-commerce/app/Http/Controllers/OrderItemsController.php",
-      "source_location": "L29",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_orderitemscontroller_orderitemscontroller_store",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/OrderItemsController.php",
       "source_location": "L37",
       "weight": 1.0,
       "context": "parameter_type",
@@ -16728,18 +17207,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "e-commerce/app/Http/Controllers/OrderItemsController.php",
-      "source_location": "L53",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_orderitemscontroller_orderitemscontroller_update",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/OrderItemsController.php",
       "source_location": "L61",
       "weight": 1.0,
       "context": "parameter_type",
@@ -16770,18 +17237,6 @@
       "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_orderscontroller",
       "target": "e_commerce_app_models_orders_orders"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/OrdersController.php",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_orderscontroller",
-      "target": "illuminate_http_request"
     },
     {
       "relation": "method",
@@ -16864,18 +17319,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "e-commerce/app/Http/Controllers/OrdersController.php",
-      "source_location": "L29",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_orderscontroller_orderscontroller_store",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/OrdersController.php",
       "source_location": "L37",
       "weight": 1.0,
       "context": "parameter_type",
@@ -16912,18 +17355,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "e-commerce/app/Http/Controllers/OrdersController.php",
-      "source_location": "L53",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_orderscontroller_orderscontroller_update",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/OrdersController.php",
       "source_location": "L61",
       "weight": 1.0,
       "context": "parameter_type",
@@ -16954,18 +17385,6 @@
       "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_productcategoriescontroller",
       "target": "e_commerce_app_models_productcategories_productcategories"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductCategoriesController.php",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productcategoriescontroller",
-      "target": "illuminate_http_request"
     },
     {
       "relation": "method",
@@ -17048,18 +17467,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "e-commerce/app/Http/Controllers/ProductCategoriesController.php",
-      "source_location": "L29",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productcategoriescontroller_productcategoriescontroller_store",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductCategoriesController.php",
       "source_location": "L37",
       "weight": 1.0,
       "context": "parameter_type",
@@ -17096,18 +17503,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "e-commerce/app/Http/Controllers/ProductCategoriesController.php",
-      "source_location": "L53",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productcategoriescontroller_productcategoriescontroller_update",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductCategoriesController.php",
       "source_location": "L61",
       "weight": 1.0,
       "context": "parameter_type",
@@ -17115,190 +17510,6 @@
       "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_productcategoriescontroller_productcategoriescontroller_destroy",
       "target": "e_commerce_app_models_productcategories_productcategories"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller",
-      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller",
-      "target": "e_commerce_app_models_products_products"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L21",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
-      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_create"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L61",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
-      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_destroy"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
-      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_edit"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
-      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_index"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
-      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_show"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L29",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
-      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_store"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L53",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller",
-      "target": "e_commerce_app_http_controllers_productscontroller_productscontroller_update"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L29",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_store",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_show",
-      "target": "e_commerce_app_models_products_products"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L45",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_edit",
-      "target": "e_commerce_app_models_products_products"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L53",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_update",
-      "target": "e_commerce_app_models_products_products"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L53",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_update",
-      "target": "illuminate_http_request"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/app/Http/Controllers/ProductsController.php",
-      "source_location": "L61",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_app_http_controllers_productscontroller_productscontroller_destroy",
-      "target": "e_commerce_app_models_products_products"
     },
     {
       "relation": "contains",
@@ -19354,74 +19565,8 @@
       "confidence_score": 1.0,
       "source": "tugas_12_readme",
       "target": "tugas_12_readme_security_vulnerabilities"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_readme",
-      "target": "e_commerce_readme_e_commerce_tugas_bootcamp"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_license"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_13_database_migration_dummy_data"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
-      "target": "e_commerce_readme_cara_menjalankan"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
-      "target": "e_commerce_readme_struktur_database"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "e-commerce/README.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1de0c3e5a85b4f1d1c208477b2f7cc910dc927e5"
+  "built_at_commit": "4c234e199a47cffc086482ea7e9742f9daf74592"
 }
