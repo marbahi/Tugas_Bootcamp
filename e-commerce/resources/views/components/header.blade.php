@@ -7,8 +7,29 @@
                 <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
             </ul>
             <ul class="nav align-items-center gap-2">
-                <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Login</a></li>
-                <li class="nav-item"><a href="#" class="btn btn-primary btn-sm rounded-pill px-3">Sign up</a></li>
+                @auth
+                    <li class="nav-item">
+                        <a href="{{ route('dashboard') }}" class="nav-link text-muted px-2">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-2 fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ Auth::user()->name }}
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                            <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                @else
+                    <li class="nav-item"><a href="{{ route('login') }}" class="nav-link text-muted px-2">Login</a></li>
+                    <li class="nav-item"><a href="{{ route('register') }}" class="btn btn-primary btn-sm rounded-pill px-3">Sign up</a></li>
+                @endauth
             </ul>
         </div>
     </nav>

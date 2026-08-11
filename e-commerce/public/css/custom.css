@@ -378,3 +378,49 @@ select:focus-visible {
         transition: none;
     }
 }
+
+.auth-card {
+    max-width: 480px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+}
+
+.auth-card .form-control {
+    font-size: 0.95rem;
+}
+
+.panel-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+}
+
+.avatar-user {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--pine-soft);
+    color: var(--pine);
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.dropdown-menu {
+    border: 1px solid var(--line);
+    border-radius: 0.9rem;
+}
+
+.dropdown-item {
+    font-size: 0.92rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: var(--pine-soft);
+    color: var(--pine);
+}
