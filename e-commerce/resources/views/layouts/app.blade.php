@@ -13,20 +13,67 @@
     <title>{{ isset($headerTitle) ? $headerTitle . ' | ' : '' }}{{ config('app.name', 'Laravel') }}</title>
 </head>
 <body class="d-flex flex-column min-vh-100 bg-paper">
-    <x-header></x-header>
+    @unless(request()->routeIs('dashboard', 'products.*', 'product-categories.*', 'profile.*'))
+        <x-header></x-header>
+    @endunless
 
-    @isset($header)
-        <div class="container pt-4 pb-2">
-            <h1 class="font-display fw-bold mb-0 fs-2">{{ $header }}</h1>
-            <hr class="section-hr">
-        </div>
-    @endisset
+    @auth
+        @if(request()->routeIs('dashboard', 'products.*', 'product-categories.*', 'profile.*'))
+            <div class="member-header">
+                <div class="container d-flex flex-wrap align-items-center gap-2 py-1">
+                    <a href="{{ route('home') }}" class="brand-word brand-word--sm me-lg-auto">E-Commerce<span class="dot">.</span></a>
+
+                    <ul class="nav member-nav py-2">
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('product-categories.*') ? 'active' : '' }}" href="{{ route('product-categories.index') }}">Product Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('products.*') ? 'active' : '' }}" href="{{ route('products.index') }}">Products</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2 ms-lg-3">
+                        @isset($actions)
+                            {!! $actions !!}
+                        @endisset
+
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle px-2 fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ Auth::user()->name }}
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item">Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endif
+    @endauth
 
     <main class="flex-fill container py-4">
+        @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show py-2" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
         {{ $slot }}
     </main>
 
     <x-footer></x-footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    @stack('scripts')
 </body>
 </html>

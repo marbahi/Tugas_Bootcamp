@@ -155,6 +155,67 @@ php artisan test         # 25 tes lolos (termasuk tes auth Breeze)
 
 ---
 
+## Sesi 16 - Admin Product List & Edit Page
+
+### Yang sudah dikerjakan:
+
+1. **Route Resource Admin** (`routes/web.php`)
+   - `Route::resource('products', ProductController::class)->except(['show'])` dan `Route::resource('product-categories', CategoryController::class)` di prefix `/dashboard`, dilindungi middleware `auth` + `verified`
+
+2. **Admin Product List** (`Admin\ProductController@index` + `dashboards/products/index.blade.php`)
+   - Tabel full-width berisi: ID, Nama, Kategori, Harga (format `Rp1.234.567`), Stok (badge hijau/merah), Gambar, Aksi (Edit/Hapus)
+   - Pencarian `search` (nama produk **atau** nama kategori via `whereHas`) + pengurutan `order_by` (name/price/stock) dengan arah `asc/desc` — auto-submit via JS, `paginate(10)->withQueryString()` agar filter tetap saat pindah halaman
+   - Hapus pakai modal konfirmasi Bootstrap
+
+3. **Create & Edit Page** (`create.blade.php` / `edit.blade.php` + partial `_form.blade.php`)
+   - Satu partial form untuk create & edit: Name, Slug, Kategori (dropdown), Harga, Stok, URL Gambar, Deskripsi
+   - Slug auto-fill dari nama via JS (tetap bisa diedit manual); tombol **Simpan/Update** + **Batal**
+   - Validasi server-side: `name` required, `slug` unique (di-ignore id sendiri saat edit), `product_category_id` harus exists, `price`/`stock` integer >= 0, `description` required
+   - Slug otomatis via `Str::slug` + suffix `-2`, `-3` jika sudah dipakai (fallback `produk`)
+
+4. **Admin Category CRUD** (`Admin\CategoryController`)
+   - Daftar kategori dengan jumlah produk (`withCount('products')`), create/edit dengan slug otomatis, hapus dengan modal + peringatan produk ikut terhapus
+
+5. **Redesign Header Dashboard**
+   - Header toko (storefront) hanya tampil di halaman publik; area member mendapat header sendiri: brand di kiri, tab navigasi (Dashboard / Product Categories / Products), tombol aksi halaman (Add/Kembali), dropdown user
+   - Slot judul h1 + hr dihapus (redundan dengan tab), diganti slot `actions` berisi tombol aksi
+   - Tabel diperlebar penuh seukuran `main` (`col-12`); form create/edit tetap lebar sedang agar nyaman
+
+6. **Perbaikan Bug Penting**
+   - Skema DB tidak sinkron dengan migrasi (tabel `products` tak punya kolom `id`, PK = `name`) -> rebuild dengan `migrate:fresh --seed`; memperbaiki relasi `ProductCategories::products()` dengan FK eksplisit `product_category_id`; `DatabaseSeeder` ditambah password ber-hash agar user seeder berhasil dibuat
+
+### Cara menjalankan:
+
+```bash
+php artisan migrate:fresh --seed   # reset + seed 8 kategori & 80 produk
+npm run build
+php artisan serve                 # buka http://127.0.0.1:8000
+```
+
+- Login `admintest@example.com` / `password` -> menu **Product Categories** / **Products** di header
+- Klik **+ Add Product** untuk membuat, **Edit** untuk mengubah, tombol Hapus (modal) untuk menghapus
+
+### Struktur Rute:
+
+| Metode | URL | Controller | Keterangan |
+|--------|-----|------------|------------|
+| `GET` | `/dashboard/products` | `Admin\ProductController@index` | Daftar produk + filter/sort |
+| `GET` | `/dashboard/products/create` | `Admin\ProductController@create` | Form tambah produk |
+| `POST` | `/dashboard/products` | `Admin\ProductController@store` | Simpan produk baru |
+| `GET` | `/dashboard/products/{product}/edit` | `Admin\ProductController@edit` | Form edit produk |
+| `PUT` | `/dashboard/products/{product}` | `Admin\ProductController@update` | Update produk |
+| `DELETE` | `/dashboard/products/{product}` | `Admin\ProductController@destroy` | Hapus produk |
+| `GET/POST/PUT/DELETE` | `/dashboard/product-categories...` | `Admin\CategoryController` | CRUD kategori |
+
+### Verifikasi:
+
+```bash
+php artisan route:list   # route resource terdaftar
+php artisan test         # semua tes tetap lolos
+```
+
+---
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

@@ -1,8 +1,6 @@
 <x-app-layout>
-    <x-slot name="header">Dashboard</x-slot>
-
     <div class="row justify-content-center">
-        <div class="col-12 col-lg-8">
+        <div class="col-12">
             <div class="panel-card p-4 p-sm-5">
                 <div class="d-flex align-items-start gap-3 mb-4">
                     <div class="avatar-user">AK</div>
@@ -15,7 +13,8 @@
                 <p class="text-muted">{{ __("You're logged in!") }}</p>
 
                 <div class="d-flex flex-wrap gap-2">
-                    <a href="/" class="btn btn-primary btn-pill">Lihat Toko</a>
+                    <a href="{{ route('products.index') }}" class="btn btn-primary btn-pill">Kelola Produk</a>
+                    <a href="{{ route('product-categories.index') }}" class="btn btn-outline-primary btn-pill">Kelola Kategori</a>
                     <a href="{{ route('profile.edit') }}" class="btn btn-outline-primary btn-pill">Kelola Profil</a>
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
