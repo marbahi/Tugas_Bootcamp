@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout headerTitle="Products">
     <x-slot name="actions">
         <a href="{{ route('products.create') }}" class="btn btn-primary btn-pill btn-sm px-4">+ Add Product</a>
     </x-slot>
@@ -67,7 +67,7 @@
                                         @endif
                                     </td>
                                     <td class="text-end">
-                                        <a href="{{ route('products.edit', $product) }}" class="btn btn-outline-primary btn-sm btn-pill">Edit</a>
+                                        <button type="button" class="btn btn-outline-primary btn-sm btn-pill" data-bs-toggle="modal" data-bs-target="#editProduct{{ $product->id }}">Edit</button>
                                         <button type="button" class="btn btn-outline-danger btn-sm btn-pill" data-bs-toggle="modal" data-bs-target="#deleteProduct{{ $product->id }}">Hapus</button>
                                     </td>
                                 </tr>
@@ -89,29 +89,7 @@
         </div>
     </div>
 
-    @foreach ($products as $product)
-        <div class="modal fade" id="deleteProduct{{ $product->id }}" tabindex="-1" aria-labelledby="deleteProductLabel{{ $product->id }}" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title font-display fw-bold" id="deleteProductLabel{{ $product->id }}">Hapus Produk</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Yakin ingin menghapus <strong>{{ $product->name }}</strong>? Tindakan ini tidak dapat dibatalkan.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-primary btn-pill" data-bs-dismiss="modal">Batal</button>
-                        <form method="POST" action="{{ route('products.destroy', $product) }}">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-pill">Hapus</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endforeach
+    @include('dashboards.products._modals')
 
     <script>
         (function () {

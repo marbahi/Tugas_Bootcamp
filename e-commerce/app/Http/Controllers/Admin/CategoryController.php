@@ -9,18 +9,22 @@ use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $categories = ProductCategories::withCount('products')
-            ->orderBy('name')
-            ->get();
+        $categories = ProductCategories::withCount('products');
+
+        if ($request->filled('search')) {
+            $search = $request->search;
+
+            $categories = $categories->where('name', 'like', "%{$search}%")
+                ->orWhere('slug', 'like', "%{$search}%");
+        }
+
+        $categories = $categories->orderBy('name')
+            ->paginate(10)
+            ->withQueryString();
 
         return view('dashboards.product-categories.index', compact('categories'));
-    }
-
-    public function create()
-    {
-        return view('dashboards.product-categories.create');
     }
 
     public function store(Request $request)
@@ -31,11 +35,6 @@ class CategoryController extends Controller
         ProductCategories::create($data);
 
         return redirect()->route('product-categories.index')->with('success', 'Kategori berhasil ditambahkan.');
-    }
-
-    public function edit(ProductCategories $productCategory)
-    {
-        return view('dashboards.product-categories.edit', compact('productCategory'));
     }
 
     public function update(Request $request, ProductCategories $productCategory)

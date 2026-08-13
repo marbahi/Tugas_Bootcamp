@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout headerTitle="Dashboard">
     <div class="row justify-content-center">
         <div class="col-12">
             <div class="panel-card p-4 p-sm-5">

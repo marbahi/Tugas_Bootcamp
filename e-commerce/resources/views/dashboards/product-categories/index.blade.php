@@ -1,11 +1,22 @@
-<x-app-layout>
+<x-app-layout headerTitle="Product Categories">
     <x-slot name="actions">
-        <a href="{{ route('product-categories.create') }}" class="btn btn-primary btn-pill btn-sm px-4">+ Add Category</a>
+        <button type="button" class="btn btn-primary btn-pill btn-sm px-4" data-bs-toggle="modal" data-bs-target="#categoryCreateModal">+ Add Category</button>
     </x-slot>
 
     <div class="row justify-content-center">
         <div class="col-12">
             <div class="panel-card p-4">
+                <form method="GET" action="{{ route('product-categories.index') }}" id="category-filter" class="row g-2 mb-3">
+                    <div class="col-12 col-md-4">
+                        <input type="search" name="search" value="{{ request('search') }}" class="form-control search-input" placeholder="Cari nama atau slug kategori...">
+                    </div>
+                    <div class="col-12 col-md-2">
+                        @if (request()->has('search'))
+                            <a href="{{ route('product-categories.index') }}" class="btn btn-outline-secondary btn-pill w-100">Reset</a>
+                        @endif
+                    </div>
+                </form>
+
                 <div class="table-responsive">
                     <table class="table table-hover align-middle admin-table mb-0">
                         <thead>
@@ -27,7 +38,7 @@
                                         <span class="badge rounded-pill stock-badge stock-badge--in">{{ $category->products_count }}</span>
                                     </td>
                                     <td class="text-end">
-                                        <a href="{{ route('product-categories.edit', $category) }}" class="btn btn-outline-primary btn-sm btn-pill">Edit</a>
+                                        <button type="button" class="btn btn-outline-primary btn-sm btn-pill" data-bs-toggle="modal" data-bs-target="#editCategory{{ $category->id }}">Edit</button>
                                         <button type="button" class="btn btn-outline-danger btn-sm btn-pill" data-bs-toggle="modal" data-bs-target="#deleteCategory{{ $category->id }}">Hapus</button>
                                     </td>
                                 </tr>
@@ -39,34 +50,27 @@
                         </tbody>
                     </table>
                 </div>
+
+                @if ($categories->hasPages())
+                    <div class="d-flex justify-content-end mt-3">
+                        {{ $categories->links() }}
+                    </div>
+                @endif
             </div>
         </div>
     </div>
 
-    @foreach ($categories as $category)
-        <div class="modal fade" id="deleteCategory{{ $category->id }}" tabindex="-1" aria-labelledby="deleteCategoryLabel{{ $category->id }}" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title font-display fw-bold" id="deleteCategoryLabel{{ $category->id }}">Hapus Kategori</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Yakin ingin menghapus kategori <strong>{{ $category->name }}</strong>?
-                        @if ($category->products_count > 0)
-                            <br><span class="text-danger small">{{ $category->products_count }} produk akan ikut terhapus.</span>
-                        @endif
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-primary btn-pill" data-bs-dismiss="modal">Batal</button>
-                        <form method="POST" action="{{ route('product-categories.destroy', $category) }}">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-pill">Hapus</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endforeach
+    @include('dashboards.product-categories._modals')
+
+    <script>
+        (function () {
+            const search = document.querySelector('#category-filter input[name="search"]');
+            if (search) {
+                search.addEventListener('input', () => {
+                    clearTimeout(search.delay);
+                    search.delay = setTimeout(() => search.form.submit(), 600);
+                });
+            }
+        })();
+    </script>
 </x-app-layout>

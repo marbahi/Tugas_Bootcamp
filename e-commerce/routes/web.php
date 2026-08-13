@@ -15,8 +15,8 @@ Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function () 
         return view('dashboards.index');
     })->name('dashboard');
 
-    Route::resource('products', ProductController::class)->except(['show']);
-    Route::resource('product-categories', CategoryController::class);
+    Route::resource('products', ProductController::class)->except(['show', 'edit']);
+    Route::resource('product-categories', CategoryController::class)->only(['index', 'store', 'update', 'destroy']);
 });
 
 Route::middleware('auth')->group(function () {

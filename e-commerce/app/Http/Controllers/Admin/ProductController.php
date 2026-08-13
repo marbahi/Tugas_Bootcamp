@@ -28,8 +28,9 @@ class ProductController extends Controller
         }
 
         $products = $products->paginate(10)->withQueryString();
+        $categories = ProductCategories::orderBy('name')->get();
 
-        return view('dashboards.products.index', compact('products'));
+        return view('dashboards.products.index', compact('products', 'categories'));
     }
 
     public function create()
@@ -42,24 +43,17 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $data = $this->validateData($request);
-        $data['slug'] = $this->resolveSlug($data['slug'] ?: $data['name']);
+        $data['slug'] = $this->resolveSlug($this->categorySlug($data['product_category_id']));
 
         Products::create($data);
 
         return redirect()->route('products.index')->with('success', 'Produk berhasil ditambahkan.');
     }
 
-    public function edit(Products $product)
-    {
-        $categories = ProductCategories::orderBy('name')->get();
-
-        return view('dashboards.products.edit', compact('product', 'categories'));
-    }
-
     public function update(Request $request, Products $product)
     {
         $data = $this->validateData($request, $product->id);
-        $data['slug'] = $this->resolveSlug($data['slug'] ?: $data['name'], $product->id);
+        $data['slug'] = $this->resolveSlug($this->categorySlug($data['product_category_id']), $product->id);
 
         $product->update($data);
 
@@ -75,21 +69,19 @@ class ProductController extends Controller
 
     protected function validateData(Request $request, ?int $ignoreId = null): array
     {
-        $slugRule = 'unique:products,slug';
-
-        if ($ignoreId !== null) {
-            $slugRule = 'unique:products,slug,' . $ignoreId;
-        }
-
         return $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'slug' => ['nullable', 'string', 'max:255', $slugRule],
             'product_category_id' => ['required', 'exists:product_categories,id'],
             'price' => ['required', 'integer', 'min:0'],
             'stock' => ['required', 'integer', 'min:0'],
             'image' => ['nullable', 'string', 'max:255'],
             'description' => ['required', 'string'],
         ]);
+    }
+
+    protected function categorySlug(int $categoryId): string
+    {
+        return ProductCategories::findOrFail($categoryId)->slug;
     }
 
     protected function resolveSlug(string $slug, ?int $ignoreId = null): string

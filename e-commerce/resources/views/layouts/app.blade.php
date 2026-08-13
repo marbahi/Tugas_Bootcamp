@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <title>{{ isset($headerTitle) ? $headerTitle . ' | ' : '' }}{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ $headerTitle ? $headerTitle . ' | ' : '' }}{{ config('app.name', 'Laravel') }}</title>
 </head>
 <body class="d-flex flex-column min-vh-100 bg-paper">
     @unless(request()->routeIs('dashboard', 'products.*', 'product-categories.*', 'profile.*'))
@@ -21,7 +21,7 @@
         @if(request()->routeIs('dashboard', 'products.*', 'product-categories.*', 'profile.*'))
             <div class="member-header">
                 <div class="container d-flex flex-wrap align-items-center gap-2 py-1">
-                    <a href="{{ route('home') }}" class="brand-word brand-word--sm me-lg-auto">E-Commerce<span class="dot">.</span></a>
+                    <a href="{{ route('home') }}" class="brand-word brand-word--sm me-3">E-Commerce<span class="dot">.</span></a>
 
                     <ul class="nav member-nav py-2">
                         <li class="nav-item">
@@ -35,7 +35,7 @@
                         </li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-2 ms-lg-3">
+                    <div class="d-flex align-items-center gap-2 ms-auto">
                         @isset($actions)
                             {!! $actions !!}
                         @endisset

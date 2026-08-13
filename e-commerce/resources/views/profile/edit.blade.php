@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout headerTitle="Profile">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
             <div class="panel-card p-4 p-sm-5 mb-4">

@@ -7,16 +7,10 @@
     @endif
 
     <div class="row g-3">
-        <div class="col-12 col-md-8">
+        <div class="col-12">
             <x-input-label for="name" :value="__('Name')" />
             <x-text-input id="name" name="name" type="text" :value="old('name', $product->name ?? '')" required placeholder="Nama produk" />
             <x-input-error :messages="$errors->get('name')" />
-        </div>
-
-        <div class="col-12 col-md-4">
-            <x-input-label for="slug" :value="__('Slug')" />
-            <x-text-input id="slug" name="slug" type="text" :value="old('slug', $product->slug ?? '')" placeholder="otomatis dari nama" />
-            <x-input-error :messages="$errors->get('slug')" />
         </div>
 
         <div class="col-12 col-md-4">
@@ -62,25 +56,3 @@
         <a href="{{ route('products.index') }}" class="btn btn-outline-secondary btn-pill">Batal</a>
     </div>
 </form>
-
-@push('scripts')
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const nameInput = document.getElementById('name');
-            const slugInput = document.getElementById('slug');
-
-            if (nameInput && slugInput) {
-                nameInput.addEventListener('input', function () {
-                    if (document.activeElement === slugInput) return;
-
-                    slugInput.value = nameInput.value
-                        .toLowerCase()
-                        .trim()
-                        .replace(/[^a-z0-9\s-]/g, '')
-                        .replace(/\s+/g, '-')
-                        .replace(/-+/g, '-');
-                });
-            }
-        });
-    </script>
-@endpush

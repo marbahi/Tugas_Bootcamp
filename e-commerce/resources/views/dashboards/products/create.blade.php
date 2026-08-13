@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout headerTitle="Add Product">
     <x-slot name="actions">
         <a href="{{ route('products.index') }}" class="btn btn-outline-secondary btn-pill btn-sm px-4">Kembali</a>
     </x-slot>
