@@ -283,6 +283,47 @@ php artisan test         # semua tes tetap lolos
 
 ---
 
+## Sesi 18 - Overview Dashboard
+
+### Yang sudah dikerjakan:
+
+1. **DashboardController** (`app/Http/Controllers/DashboardController.php`)
+   - File baru hasil rename dari `DashboardConrtoller` (typo nama kelas diperbaiki)
+   - Method `index()` menyiapkan `$items` — list array berisi data kartu statistik (title, number, icon) lalu dikirim ke view via `compact('items')`
+   - Nilai statistik masih **hardcoded** (80 produk, 8 kategori, 100 klik produk) sebagai placeholder sementara
+
+2. **Route Dashboard → Controller**
+   - Route `/dashboard` yang tadinya closure langsung `return view('dashboards.index')` kini diarahkan ke `DashboardController@index` agar data dari controller sampai ke view
+
+3. **View Overview** (`dashboards/index.blade.php`)
+   - Menampilkan grid 3 kartu statistik dengan loop `@foreach ($items as $item)` menggunakan class `panel-card`
+   - Tiap kartu berisi ikon Material Symbols, angka besar, dan judul statistik
+
+4. **Ikon Material Symbols**
+   - Font Material Symbols ditambahkan di `<head>` `layouts/app.blade.php`
+   - Ikon disimpan sebagai nama string (mis. `inventory_2`, `category`, `left_click`) dan dirender `<span class="material-symbols-outlined">`
+   - Style baru `.dashboard-stat-icon` di `public/css/custom.css`
+
+5. **User Test**
+   - Ditambahkan user `test@test.com` / `test123` (email sudah diverifikasi) untuk login dan melihat dashboard
+
+### Cara menjalankan:
+
+```bash
+php artisan serve   # buka http://127.0.0.1:8000
+```
+
+- Login dengan `test@test.com` / `test123` → buka menu **Dashboard**
+- Lihat 3 kartu statistik (Number of Products, Number of Categories, Number of Product Clicks)
+
+### Verifikasi:
+
+```bash
+php artisan route:list   # GET /dashboard → DashboardController@index
+```
+
+---
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

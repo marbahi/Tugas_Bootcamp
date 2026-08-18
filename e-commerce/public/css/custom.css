@@ -410,6 +410,12 @@ select:focus-visible {
     border-radius: 1.25rem;
 }
 
+.dashboard-stat-icon {
+    font-size: 2.25rem;
+    color: var(--pine);
+    flex-shrink: 0;
+}
+
 .avatar-user {
     width: 56px;
     height: 56px;

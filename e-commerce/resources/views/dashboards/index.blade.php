@@ -1,26 +1,18 @@
 <x-app-layout headerTitle="Dashboard">
     <div class="row justify-content-center">
         <div class="col-12">
-            <div class="panel-card p-4 p-sm-5">
-                <div class="d-flex align-items-start gap-3 mb-4">
-                    <div class="avatar-user">AK</div>
-                    <div>
-                        <h2 class="font-display fw-bold mb-1 fs-4">Halo, {{ Auth::user()->name }}!</h2>
-                        <p class="text-muted small mb-0">{{ Auth::user()->email }}</p>
+            <div class="row g-3 mb-4">
+                @foreach ($items as $item)
+                    <div class="col-12 col-md-4">
+                        <div class="panel-card p-4 d-flex align-items-center gap-3 h-100">
+                            <span class="material-symbols-outlined dashboard-stat-icon">{{ $item['icon'] }}</span>
+                            <div>
+                                <div class="fs-3 fw-bold font-display">{{ $item['number'] }}</div>
+                                <div class="text-muted small">{{ $item['title'] }}</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <p class="text-muted">{{ __("You're logged in!") }}</p>
-
-                <div class="d-flex flex-wrap gap-2">
-                    <a href="{{ route('products.index') }}" class="btn btn-primary btn-pill">Kelola Produk</a>
-                    <a href="{{ route('product-categories.index') }}" class="btn btn-outline-primary btn-pill">Kelola Kategori</a>
-                    <a href="{{ route('profile.edit') }}" class="btn btn-outline-primary btn-pill">Kelola Profil</a>
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
-                        <button type="submit" class="btn btn-outline-secondary btn-pill">Logout</button>
-                    </form>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
