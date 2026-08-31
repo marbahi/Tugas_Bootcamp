@@ -1,16 +1,16 @@
-# Graph Report - Tugas_Bootcamp  (2026-08-18)
+# Graph Report - Tugas_Bootcamp  (2026-08-13)
 
 ## Corpus Check
-- 272 files · ~804,377 words
+- 271 files · ~803,921 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1069 nodes · 1247 edges · 207 communities (194 shown, 13 thin omitted)
+- 1057 nodes · 1235 edges · 204 communities (190 shown, 14 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `03d4fa1f`
+- Built from commit: `527bcb43`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -56,11 +56,8 @@
 - Product
 - Order
 - products/create.blade.php
-- VerifyEmailController.php
-- HomeController
 - product-categories/index.blade.php
 - products/index.blade.php
-- ProductController
 
 ## God Nodes (most connected - your core abstractions)
 1. `Controller` - 33 edges
@@ -75,25 +72,25 @@
 10. `Product` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `AuthenticatedSessionController` --inherits--> `Controller`  [EXTRACTED]
-  e-commerce/app/Http/Controllers/Auth/AuthenticatedSessionController.php → Tugas_10/app/Http/Controllers/Controller.php
-- `EmailVerificationNotificationController` --inherits--> `Controller`  [EXTRACTED]
-  e-commerce/app/Http/Controllers/Auth/EmailVerificationNotificationController.php → Tugas_10/app/Http/Controllers/Controller.php
-- `PasswordController` --inherits--> `Controller`  [EXTRACTED]
-  e-commerce/app/Http/Controllers/Auth/PasswordController.php → Tugas_10/app/Http/Controllers/Controller.php
-- `VerifyEmailController` --inherits--> `Controller`  [EXTRACTED]
-  e-commerce/app/Http/Controllers/Auth/VerifyEmailController.php → Tugas_10/app/Http/Controllers/Controller.php
 - `CartItemsController` --inherits--> `Controller`  [EXTRACTED]
   e-commerce/app/Http/Controllers/CartItemsController.php → Tugas_10/app/Http/Controllers/Controller.php
+- `HomeController` --inherits--> `Controller`  [EXTRACTED]
+  e-commerce/app/Http/Controllers/HomeController.php → Tugas_10/app/Http/Controllers/Controller.php
+- `OrderItemsController` --inherits--> `Controller`  [EXTRACTED]
+  e-commerce/app/Http/Controllers/OrderItemsController.php → Tugas_10/app/Http/Controllers/Controller.php
+- `OrdersController` --inherits--> `Controller`  [EXTRACTED]
+  e-commerce/app/Http/Controllers/OrdersController.php → Tugas_10/app/Http/Controllers/Controller.php
+- `ProductCategoriesController` --inherits--> `Controller`  [EXTRACTED]
+  e-commerce/app/Http/Controllers/ProductCategoriesController.php → Tugas_10/app/Http/Controllers/Controller.php
 
 ## Import Cycles
 - None detected.
 
-## Communities (207 total, 13 thin omitted)
+## Communities (204 total, 14 thin omitted)
 
 ### Community 7 - "Tugas 9 - TokoKu (E-Commerce)"
-Cohesion: 0.07
-Nodes (29): Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, E-Commerce - Tugas Bootcamp, License (+21 more)
+Cohesion: 0.08
+Nodes (25): Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, E-Commerce - Tugas Bootcamp, License, Sesi 13 - Database Migration & Dummy Data (+17 more)
 
 ### Community 8 - "Fitur"
 Cohesion: 0.08
@@ -112,7 +109,7 @@ Cohesion: 0.08
 Nodes (26): Composer\\Config::disableProcessTimeout, composer install, Illuminate\\Foundation\\ComposerScripts::postAutoloadDump, Illuminate\\Foundation\\ComposerScripts::prePackageUninstall, npm install --ignore-scripts, npm run build, npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1 --timeout=0\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others, @php artisan config:clear --ansi @no_additional_args (+18 more)
 
 ### Community 26 - "Product"
-Cohesion: 0.24
+Cohesion: 0.27
 Nodes (3): LoginRequest, ProfileUpdateRequest, Illuminate\Foundation\Http\FormRequest
 
 ### Community 27 - "devDependencies"
@@ -124,8 +121,8 @@ Cohesion: 0.08
 Nodes (25): alpinejs, devDependencies, alpinejs, autoprefixer, concurrently, laravel-vite-plugin, postcss, tailwindcss (+17 more)
 
 ### Community 29 - "User"
-Cohesion: 0.12
-Nodes (13): DatabaseSeeder, ProductSeeder, Illuminate\Database\Console\Seeds\WithoutModelEvents, Illuminate\Database\Eloquent\Factories\HasFactory, Illuminate\Database\Seeder, Illuminate\Foundation\Auth\User, Illuminate\Notifications\Notifiable, User (+5 more)
+Cohesion: 0.08
+Nodes (16): ProductCategoriesController, ProductCategories, CategorySeeder, DatabaseSeeder, ProductSeeder, Illuminate\Database\Console\Seeds\WithoutModelEvents, Illuminate\Database\Eloquent\Factories\HasFactory, Illuminate\Database\Seeder (+8 more)
 
 ### Community 30 - "scripts"
 Cohesion: 0.13
@@ -164,8 +161,8 @@ Cohesion: 0.21
 Nodes (5): ExampleTest, PHPUnit\Framework\TestCase, ExampleTest, ExampleTest, ExampleTest
 
 ### Community 92 - "Closure"
-Cohesion: 0.15
-Nodes (9): Closure, footer, GuestLayout, header, template, Illuminate\Contracts\View\View, Illuminate\View\Component, Footer (+1 more)
+Cohesion: 0.14
+Nodes (9): Closure, AppLayout, footer, header, template, Illuminate\Contracts\View\View, Illuminate\View\Component, Footer (+1 more)
 
 ### Community 93 - "Tugas_12/README.md"
 Cohesion: 0.25
@@ -175,25 +172,17 @@ Nodes (7): About Laravel, Agentic Development, Code of Conduct, Contributing, Le
 Cohesion: 0.11
 Nodes (17): devDependencies, concurrently, laravel-vite-plugin, tailwindcss, @tailwindcss/vite, vite, concurrently, laravel-vite-plugin (+9 more)
 
-### Community 122 - "ProductCategories"
-Cohesion: 0.18
-Nodes (3): ProductCategoriesController, ProductCategories, CategorySeeder
-
 ### Community 123 - "Illuminate\Http\Request"
-Cohesion: 0.05
-Nodes (12): CartItemsController, HomeController, OrderItemsController, ProductsController, CartItems, OrderItems, Products, Illuminate\Database\Eloquent\Model (+4 more)
-
-### Community 124 - "OrderItemsController"
-Cohesion: 0.18
-Nodes (6): AuthenticatedSessionController, EmailVerificationNotificationController, PasswordController, ProfileController, Illuminate\Http\RedirectResponse, Illuminate\Http\Request
+Cohesion: 0.19
+Nodes (3): HomeController, ProductsController, Products
 
 ### Community 125 - "CartItemsController"
 Cohesion: 0.50
 Nodes (3): profile.partials.delete-user-form, profile.partials.update-password-form, profile.partials.update-profile-information-form
 
 ### Community 128 - "Sesi 13 - Database Migration & Dummy Data"
-Cohesion: 0.07
-Nodes (29): Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, E-Commerce - Tugas Bootcamp, License (+21 more)
+Cohesion: 0.08
+Nodes (25): Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, E-Commerce - Tugas Bootcamp, License, Sesi 13 - Database Migration & Dummy Data (+17 more)
 
 ### Community 157 - "scripts"
 Cohesion: 0.08
@@ -212,36 +201,28 @@ Cohesion: 0.60
 Nodes (4): formatRupiah(), products, renderFiltered(), renderProducts()
 
 ### Community 166 - "Controller"
-Cohesion: 0.11
-Nodes (10): ConfirmablePasswordController, EmailVerificationPromptController, NewPasswordController, PasswordResetLinkController, RegisteredUserController, AppLayout, Illuminate\View\View, Controller (+2 more)
-
-### Community 195 - "OrderItemsController"
-Cohesion: 0.33
-Nodes (4): App\Http\Controllers\Controller, App\Models\Products, ProductController, Products
-
-### Community 197 - "Product"
-Cohesion: 0.33
-Nodes (3): App\Models\ProductCategories, CategoryController, ProductCategories
+Cohesion: 0.05
+Nodes (27): App\Http\Controllers\Controller, App\Models\ProductCategories, App\Models\Products, CategoryController, ProductController, AuthenticatedSessionController, ConfirmablePasswordController, EmailVerificationNotificationController (+19 more)
 
 ## Knowledge Gaps
-- **298 isolated node(s):** `Yang sudah dikerjakan:`, `Cara menjalankan:`, `Struktur Database:`, `Yang sudah dikerjakan:`, `Cara menjalankan:` (+293 more)
+- **292 isolated node(s):** `Yang sudah dikerjakan:`, `Cara menjalankan:`, `Struktur Database:`, `Yang sudah dikerjakan:`, `Cara menjalankan:` (+287 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `User` connect `TestCase` to `User`, `Controller`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
-- **Why does `Controller` connect `Controller` to `OrdersController`, `CartController`, `VerifyEmailController.php`, `HomeController`, `ProductController`, `ProductCategories`, `Illuminate\Http\Request`, `OrderItemsController`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `Controller` connect `Controller` to `OrdersController`, `OrderItemsController`, `CartController`, `Product`, `Order`, `Illuminate\Http\Request`, `OrderItemsController`, `User`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `ProductCategories` connect `User` to `ProductCategories`?**
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Are the 20 inferred relationships involving `User` (e.g. with `.store()` and `.test_users_can_authenticate_using_the_login_screen()`) actually correct?**
   _`User` has 20 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Yang sudah dikerjakan:`, `Cara menjalankan:`, `Struktur Database:` to the rest of the system?**
-  _298 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _292 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Tugas 9 - TokoKu (E-Commerce)` be split into smaller, more focused modules?**
-  _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
 - **Should `Fitur` be split into smaller, more focused modules?**
   _Cohesion score 0.07597402597402597 - nodes in this community are weakly interconnected._
-- **Should `Tugas_10/composer.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._

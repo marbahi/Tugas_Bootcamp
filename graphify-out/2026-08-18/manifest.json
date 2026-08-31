@@ -210,8 +210,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1787048652.0896459,
-    "ast_hash": "591ed9d9848d30dd15166a41732ee06a",
+    "mtime": 1786625225.4803548,
+    "ast_hash": "88c71e1827b2b800ca19f61cb4d5a035",
     "semantic_hash": ""
   },
   "Tugas_9/uploads/prod_6a674498033b0.jpg": {
@@ -1125,8 +1125,8 @@
     "semantic_hash": ""
   },
   "e-commerce/routes/web.php": {
-    "mtime": 1787048206.1718605,
-    "ast_hash": "4858c2f32a360140e0b17fda1652d74c",
+    "mtime": 1786622812.7485416,
+    "ast_hash": "9e303d9e330b253cd62501dcb2ab3327",
     "semantic_hash": ""
   },
   "e-commerce/tests/Feature/ExampleTest.php": {
@@ -1150,8 +1150,8 @@
     "semantic_hash": ""
   },
   "e-commerce/README.md": {
-    "mtime": 1787048517.357297,
-    "ast_hash": "591ed9d9848d30dd15166a41732ee06a",
+    "mtime": 1786624882.1801274,
+    "ast_hash": "88c71e1827b2b800ca19f61cb4d5a035",
     "semantic_hash": ""
   },
   "e-commerce/public/robots.txt": {
@@ -1375,8 +1375,8 @@
     "semantic_hash": ""
   },
   "e-commerce/resources/views/layouts/app.blade.php": {
-    "mtime": 1787048236.66574,
-    "ast_hash": "653a02bd7e769f1ad97eab7bb26afa83",
+    "mtime": 1786624553.966132,
+    "ast_hash": "cb255aad043492b62cbb5c049bacf259",
     "semantic_hash": ""
   },
   "e-commerce/resources/views/layouts/guest.blade.php": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/index.blade.php": {
-    "mtime": 1787048231.3668103,
-    "ast_hash": "a52b8bb35061d11803db699339d3a1f7",
+    "mtime": 1786624560.7561677,
+    "ast_hash": "e90873ee7fc5caecde574e6488348b5d",
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/product-categories/index.blade.php": {
@@ -1502,11 +1502,6 @@
   "e-commerce/resources/views/dashboards/products/_modals.blade.php": {
     "mtime": 1786624040.5028846,
     "ast_hash": "c30ec85e28de9cd8aa705a373dd273e4",
-    "semantic_hash": ""
-  },
-  "e-commerce/app/Http/Controllers/DashboardController.php": {
-    "mtime": 1787048196.542634,
-    "ast_hash": "93dafa58f001dccaaa470ce81422b802",
     "semantic_hash": ""
   }
 }

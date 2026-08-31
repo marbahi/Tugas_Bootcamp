@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/product/{product}', [ProductsController::class, 'show'])->name('products.show');
 
-Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function () {
+Route::middleware(['admin'])->prefix('dashboard')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::resource('products', ProductController::class)->except(['show', 'edit']);

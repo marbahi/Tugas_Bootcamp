@@ -324,6 +324,77 @@ php artisan route:list   # GET /dashboard → DashboardController@index
 
 ---
 
+## Sesi 19 - Role Admin & Dashboard Access Control
+
+### Yang sudah dikerjakan:
+
+1. **Migration - Add Role Column** (`database/migrations/2026_08_31_161829_add_role_to_users_table.php`)
+   - Menambah kolom `role` (string, default: `'user'`) ke tabel `users`
+   - Kolom `role` menyimpan nilai `'admin'` atau `'user'`
+
+2. **AdminMiddleware** (`app/Http/Middleware/AdminMiddleware.php`)
+   - Middleware baru untuk membatasi akses hanya untuk admin
+   - Cek `Auth::check()` && `Auth::user()->role == 'admin'`
+   - Jika bukan admin → redirect ke `/home` dengan pesan error `"You Do Not Have Admin Access"`
+
+3. **Register Middleware Alias** (`bootstrap/app.php`)
+   - Alias `'admin' => AdminMiddleware::class` didaftarkan di `withMiddleware`
+   - Memungkinkan penggunaan `middleware('admin')` di route
+
+4. **Route Protection** (`routes/web.php`)
+   - Seluruh route dashboard dibungkus `Route::middleware(['admin'])->prefix('dashboard')`
+   - Hanya user dengan `role = 'admin'` yang bisa mengakses:
+     - `/dashboard` (Overview Dashboard)
+     - `/dashboard/products` (CRUD Produk)
+     - `/dashboard/product-categories` (CRUD Kategori)
+   - User biasa (`role = 'user'`) tidak bisa mengakses halaman dashboard
+
+5. **Admin User Seeder** (`database/seeders/DatabaseSeeder.php`)
+   - Ditambahkan user admin: `admintest@example.com` / `password` dengan `role = 'admin'`
+   - User biasa tetap: `test@example.com` / `password` dengan `role = 'user'`
+
+6. **Header Navigation Conditional** (`resources/views/layouts/app.blade.php`)
+   - Menu navigasi Dashboard, Product Categories, Products hanya tampil jika user adalah admin
+   - User biasa hanya melihat header toko (storefront) tanpa akses admin
+
+### Cara menjalankan:
+
+```bash
+# Jalankan migration untuk menambah kolom role
+php artisan migrate
+
+# Jalankan seeder untuk membuat user admin
+php artisan db:seed
+
+# Jalankan server
+php artisan serve
+```
+
+### Test Akses:
+
+| User | Email | Password | Role | Akses Dashboard |
+|------|-------|----------|------|-----------------|
+| Admin | `admintest@example.com` | `password` | `admin` | ✅ Bisa |
+| User | `test@example.com` | `password` | `user` | ❌ Redirect ke `/home` |
+
+### Struktur Rute:
+
+| Metode | URL | Middleware | Keterangan |
+|--------|-----|------------|------------|
+| `GET` | `/dashboard` | `auth`, `admin`, `verified` | Overview dashboard (admin only) |
+| `GET/POST/...` | `/dashboard/products/*` | `auth`, `admin`, `verified` | CRUD produk (admin only) |
+| `GET/POST/...` | `/dashboard/product-categories/*` | `auth`, `admin`, `verified` | CRUD kategori (admin only) |
+
+### Verifikasi:
+
+```bash
+php artisan migrate   # tambah kolom role ke tabel users
+php artisan db:seed   # buat user admin
+php artisan route:list   # cek route dengan middleware admin
+```
+
+---
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

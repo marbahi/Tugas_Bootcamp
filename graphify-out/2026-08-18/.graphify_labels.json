@@ -199,11 +199,8 @@
   "197": "Product",
   "198": "Order",
   "199": "products/create.blade.php",
-  "200": "VerifyEmailController.php",
   "201": "dashboards/index.blade.php",
-  "202": "HomeController",
   "203": "product-categories/index.blade.php",
   "204": "products/_form.blade.php",
-  "205": "products/index.blade.php",
-  "206": "ProductController"
+  "205": "products/index.blade.php"
 }
