@@ -395,6 +395,60 @@ php artisan route:list   # cek route dengan middleware admin
 
 ---
 
+## Sesi 20 - Add Product Form & Store ke Database
+
+### Yang sudah dikerjakan:
+
+1. **Form Add Product** (`resources/views/dashboards/products/_form.blade.php`)
+   - Form hanya untuk **create** product (bukan edit)
+   - Field: Name, Kategori (dropdown), Harga, Stok, URL Gambar (opsional), Deskripsi
+   - Menggunakan komponen Blade: `x-input-label`, `x-text-input`, `x-input-error`, `x-primary-button`
+   - Form action: `route('products.store')` dengan method POST + `enctype="multipart/form-data"`
+   - `old()` input tetap terjaga saat validasi gagal
+
+2. **Controller Store** (`Admin\ProductController@store`)
+   - Validasi server-side: `name` required, `product_category_id` harus exists di tabel `product_categories`, `price`/`stock` integer ≥ 0, `image` nullable, `description` required
+   - Slug produk = slug kategori yang dipilih (otomatis suffix `-2`, `-3` jika sudah dipakai via `resolveSlug`)
+   - Simpan ke database via `Products::create($data)`
+   - Redirect ke `products.index` dengan flash message `"Produk berhasil ditambahkan."`
+
+3. **Route** (`routes/web.php`)
+   - `GET /dashboard/products/create` → form tambah produk (`ProductController@create`)
+   - `POST /dashboard/products` → simpan produk baru (`ProductController@store`)
+
+4. **View Create** (`resources/views/dashboards/products/create.blade.php`)
+   - Include `_form.blade.php` sebagai partial form
+   - Title tab: "Add Product"
+
+5. **Pembersihan Code**
+   - Hapus dead code `$product` dari `_form.blade.php` (form hanya untuk create)
+   - Hapus `@method('PUT')` conditional yang tidak terpakai
+   - Button text fixed: "Simpan" (tidak ada kondisi Update)
+
+### Cara menjalankan:
+
+```bash
+php artisan serve   # buka http://127.0.0.1:8000
+```
+
+- Login sebagai admin → buka **Products** → klik **+ Add Product**
+- Isi form → klik **Simpan** → produk baru tersimpan di database
+
+### Struktur Rute:
+
+| Metode | URL | Controller | Keterangan |
+|--------|-----|------------|------------|
+| `GET` | `/dashboard/products/create` | `Admin\ProductController@create` | Form tambah produk |
+| `POST` | `/dashboard/products` | `Admin\ProductController@store` | Simpan produk baru |
+
+### Verifikasi:
+
+```bash
+php artisan route:list   # cek route create & store terdaftar
+```
+
+---
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

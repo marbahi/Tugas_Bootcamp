@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Products;
 use Illuminate\Http\Request;
+use App\Models\ProductCategories;
 
 class ProductsController extends Controller
 {
@@ -20,7 +21,9 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        $categories = ProductCategories::all();
+
+        return view('dashboards.products.tambah', compact('categories'));
     }
 
     /**

@@ -205,9 +205,5 @@
   "203": "product-categories/index.blade.php",
   "204": "products/_form.blade.php",
   "205": "products/index.blade.php",
-  "206": "ProductController",
-  "207": "Product",
-  "208": "ConfirmablePasswordController.php",
-  "209": "PasswordResetLinkController.php",
-  "210": "2026_08_31_161829_add_role_to_users_table.php"
+  "206": "ProductController"
 }

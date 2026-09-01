@@ -210,8 +210,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1788194821.9261646,
-    "ast_hash": "da43fa6e7754bd590f976a9c39e4f0d3",
+    "mtime": 1787048652.0896459,
+    "ast_hash": "591ed9d9848d30dd15166a41732ee06a",
     "semantic_hash": ""
   },
   "Tugas_9/uploads/prod_6a674498033b0.jpg": {
@@ -960,8 +960,8 @@
     "semantic_hash": ""
   },
   "e-commerce/app/Models/User.php": {
-    "mtime": 1788193690.8423257,
-    "ast_hash": "04a2f6cd79aba1e43abd0e2df99d8565",
+    "mtime": 1779750712.0,
+    "ast_hash": "ca00ef9e587df52eeb3f687855f5c234",
     "semantic_hash": ""
   },
   "e-commerce/app/Providers/AppServiceProvider.php": {
@@ -975,8 +975,8 @@
     "semantic_hash": ""
   },
   "e-commerce/bootstrap/app.php": {
-    "mtime": 1788194113.5528145,
-    "ast_hash": "04dfdbd9757796fc5d08c4ed4c760d83",
+    "mtime": 1779750712.0,
+    "ast_hash": "1af409508a89bf168e42816535a9503b",
     "semantic_hash": ""
   },
   "e-commerce/bootstrap/providers.php": {
@@ -1125,8 +1125,8 @@
     "semantic_hash": ""
   },
   "e-commerce/routes/web.php": {
-    "mtime": 1788194185.334813,
-    "ast_hash": "5c0bcb056447ed2da91c72ad581afa2a",
+    "mtime": 1787048206.1718605,
+    "ast_hash": "4858c2f32a360140e0b17fda1652d74c",
     "semantic_hash": ""
   },
   "e-commerce/tests/Feature/ExampleTest.php": {
@@ -1150,8 +1150,8 @@
     "semantic_hash": ""
   },
   "e-commerce/README.md": {
-    "mtime": 1788194587.1156797,
-    "ast_hash": "da43fa6e7754bd590f976a9c39e4f0d3",
+    "mtime": 1787048517.357297,
+    "ast_hash": "591ed9d9848d30dd15166a41732ee06a",
     "semantic_hash": ""
   },
   "e-commerce/public/robots.txt": {
@@ -1507,21 +1507,6 @@
   "e-commerce/app/Http/Controllers/DashboardController.php": {
     "mtime": 1787048196.542634,
     "ast_hash": "93dafa58f001dccaaa470ce81422b802",
-    "semantic_hash": ""
-  },
-  "e-commerce/app/Http/Middleware/AdminMiddleware.php": {
-    "mtime": 1788194300.7246947,
-    "ast_hash": "aad19f68258bcecbc3d009b73f429cb2",
-    "semantic_hash": ""
-  },
-  "e-commerce/database/migrations/2026_08_31_161829_add_role_to_users_table.php": {
-    "mtime": 1788193217.6959486,
-    "ast_hash": "1cdec4ea449c0fe487df18705c7417be",
-    "semantic_hash": ""
-  },
-  "e-commerce/database/seeders/UserSeeder.php": {
-    "mtime": 1788193712.5551493,
-    "ast_hash": "92a09496d3e6fb5002acf7dc84737913",
     "semantic_hash": ""
   }
 }
