@@ -59,7 +59,7 @@ class CategoryController extends Controller
         $slugRule = 'unique:product_categories,slug';
 
         if ($ignoreId !== null) {
-            $slugRule = 'unique:product_categories,slug,' . $ignoreId;
+            $slugRule = 'unique:product_categories,slug,'.$ignoreId;
         }
 
         return $request->validate([
@@ -75,7 +75,7 @@ class CategoryController extends Controller
         $i = 2;
 
         while (ProductCategories::where('slug', $candidate)->where('id', '!=', $ignoreId)->exists()) {
-            $candidate = $base . '-' . $i++;
+            $candidate = $base.'-'.$i++;
         }
 
         return $candidate;

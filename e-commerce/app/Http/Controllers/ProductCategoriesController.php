@@ -30,12 +30,12 @@ class ProductCategoriesController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name'=> 'required|string|min:3|max:50',
+            'name' => 'required|string|min:3|max:50',
         ]);
 
-        if(ProductCategories::where('name', $request->name)->exists()){
+        if (ProductCategories::where('name', $request->name)->exists()) {
             return redirect()->back()->withErrors(['Nama kategori sudah ada']);
-        } 
+        }
 
         $slug = Str::slug($request->name);
 

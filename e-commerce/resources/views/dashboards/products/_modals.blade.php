@@ -3,7 +3,7 @@
     <div class="modal fade" id="editProduct{{ $product->id }}" tabindex="-1" aria-labelledby="editProductLabel{{ $product->id }}" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
-                <form method="POST" action="{{ route('products.update', $product) }}">
+                <form method="POST" action="{{ route('products.update', $product) }}" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <input type="hidden" name="form_context" value="product-edit-{{ $product->id }}">
@@ -47,9 +47,29 @@
                             </div>
 
                             <div class="col-12">
-                                <x-input-label for="edit-product-image-{{ $product->id }}" :value="__('URL Gambar')" />
-                                <x-text-input id="edit-product-image-{{ $product->id }}" name="image" type="url" :value="old('image', $product->image)" placeholder="https://... (opsional)" />
+                                <x-input-label for="edit-product-image-{{ $product->id }}" :value="__('Gambar Produk')" />
+                                <input type="file" id="image-input-{{ $product->id }}" name="image_file" accept="image/*" class="form-control">
+                                <input type="hidden" name="image" id="image-base64-{{ $product->id }}" value="{{ old('image', $product->image) }}">
                                 <x-input-error :messages="$errors->get('image')" />
+
+                                <div id="croppie-wrapper-{{ $product->id }}" class="mt-3" style="display:none;">
+                                    <div id="croppie-container-{{ $product->id }}"></div>
+                                    <button type="button" class="btn btn-primary btn-sm btn-pill mt-2" data-action="crop">Crop</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm btn-pill mt-2" data-action="cancel">Batal</button>
+                                </div>
+
+                                <div id="image-preview-{{ $product->id }}" class="mt-3" style="display:{{ $product->image ? 'block' : 'none' }};">
+                                    @if ($product->image)
+                                        @if (str_starts_with($product->image, 'data:'))
+                                            <img id="preview-img-{{ $product->id }}" src="{{ $product->image }}" style="max-width:200px; border-radius:8px; border:1px solid #ddd;">
+                                        @else
+                                            <img id="preview-img-{{ $product->id }}" src="{{ asset('storage/' . $product->image) }}" style="max-width:200px; border-radius:8px; border:1px solid #ddd;">
+                                        @endif
+                                    @else
+                                        <img id="preview-img-{{ $product->id }}" style="max-width:200px; border-radius:8px; border:1px solid #ddd;">
+                                    @endif
+                                    <button type="button" class="btn btn-sm btn-outline-danger ms-2" data-action="remove">Hapus</button>
+                                </div>
                             </div>
 
                             <div class="col-12">
@@ -95,14 +115,106 @@
     </div>
 @endforeach
 
+@push('scripts')
 <script>
+(function () {
+    const context = @json(old('form_context'));
+
+    if (typeof context === 'string' && context.startsWith('product-edit-')) {
+        const modal = document.getElementById('editProduct' + context.replace('product-edit-', ''));
+        if (modal) new bootstrap.Modal(modal).show();
+    }
+
+    // Initialize Croppie for each product modal
+    @foreach ($products as $product)
     (function () {
-        const context = @json(old('form_context'));
+        const id = '{{ $product->id }}';
+        let croppieInstance = null;
 
-        if (typeof context === 'string' && context.startsWith('product-edit-')) {
-            const modal = document.getElementById('editProduct' + context.replace('product-edit-', ''));
+        const fileInput = document.getElementById('image-input-' + id);
+        const base64Input = document.getElementById('image-base64-' + id);
+        const croppieWrapper = document.getElementById('croppie-wrapper-' + id);
+        const croppieContainer = document.getElementById('croppie-container-' + id);
+        const imagePreview = document.getElementById('image-preview-' + id);
+        const previewImg = document.getElementById('preview-img-' + id);
 
-            if (modal) new bootstrap.Modal(modal).show();
+        const cropBtn = croppieWrapper.querySelector('[data-action="crop"]');
+        const cancelBtn = croppieWrapper.querySelector('[data-action="cancel"]');
+        const removeBtn = imagePreview.querySelector('[data-action="remove"]');
+
+        function showPreview(base64) {
+            previewImg.src = base64;
+            imagePreview.style.display = 'block';
+            croppieWrapper.style.display = 'none';
+            fileInput.style.display = 'none';
         }
+
+        function resetAll() {
+            base64Input.value = '';
+            fileInput.value = '';
+            fileInput.style.display = '';
+            imagePreview.style.display = 'none';
+            croppieWrapper.style.display = 'none';
+            previewImg.src = '';
+            if (croppieInstance) {
+                croppieInstance.destroy();
+                croppieInstance = null;
+            }
+        }
+
+        fileInput.addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (event) {
+                croppieWrapper.style.display = 'block';
+                imagePreview.style.display = 'none';
+
+                if (croppieInstance) {
+                    croppieInstance.destroy();
+                }
+
+                croppieInstance = new Croppie(croppieContainer, {
+                    viewport: { width: 250, height: 250, type: 'square' },
+                    boundary: { width: 350, height: 350 },
+                    enableOrientation: true
+                });
+
+                croppieInstance.bind({ url: event.target.result });
+            };
+            reader.readAsDataURL(file);
+        });
+
+        cropBtn.addEventListener('click', function () {
+            if (!croppieInstance) return;
+
+            croppieInstance.result({
+                type: 'base64',
+                size: 'viewport',
+                format: 'jpeg',
+                quality: 0.9
+            }).then(function (base64) {
+                base64Input.value = base64;
+                showPreview(base64);
+                croppieInstance.destroy();
+                croppieInstance = null;
+            });
+        });
+
+        cancelBtn.addEventListener('click', function () {
+            if (croppieInstance) {
+                croppieInstance.destroy();
+                croppieInstance = null;
+            }
+            croppieWrapper.style.display = 'none';
+            fileInput.value = '';
+            fileInput.style.display = '';
+        });
+
+        removeBtn.addEventListener('click', resetAll);
     })();
+    @endforeach
+})();
 </script>
+@endpush

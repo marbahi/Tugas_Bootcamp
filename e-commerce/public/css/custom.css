@@ -488,3 +488,24 @@ select:focus-visible {
     border-radius: 0.4rem;
     font-size: 0.82rem;
 }
+
+.order-status-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+}
+
+.order-status-badge--completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.order-status-badge--pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.order-status-badge--cancelled {
+    background: #f8d7da;
+    color: #721c24;
+}

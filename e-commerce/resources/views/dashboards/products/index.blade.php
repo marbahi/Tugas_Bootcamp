@@ -61,7 +61,11 @@
                                     </td>
                                     <td>
                                         @if ($product->image)
-                                            <img src="{{ $product->image }}" alt="{{ $product->name }}" width="48" height="36" class="rounded border" style="object-fit: cover;">
+                                            @if (str_starts_with($product->image, 'data:'))
+                                                <img src="{{ $product->image }}" alt="{{ $product->name }}" width="48" height="36" class="rounded border" style="object-fit: cover;">
+                                            @else
+                                                <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" width="48" height="36" class="rounded border" style="object-fit: cover;">
+                                            @endif
                                         @else
                                             <span class="text-muted small">N/A</span>
                                         @endif

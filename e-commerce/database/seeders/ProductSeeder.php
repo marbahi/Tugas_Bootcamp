@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Products;
 use Illuminate\Database\Seeder;
 
 class ProductSeeder extends Seeder
@@ -107,7 +108,7 @@ class ProductSeeder extends Seeder
         ];
 
         foreach ($products as $product) {
-            \App\Models\Products::firstOrCreate(
+            Products::firstOrCreate(
                 ['slug' => $product['slug']],
                 $product
             );

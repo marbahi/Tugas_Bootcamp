@@ -925,13 +925,13 @@
     "semantic_hash": ""
   },
   "e-commerce/app/Http/Controllers/ProductCategoriesController.php": {
-    "mtime": 1785947683.8447373,
-    "ast_hash": "4c792e419eef387283e5fcf9251e1940",
+    "mtime": 1788251559.4574213,
+    "ast_hash": "0e110f2430fa368cfb506e2ea9670c6c",
     "semantic_hash": ""
   },
   "e-commerce/app/Http/Controllers/ProductsController.php": {
-    "mtime": 1786623668.1587427,
-    "ast_hash": "f449025b7a985902cc292ca952113a05",
+    "mtime": 1788252011.621637,
+    "ast_hash": "352f6c5d94610a3e8d58f781874bbd76",
     "semantic_hash": ""
   },
   "e-commerce/app/Models/CartItems.php": {
@@ -1125,7 +1125,7 @@
     "semantic_hash": ""
   },
   "e-commerce/routes/web.php": {
-    "mtime": 1788194185.334813,
+    "mtime": 1788253625.2056677,
     "ast_hash": "5c0bcb056447ed2da91c72ad581afa2a",
     "semantic_hash": ""
   },
@@ -1150,8 +1150,8 @@
     "semantic_hash": ""
   },
   "e-commerce/README.md": {
-    "mtime": 1788194587.1156797,
-    "ast_hash": "da43fa6e7754bd590f976a9c39e4f0d3",
+    "mtime": 1788254141.8329506,
+    "ast_hash": "f1403004f610bd7a48c33fa231b39c17",
     "semantic_hash": ""
   },
   "e-commerce/public/robots.txt": {
@@ -1455,12 +1455,12 @@
     "semantic_hash": ""
   },
   "e-commerce/app/Http/Controllers/Admin/CategoryController.php": {
-    "mtime": 1786622807.8877113,
+    "mtime": 1788253821.461942,
     "ast_hash": "057551284d120ae72edb268ab269bcbc",
     "semantic_hash": ""
   },
   "e-commerce/app/Http/Controllers/Admin/ProductController.php": {
-    "mtime": 1786624009.3026316,
+    "mtime": 1788253814.1511562,
     "ast_hash": "e9999dd6794d45178688b27328d3850a",
     "semantic_hash": ""
   },
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/products/_form.blade.php": {
-    "mtime": 1786624023.5257075,
-    "ast_hash": "7ed955594b201defd586844a3f251722",
+    "mtime": 1788253288.0041337,
+    "ast_hash": "bcde63ca3e379a8b9c54912b2e0120d5",
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/products/create.blade.php": {
@@ -1522,6 +1522,11 @@
   "e-commerce/database/seeders/UserSeeder.php": {
     "mtime": 1788193712.5551493,
     "ast_hash": "92a09496d3e6fb5002acf7dc84737913",
+    "semantic_hash": ""
+  },
+  "e-commerce/resources/views/dashboards/product-categories/tambah.blade.php": {
+    "mtime": 1788250917.87016,
+    "ast_hash": "4a79187542e15f14b7b8128ff9a0dbc5",
     "semantic_hash": ""
   }
 }

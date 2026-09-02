@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ProductCategories;
 use App\Models\Products;
 use Illuminate\Http\Request;
-use App\Models\ProductCategories;
 
 class ProductsController extends Controller
 {
@@ -42,9 +42,7 @@ class ProductsController extends Controller
         $title = $product->name;
 
         $productImages = [
-            'https://placehold.co/900x675/EAF1EC/1B2A27?text=' . rawurlencode($product->name),
-            'https://placehold.co/900x675/F3E8D6/1B2A27?text=' . rawurlencode($product->name),
-            'https://placehold.co/900x675/E3EAF3/1B2A27?text=' . rawurlencode($product->name),
+            $product->image ? asset('storage/'.$product->image) : 'https://placehold.co/900x675/EAF1EC/1B2A27?text='.rawurlencode($product->name),
         ];
 
         $recommendations = Products::where('product_category_id', $product->product_category_id)

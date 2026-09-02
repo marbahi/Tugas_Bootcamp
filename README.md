@@ -307,6 +307,13 @@ php artisan test         # semua tes tetap lolos
 5. **User Test**
    - Ditambahkan user `test@test.com` / `test123` (email sudah diverifikasi) untuk login dan melihat dashboard
 
+6. **Dashboard Chart & Order Terbaru** (`DashboardController` + `dashboards/index.blade.php`)
+   - Chart.js v4.4.4 via CDN untuk line chart penjualan bulanan
+   - Data dummy: 6 bulan terakhir (Jul-Des)
+   - Card ringkasan: Total Order, Revenue, Pending, Completed, Cancelled
+   - Tabel order terbaru (5 data dummy) dengan status badge (Selesai/Pending/Dibatalkan)
+   - Style `.order-status-badge` di `custom.css`
+
 ### Cara menjalankan:
 
 ```bash
@@ -446,6 +453,48 @@ php artisan serve   # buka http://127.0.0.1:8000
 ```bash
 php artisan route:list   # cek route create & store terdaftar
 ```
+
+---
+
+## Sesi 21 - Croppie Image Crop & AVIF Conversion
+
+### Yang sudah dikerjakan:
+
+1. **Croppie.js Integration**
+   - Load Croppie.js v2.6.5 via CDN (CSS + JS) di `layouts/app.blade.php`
+   - Viewport square 250x250 untuk crop gambar produk
+
+2. **Form Input Gambar** (`_form.blade.php` + `_modals.blade.php`)
+   - Input file `accept="image/*"` menggantikan input URL
+   - Preview gambar sebelum upload
+   - Tombol Crop & Hapus
+
+3. **AVIF Conversion** (`Admin\ProductController`)
+   - Base64 dari Croppie di-decode via GD
+   - Konversi ke AVIF via `imageavif()` (quality 80)
+   - Simpan ke `storage/app/public/products/{uuid}.avif`
+   - Storage symlink dibuat via `php artisan storage:link`
+
+4. **Update Image Display**
+   - Semua tampilan gambar diubah ke `asset('storage/' . $product->image)`
+
+### Cara menjalankan:
+
+```bash
+php artisan storage:link   # buat symlink public/storage
+php artisan serve          # buka http://127.0.0.1:8000
+```
+
+- Login sebagai admin → **Products** → **+ Add Product**
+- Pilih file gambar → Croppie muncul → Crop → Simpan
+- Gambar otomatis dikonversi ke AVIF dan disimpan di `storage/app/public/products/`
+
+### Struktur Storage:
+
+| Path | Keterangan |
+|------|------------|
+| `storage/app/public/products/` | Folder penyimpanan file gambar AVIF |
+| `public/storage/` | Symlink ke `storage/app/public` |
 
 ---
 

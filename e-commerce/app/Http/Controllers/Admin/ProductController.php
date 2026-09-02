@@ -43,6 +43,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $data = $this->validateData($request);
+        $data['image'] = $this->handleImageUpload($request);
         $data['slug'] = $this->resolveSlug($this->categorySlug($data['product_category_id']));
 
         Products::create($data);
@@ -53,6 +54,22 @@ class ProductController extends Controller
     public function update(Request $request, Products $product)
     {
         $data = $this->validateData($request, $product->id);
+        $newImage = $this->handleImageUpload($request);
+
+        if ($newImage) {
+            // Delete old image if exists
+            if ($product->image && ! str_starts_with($product->image, 'data:')) {
+                $oldPath = storage_path('app/public/'.$product->image);
+                if (file_exists($oldPath)) {
+                    unlink($oldPath);
+                }
+            }
+            $data['image'] = $newImage;
+        } else {
+            // Keep old image if no new upload
+            $data['image'] = $product->image;
+        }
+
         $data['slug'] = $this->resolveSlug($this->categorySlug($data['product_category_id']), $product->id);
 
         $product->update($data);
@@ -62,6 +79,14 @@ class ProductController extends Controller
 
     public function destroy(Products $product)
     {
+        // Delete image file if exists
+        if ($product->image && ! str_starts_with($product->image, 'data:')) {
+            $path = storage_path('app/public/'.$product->image);
+            if (file_exists($path)) {
+                unlink($path);
+            }
+        }
+
         $product->delete();
 
         return redirect()->route('products.index')->with('success', 'Produk berhasil dihapus.');
@@ -74,9 +99,51 @@ class ProductController extends Controller
             'product_category_id' => ['required', 'exists:product_categories,id'],
             'price' => ['required', 'integer', 'min:0'],
             'stock' => ['required', 'integer', 'min:0'],
-            'image' => ['nullable', 'string', 'max:255'],
+            'image' => ['nullable', 'string'],
             'description' => ['required', 'string'],
         ]);
+    }
+
+    protected function handleImageUpload(Request $request): ?string
+    {
+        $base64 = $request->input('image');
+
+        if (! $base64) {
+            return null;
+        }
+
+        // Remove data URL prefix if present
+        $imageData = base64_decode(
+            preg_replace('#^data:image/\w+;base64,#i', '', $base64)
+        );
+
+        if ($imageData === false) {
+            return null;
+        }
+
+        // Create GD image from decoded data
+        $image = @imagecreatefromstring($imageData);
+
+        if (! $image) {
+            return null;
+        }
+
+        // Generate unique filename
+        $filename = Str::uuid().'.avif';
+        $directory = storage_path('app/public/products');
+
+        // Ensure directory exists
+        if (! is_dir($directory)) {
+            mkdir($directory, 0755, true);
+        }
+
+        $path = $directory.'/'.$filename;
+
+        // Save as AVIF
+        imageavif($image, $path, 80);
+        imagedestroy($image);
+
+        return 'products/'.$filename;
     }
 
     protected function categorySlug(int $categoryId): string
@@ -91,7 +158,7 @@ class ProductController extends Controller
         $i = 2;
 
         while (Products::where('slug', $candidate)->where('id', '!=', $ignoreId)->exists()) {
-            $candidate = $base . '-' . $i++;
+            $candidate = $base.'-'.$i++;
         }
 
         return $candidate;
