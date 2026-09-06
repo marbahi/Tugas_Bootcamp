@@ -52,8 +52,7 @@
                             <img src="{{ $product->image ? asset('storage/' . $product->image) : 'https://placehold.co/600x450/EAF1EC/1B2A27?text=Produk+' . urlencode($product->name) }}" class="card-img-top" alt="Produk {{ $product->name }}">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title fs-6 fw-semibold text-body">Produk {{ $product->name }}</h5>
-                                <p class="card-price mt-1 mb-3">Rp{{ number_format($product->price, 0, ',', '.') }}</p>
-                                <button type="button" class="btn btn-primary btn-pill w-100 mt-auto">Beli</button>
+                                <p class="card-price mt-1 mb-0">Rp{{ number_format($product->price, 0, ',', '.') }}</p>
                             </div>
                         </div>
                     </a>

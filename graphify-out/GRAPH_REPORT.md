@@ -1,16 +1,16 @@
 # Graph Report - Tugas_Bootcamp  (2026-09-06)
 
 ## Corpus Check
-- 274 files · ~807,708 words
+- 274 files · ~808,015 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1105 nodes · 1267 edges · 201 communities (190 shown, 11 thin omitted)
+- 1109 nodes · 1271 edges · 201 communities (190 shown, 11 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 27 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `269b94ff`
+- Built from commit: `f93a0629`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -62,7 +62,7 @@
 3. `TestCase` - 27 edges
 4. `Installer` - 22 edges
 5. `E-Commerce - Tugas Bootcamp` - 12 edges
-6. `E-Commerce - Tugas Bootcamp` - 11 edges
+6. `E-Commerce - Tugas Bootcamp` - 12 edges
 7. `Products` - 10 edges
 8. `process()` - 10 edges
 9. `out()` - 10 edges
@@ -87,7 +87,7 @@
 
 ### Community 7 - "Tugas 9 - TokoKu (E-Commerce)"
 Cohesion: 0.04
-Nodes (44): Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan: (+36 more)
+Nodes (48): Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan:, Cara menjalankan: (+40 more)
 
 ### Community 8 - "Fitur"
 Cohesion: 0.08
@@ -154,8 +154,8 @@ Cohesion: 0.21
 Nodes (5): ExampleTest, PHPUnit\Framework\TestCase, ExampleTest, ExampleTest, ExampleTest
 
 ### Community 92 - "Closure"
-Cohesion: 0.11
-Nodes (11): Closure, AdminMiddleware, AppLayout, footer, GuestLayout, header, template, Illuminate\Contracts\View\View (+3 more)
+Cohesion: 0.12
+Nodes (10): Closure, AdminMiddleware, AppLayout, footer, header, template, Illuminate\Contracts\View\View, Illuminate\View\Component (+2 more)
 
 ### Community 93 - "Tugas_12/README.md"
 Cohesion: 0.25
@@ -195,14 +195,14 @@ Nodes (13): App\Http\Controllers\Controller, App\Models\ProductCategories, App\M
 
 ### Community 198 - "Order"
 Cohesion: 0.06
-Nodes (10): CartItemsController, OrderItemsController, OrdersController, CartItems, OrderItems, Orders, ProductCategories, Illuminate\Database\Eloquent\Model (+2 more)
+Nodes (10): OrderItemsController, OrdersController, OrderItems, Orders, ProductCategories, Illuminate\Database\Eloquent\Model, OrderController, ProductController (+2 more)
 
 ### Community 200 - "VerifyEmailController.php"
 Cohesion: 0.06
-Nodes (23): AuthenticatedSessionController, ConfirmablePasswordController, EmailVerificationNotificationController, EmailVerificationPromptController, NewPasswordController, PasswordController, PasswordResetLinkController, RegisteredUserController (+15 more)
+Nodes (24): AuthenticatedSessionController, ConfirmablePasswordController, EmailVerificationNotificationController, EmailVerificationPromptController, NewPasswordController, PasswordController, PasswordResetLinkController, RegisteredUserController (+16 more)
 
 ## Knowledge Gaps
-- **325 isolated node(s):** `Yang sudah dikerjakan:`, `Cara menjalankan:`, `Struktur Database:`, `Yang sudah dikerjakan:`, `Cara menjalankan:` (+320 more)
+- **328 isolated node(s):** `Yang sudah dikerjakan:`, `Cara menjalankan:`, `Struktur Database:`, `Yang sudah dikerjakan:`, `Cara menjalankan:` (+323 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -212,13 +212,13 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `User` connect `TestCase` to `VerifyEmailController.php`, `User`?**
   _High betweenness centrality (0.029) - this node is a cross-community bridge._
 - **Why does `Controller` connect `VerifyEmailController.php` to `ProductCategories`, `Order`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Are the 22 inferred relationships involving `User` (e.g. with `.store()` and `.run()`) actually correct?**
   _`User` has 22 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Yang sudah dikerjakan:`, `Cara menjalankan:`, `Struktur Database:` to the rest of the system?**
-  _325 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _328 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Tugas 9 - TokoKu (E-Commerce)` be split into smaller, more focused modules?**
-  _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
 - **Should `Fitur` be split into smaller, more focused modules?**
   _Cohesion score 0.07597402597402597 - nodes in this community are weakly interconnected._
 - **Should `Tugas_10/composer.json` be split into smaller, more focused modules?**

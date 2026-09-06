@@ -31,23 +31,23 @@
                         <div class="d-flex flex-column gap-3">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-muted">Total Order</span>
-                                <span class="fw-bold fs-5">76</span>
+                                <span class="fw-bold fs-5">{{ $summary['total_order'] }}</span>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-muted">Revenue</span>
-                                <span class="fw-bold fs-5">Rp45.2jt</span>
+                                <span class="fw-bold fs-5">Rp{{ number_format($summary['revenue'], 0, ',', '.') }}</span>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-muted">Pending</span>
-                                <span class="fw-bold fs-5 text-warning">12</span>
+                                <span class="fw-bold fs-5 text-warning">{{ $summary['pending'] }}</span>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-muted">Completed</span>
-                                <span class="fw-bold fs-5 text-success">58</span>
+                                <span class="fw-bold fs-5 text-success">{{ $summary['completed'] }}</span>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-muted">Cancelled</span>
-                                <span class="fw-bold fs-5 text-danger">6</span>
+                                <span class="fw-bold fs-5 text-danger">{{ $summary['cancelled'] }}</span>
                             </div>
                         </div>
                     </div>
@@ -57,42 +57,54 @@
             <div class="row g-3 mt-1">
                 <div class="col-12">
                     <div class="panel-card p-4">
-                        <h5 class="font-display fw-bold mb-3">Order Terbaru</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="font-display fw-bold mb-0">Order Terbaru</h5>
+                            <a href="{{ route('orders.index') }}" class="btn btn-outline-primary btn-sm btn-pill">Lihat Selengkapnya</a>
+                        </div>
                         <div class="table-responsive">
                             <table class="table table-hover align-middle admin-table mb-0">
                                 <thead>
                                     <tr>
                                         <th class="text-muted small">ID</th>
+                                        <th>Order Number</th>
                                         <th>Customer</th>
-                                        <th>Produk</th>
-                                        <th>Jumlah</th>
+                                        <th>Total</th>
                                         <th>Status</th>
-                                        <th>Tanggal</th>
+                                        <th class="text-end">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($recentOrders as $order)
+                                    @forelse ($recentOrders as $order)
                                         <tr>
-                                            <td class="text-muted small">{{ $order['id'] }}</td>
-                                            <td class="fw-semibold">{{ $order['customer'] }}</td>
-                                            <td>{{ $order['product'] }}</td>
-                                            <td class="card-price">Rp{{ number_format($order['amount'], 0, ',', '.') }}</td>
+                                            <td class="text-muted small">{{ $order->id }}</td>
+                                            <td><code>{{ $order->order_number }}</code></td>
+                                            <td class="fw-semibold">{{ $order->customer_name }}</td>
+                                            <td class="card-price">Rp{{ number_format($order->total_amount, 0, ',', '.') }}</td>
                                             <td>
-                                                @switch($order['status'])
+                                                @switch($order->status)
                                                     @case('completed')
                                                         <span class="badge rounded-pill order-status-badge order-status-badge--completed">Selesai</span>
                                                         @break
                                                     @case('pending')
                                                         <span class="badge rounded-pill order-status-badge order-status-badge--pending">Pending</span>
                                                         @break
-                                                    @case('cancelled')
+                                                    @case('processing')
+                                                        <span class="badge rounded-pill order-status-badge order-status-badge--processing">Processing</span>
+                                                        @break
+                                                    @case('canceled')
                                                         <span class="badge rounded-pill order-status-badge order-status-badge--cancelled">Dibatalkan</span>
                                                         @break
                                                 @endswitch
                                             </td>
-                                            <td class="text-muted small">{{ $order['date'] }}</td>
+                                            <td class="text-end">
+                                                <a href="{{ route('orders.show', $order) }}" class="btn btn-outline-primary btn-sm btn-pill">Detail</a>
+                                            </td>
                                         </tr>
-                                    @endforeach
+                                    @empty
+                                        <tr>
+                                            <td colspan="6" class="text-center text-muted py-4">Belum ada order.</td>
+                                        </tr>
+                                    @endforelse
                                 </tbody>
                             </table>
                         </div>

@@ -39,6 +39,12 @@ class ProductsController extends Controller
      */
     public function show(Products $product)
     {
+        $sessionKey = 'product_clicks_' . $product->id;
+        if (!session()->has($sessionKey)) {
+            $product->increment('click');
+            session()->put($sessionKey, true);
+        }
+
         $title = $product->name;
 
         $productImages = [

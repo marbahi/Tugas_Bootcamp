@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Products extends Model
 {
-    protected $fillable = ['name', 'slug', 'description', 'stock', 'image', 'price', 'product_category_id'];
+    protected $fillable = ['name', 'slug', 'description', 'stock', 'image', 'price', 'product_category_id', 'click'];
 
     public function category()
     {

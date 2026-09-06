@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Orders;
+use App\Models\ProductCategories;
+use App\Models\Products;
+
 class DashboardController extends Controller
 {
     public function index()
@@ -9,69 +13,50 @@ class DashboardController extends Controller
         $items = [
             [
                 'title' => 'Number of Products',
-                'number' => 80,
+                'number' => Products::count(),
                 'icon' => 'inventory_2',
             ],
             [
                 'title' => 'Number of Categories',
-                'number' => 8,
+                'number' => ProductCategories::count(),
                 'icon' => 'category',
             ],
             [
                 'title' => 'Number of Product Clicks',
-                'number' => 100,
+                'number' => Products::sum('click'),
                 'icon' => 'left_click',
             ],
         ];
 
+        $monthlyOrders = Orders::selectRaw('MONTH(created_at) as month, COUNT(*) as total')
+            ->where('created_at', '>=', now()->subMonths(6))
+            ->groupBy('month')
+            ->pluck('total', 'month')
+            ->toArray();
+
+        $monthLabels = [];
+        $monthValues = [];
+        for ($i = 6; $i >= 1; $i--) {
+            $month = now()->subMonths($i);
+            $monthLabels[] = $month->format('M');
+            $monthValues[] = $monthlyOrders[$month->format('m')] ?? 0;
+        }
+
         $chartData = [
-            'labels' => ['Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'],
-            'values' => [12, 19, 8, 15, 22, 14],
+            'labels' => $monthLabels,
+            'values' => $monthValues,
         ];
 
-        $recentOrders = [
-            [
-                'id' => 'ORD-001',
-                'customer' => 'Budi Santoso',
-                'product' => 'Laptop ASUS ROG',
-                'amount' => 12500000,
-                'status' => 'completed',
-                'date' => '2026-09-01',
-            ],
-            [
-                'id' => 'ORD-002',
-                'customer' => 'Siti Rahayu',
-                'product' => 'Sepatu Nike Air',
-                'amount' => 1250000,
-                'status' => 'pending',
-                'date' => '2026-09-01',
-            ],
-            [
-                'id' => 'ORD-003',
-                'customer' => 'Andi Wijaya',
-                'product' => 'Headset Sony WH-1000',
-                'amount' => 850000,
-                'status' => 'completed',
-                'date' => '2026-08-31',
-            ],
-            [
-                'id' => 'ORD-004',
-                'customer' => 'Dewi Lestari',
-                'product' => 'Buku React Design Patterns',
-                'amount' => 125000,
-                'status' => 'cancelled',
-                'date' => '2026-08-30',
-            ],
-            [
-                'id' => 'ORD-005',
-                'customer' => 'Rizky Pratama',
-                'product' => 'Keyboard Mechanical Keychron',
-                'amount' => 450000,
-                'status' => 'pending',
-                'date' => '2026-08-30',
-            ],
+        $recentOrders = Orders::latest()->take(5)->get();
+
+        $summary = [
+            'total_order' => Orders::count(),
+            'revenue' => Orders::where('status', 'completed')->sum('total_amount'),
+            'pending' => Orders::where('status', 'pending')->count(),
+            'completed' => Orders::where('status', 'completed')->count(),
+            'cancelled' => Orders::where('status', 'canceled')->count(),
         ];
 
-        return view('dashboards.index', compact('items', 'chartData', 'recentOrders'));
+        return view('dashboards.index', compact('items', 'chartData', 'recentOrders', 'summary'));
     }
 }

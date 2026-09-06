@@ -4,15 +4,554 @@
   "graph": {},
   "nodes": [
     {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "E-Commerce - Tugas Bootcamp",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "readme_e_commerce_tugas_bootcamp",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "e-commerce - tugas bootcamp"
+    },
+    {
+      "label": "Sesi 13 - Database Migration & Dummy Data",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "readme_sesi_13_database_migration_dummy_data",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 13 - database migration & dummy data"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Database:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "readme_struktur_database",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur database:"
+    },
+    {
+      "label": "Sesi 14 - Display Product (Home Page) & Detail Product",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "readme_sesi_14_display_product_home_page_detail_product",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 14 - display product (home page) & detail product"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_51",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_73",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Rute:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "readme_struktur_rute",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur rute:"
+    },
+    {
+      "label": "Sesi 15 - Penambahan Autentikasi (Laravel Breeze)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 15 - penambahan autentikasi (laravel breeze)"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_97",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_122",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Rute Autentikasi:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "readme_struktur_rute_autentikasi",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur rute autentikasi:"
+    },
+    {
+      "label": "Verifikasi:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "readme_verifikasi",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "verifikasi:"
+    },
+    {
+      "label": "Sesi 16 - Admin Product List & Edit Page",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "readme_sesi_16_admin_product_list_edit_page",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 16 - admin product list & edit page"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_160",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L187",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_187",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Rute:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L198",
+      "_origin": "ast",
+      "id": "readme_struktur_rute_198",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur rute:"
+    },
+    {
+      "label": "Verifikasi:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L210",
+      "_origin": "ast",
+      "id": "readme_verifikasi_210",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "verifikasi:"
+    },
+    {
+      "label": "Sesi 17 - Modal untuk CRUD Kategori & Edit Produk",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L219",
+      "_origin": "ast",
+      "id": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 17 - modal untuk crud kategori & edit produk"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L221",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_221",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L254",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_254",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Rute:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L265",
+      "_origin": "ast",
+      "id": "readme_struktur_rute_265",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur rute:"
+    },
+    {
+      "label": "Verifikasi:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L277",
+      "_origin": "ast",
+      "id": "readme_verifikasi_277",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "verifikasi:"
+    },
+    {
+      "label": "Sesi 18 - Overview Dashboard",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L286",
+      "_origin": "ast",
+      "id": "readme_sesi_18_overview_dashboard",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 18 - overview dashboard"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L288",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_288",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L317",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_317",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Verifikasi:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L326",
+      "_origin": "ast",
+      "id": "readme_verifikasi_326",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "verifikasi:"
+    },
+    {
+      "label": "Sesi 19 - Role Admin & Dashboard Access Control",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L334",
+      "_origin": "ast",
+      "id": "readme_sesi_19_role_admin_dashboard_access_control",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 19 - role admin & dashboard access control"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L336",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_336",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L367",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_367",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Test Akses:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L380",
+      "_origin": "ast",
+      "id": "readme_test_akses",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "test akses:"
+    },
+    {
+      "label": "Struktur Rute:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L387",
+      "_origin": "ast",
+      "id": "readme_struktur_rute_387",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur rute:"
+    },
+    {
+      "label": "Verifikasi:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L395",
+      "_origin": "ast",
+      "id": "readme_verifikasi_395",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "verifikasi:"
+    },
+    {
+      "label": "Sesi 20 - Add Product Form & Store ke Database",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L405",
+      "_origin": "ast",
+      "id": "readme_sesi_20_add_product_form_store_ke_database",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 20 - add product form & store ke database"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L407",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_407",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L435",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_435",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Rute:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L444",
+      "_origin": "ast",
+      "id": "readme_struktur_rute_444",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur rute:"
+    },
+    {
+      "label": "Verifikasi:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L451",
+      "_origin": "ast",
+      "id": "readme_verifikasi_451",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "verifikasi:"
+    },
+    {
+      "label": "Sesi 21 - Croppie Image Crop & AVIF Conversion",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L459",
+      "_origin": "ast",
+      "id": "readme_sesi_21_croppie_image_crop_avif_conversion",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 21 - croppie image crop & avif conversion"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L461",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_461",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L481",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_481",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Storage:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L492",
+      "_origin": "ast",
+      "id": "readme_struktur_storage",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur storage:"
+    },
+    {
+      "label": "Sesi 22 - Penyederhanaan Controller & Logika Edit/Update/Destroy",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L501",
+      "_origin": "ast",
+      "id": "readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "sesi 22 - penyederhanaan controller & logika edit/update/destroy"
+    },
+    {
+      "label": "Yang sudah dikerjakan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L503",
+      "_origin": "ast",
+      "id": "readme_yang_sudah_dikerjakan_503",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "yang sudah dikerjakan:"
+    },
+    {
+      "label": "Cara menjalankan:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L537",
+      "_origin": "ast",
+      "id": "readme_cara_menjalankan_537",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "cara menjalankan:"
+    },
+    {
+      "label": "Struktur Rute:",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L546",
+      "_origin": "ast",
+      "id": "readme_struktur_rute_546",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "struktur rute:"
+    },
+    {
+      "label": "License",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L559",
+      "_origin": "ast",
+      "id": "readme_license",
+      "community": 7,
+      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
+      "norm_label": "license"
+    },
+    {
       "label": "e-commerce/README.md",
       "file_type": "document",
       "source_file": "e-commerce/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "e_commerce_readme",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "e-commerce/readme.md"
+      "norm_label": "e-commerce/readme.md",
+      "id": "e_commerce_readme"
     },
     {
       "label": "E-Commerce - Tugas Bootcamp",
@@ -20,10 +559,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "e_commerce_readme_e_commerce_tugas_bootcamp",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "e-commerce - tugas bootcamp"
+      "norm_label": "e-commerce - tugas bootcamp",
+      "id": "e_commerce_readme_e_commerce_tugas_bootcamp"
     },
     {
       "label": "Sesi 13 - Database Migration & Dummy Data",
@@ -31,10 +570,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_13_database_migration_dummy_data",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 13 - database migration & dummy data"
+      "norm_label": "sesi 13 - database migration & dummy data",
+      "id": "e_commerce_readme_sesi_13_database_migration_dummy_data"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -42,10 +581,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan"
     },
     {
       "label": "Cara menjalankan:",
@@ -53,10 +592,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan"
     },
     {
       "label": "Struktur Database:",
@@ -64,10 +603,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_database",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur database:"
+      "norm_label": "struktur database:",
+      "id": "e_commerce_readme_struktur_database"
     },
     {
       "label": "Sesi 14 - Display Product (Home Page) & Detail Product",
@@ -75,10 +614,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 14 - display product (home page) & detail product"
+      "norm_label": "sesi 14 - display product (home page) & detail product",
+      "id": "e_commerce_readme_sesi_14_display_product_home_page_detail_product"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -86,10 +625,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L51",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_51",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_51"
     },
     {
       "label": "Cara menjalankan:",
@@ -97,10 +636,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L73",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_73",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_73"
     },
     {
       "label": "Struktur Rute:",
@@ -108,10 +647,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L86",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_rute",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur rute:"
+      "norm_label": "struktur rute:",
+      "id": "e_commerce_readme_struktur_rute"
     },
     {
       "label": "Sesi 15 - Penambahan Autentikasi (Laravel Breeze)",
@@ -119,10 +658,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L95",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_15_penambahan_autentikasi_laravel_breeze",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 15 - penambahan autentikasi (laravel breeze)"
+      "norm_label": "sesi 15 - penambahan autentikasi (laravel breeze)",
+      "id": "e_commerce_readme_sesi_15_penambahan_autentikasi_laravel_breeze"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -130,10 +669,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L97",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_97",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_97"
     },
     {
       "label": "Cara menjalankan:",
@@ -141,10 +680,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L122",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_122",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_122"
     },
     {
       "label": "Struktur Rute Autentikasi:",
@@ -152,10 +691,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L137",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_rute_autentikasi",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur rute autentikasi:"
+      "norm_label": "struktur rute autentikasi:",
+      "id": "e_commerce_readme_struktur_rute_autentikasi"
     },
     {
       "label": "Verifikasi:",
@@ -163,10 +702,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L149",
       "_origin": "ast",
-      "id": "e_commerce_readme_verifikasi",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "verifikasi:"
+      "norm_label": "verifikasi:",
+      "id": "e_commerce_readme_verifikasi"
     },
     {
       "label": "Sesi 16 - Admin Product List & Edit Page",
@@ -174,10 +713,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L158",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_16_admin_product_list_edit_page",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 16 - admin product list & edit page"
+      "norm_label": "sesi 16 - admin product list & edit page",
+      "id": "e_commerce_readme_sesi_16_admin_product_list_edit_page"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -185,10 +724,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L160",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_160",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_160"
     },
     {
       "label": "Cara menjalankan:",
@@ -196,10 +735,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L187",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_187",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_187"
     },
     {
       "label": "Struktur Rute:",
@@ -207,10 +746,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L198",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_rute_198",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur rute:"
+      "norm_label": "struktur rute:",
+      "id": "e_commerce_readme_struktur_rute_198"
     },
     {
       "label": "Verifikasi:",
@@ -218,10 +757,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L210",
       "_origin": "ast",
-      "id": "e_commerce_readme_verifikasi_210",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "verifikasi:"
+      "norm_label": "verifikasi:",
+      "id": "e_commerce_readme_verifikasi_210"
     },
     {
       "label": "Sesi 17 - Modal untuk CRUD Kategori & Edit Produk",
@@ -229,10 +768,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L219",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 17 - modal untuk crud kategori & edit produk"
+      "norm_label": "sesi 17 - modal untuk crud kategori & edit produk",
+      "id": "e_commerce_readme_sesi_17_modal_untuk_crud_kategori_edit_produk"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -240,10 +779,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L221",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_221",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_221"
     },
     {
       "label": "Cara menjalankan:",
@@ -251,10 +790,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L254",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_254",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_254"
     },
     {
       "label": "Struktur Rute:",
@@ -262,10 +801,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L265",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_rute_265",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur rute:"
+      "norm_label": "struktur rute:",
+      "id": "e_commerce_readme_struktur_rute_265"
     },
     {
       "label": "Verifikasi:",
@@ -273,10 +812,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L277",
       "_origin": "ast",
-      "id": "e_commerce_readme_verifikasi_277",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "verifikasi:"
+      "norm_label": "verifikasi:",
+      "id": "e_commerce_readme_verifikasi_277"
     },
     {
       "label": "Sesi 18 - Overview Dashboard",
@@ -284,10 +823,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L286",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_18_overview_dashboard",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 18 - overview dashboard"
+      "norm_label": "sesi 18 - overview dashboard",
+      "id": "e_commerce_readme_sesi_18_overview_dashboard"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -295,10 +834,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L288",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_288",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_288"
     },
     {
       "label": "Cara menjalankan:",
@@ -306,10 +845,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L317",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_317",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_317"
     },
     {
       "label": "Verifikasi:",
@@ -317,10 +856,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L326",
       "_origin": "ast",
-      "id": "e_commerce_readme_verifikasi_326",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "verifikasi:"
+      "norm_label": "verifikasi:",
+      "id": "e_commerce_readme_verifikasi_326"
     },
     {
       "label": "Sesi 19 - Role Admin & Dashboard Access Control",
@@ -328,10 +867,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L334",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 19 - role admin & dashboard access control"
+      "norm_label": "sesi 19 - role admin & dashboard access control",
+      "id": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -339,10 +878,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L336",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_336",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_336"
     },
     {
       "label": "Cara menjalankan:",
@@ -350,10 +889,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L367",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_367",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_367"
     },
     {
       "label": "Test Akses:",
@@ -361,10 +900,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L380",
       "_origin": "ast",
-      "id": "e_commerce_readme_test_akses",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "test akses:"
+      "norm_label": "test akses:",
+      "id": "e_commerce_readme_test_akses"
     },
     {
       "label": "Struktur Rute:",
@@ -372,10 +911,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L387",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_rute_387",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur rute:"
+      "norm_label": "struktur rute:",
+      "id": "e_commerce_readme_struktur_rute_387"
     },
     {
       "label": "Verifikasi:",
@@ -383,10 +922,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L395",
       "_origin": "ast",
-      "id": "e_commerce_readme_verifikasi_395",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "verifikasi:"
+      "norm_label": "verifikasi:",
+      "id": "e_commerce_readme_verifikasi_395"
     },
     {
       "label": "Sesi 20 - Add Product Form & Store ke Database",
@@ -394,10 +933,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L405",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_20_add_product_form_store_ke_database",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 20 - add product form & store ke database"
+      "norm_label": "sesi 20 - add product form & store ke database",
+      "id": "e_commerce_readme_sesi_20_add_product_form_store_ke_database"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -405,10 +944,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L407",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_407",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_407"
     },
     {
       "label": "Cara menjalankan:",
@@ -416,10 +955,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L435",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_435",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_435"
     },
     {
       "label": "Struktur Rute:",
@@ -427,10 +966,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L444",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_rute_444",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur rute:"
+      "norm_label": "struktur rute:",
+      "id": "e_commerce_readme_struktur_rute_444"
     },
     {
       "label": "Verifikasi:",
@@ -438,10 +977,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L451",
       "_origin": "ast",
-      "id": "e_commerce_readme_verifikasi_451",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "verifikasi:"
+      "norm_label": "verifikasi:",
+      "id": "e_commerce_readme_verifikasi_451"
     },
     {
       "label": "Sesi 21 - Croppie Image Crop & AVIF Conversion",
@@ -449,10 +988,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L459",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_21_croppie_image_crop_avif_conversion",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 21 - croppie image crop & avif conversion"
+      "norm_label": "sesi 21 - croppie image crop & avif conversion",
+      "id": "e_commerce_readme_sesi_21_croppie_image_crop_avif_conversion"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -460,10 +999,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L461",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_461",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_461"
     },
     {
       "label": "Cara menjalankan:",
@@ -471,10 +1010,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L481",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_481",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_481"
     },
     {
       "label": "Struktur Storage:",
@@ -482,10 +1021,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L492",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_storage",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur storage:"
+      "norm_label": "struktur storage:",
+      "id": "e_commerce_readme_struktur_storage"
     },
     {
       "label": "Sesi 22 - Penyederhanaan Controller & Logika Edit/Update/Destroy",
@@ -493,10 +1032,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L501",
       "_origin": "ast",
-      "id": "e_commerce_readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "sesi 22 - penyederhanaan controller & logika edit/update/destroy"
+      "norm_label": "sesi 22 - penyederhanaan controller & logika edit/update/destroy",
+      "id": "e_commerce_readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy"
     },
     {
       "label": "Yang sudah dikerjakan:",
@@ -504,10 +1043,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L503",
       "_origin": "ast",
-      "id": "e_commerce_readme_yang_sudah_dikerjakan_503",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "yang sudah dikerjakan:"
+      "norm_label": "yang sudah dikerjakan:",
+      "id": "e_commerce_readme_yang_sudah_dikerjakan_503"
     },
     {
       "label": "Cara menjalankan:",
@@ -515,10 +1054,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L537",
       "_origin": "ast",
-      "id": "e_commerce_readme_cara_menjalankan_537",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "cara menjalankan:"
+      "norm_label": "cara menjalankan:",
+      "id": "e_commerce_readme_cara_menjalankan_537"
     },
     {
       "label": "Struktur Rute:",
@@ -526,10 +1065,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L546",
       "_origin": "ast",
-      "id": "e_commerce_readme_struktur_rute_546",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "struktur rute:"
+      "norm_label": "struktur rute:",
+      "id": "e_commerce_readme_struktur_rute_546"
     },
     {
       "label": "License",
@@ -537,10 +1076,10 @@
       "source_file": "e-commerce/README.md",
       "source_location": "L559",
       "_origin": "ast",
-      "id": "e_commerce_readme_license",
       "community": 128,
       "community_name": "Sesi 13 - Database Migration & Dummy Data",
-      "norm_label": "license"
+      "norm_label": "license",
+      "id": "e_commerce_readme_license"
     },
     {
       "label": "CategoryController.php",
@@ -548,10 +1087,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/CategoryController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_categorycontroller",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "categorycontroller.php"
+      "norm_label": "categorycontroller.php",
+      "id": "e_commerce_app_http_controllers_admin_categorycontroller"
     },
     {
       "label": "CategoryController",
@@ -559,10 +1098,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/CategoryController.php",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "categorycontroller"
+      "norm_label": "categorycontroller",
+      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller"
     },
     {
       "label": ".index()",
@@ -570,10 +1109,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/CategoryController.php",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_index",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".index()"
+      "norm_label": ".index()",
+      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_index"
     },
     {
       "label": ".store()",
@@ -581,10 +1120,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/CategoryController.php",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_store",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".store()"
+      "norm_label": ".store()",
+      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_store"
     },
     {
       "label": ".update()",
@@ -592,10 +1131,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/CategoryController.php",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_update",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".update()"
+      "norm_label": ".update()",
+      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_update"
     },
     {
       "label": "ProductCategories",
@@ -603,10 +1142,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "productcategories",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "productcategories"
+      "norm_label": "productcategories",
+      "id": "productcategories"
     },
     {
       "label": ".destroy()",
@@ -614,10 +1153,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/CategoryController.php",
       "source_location": "L68",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_destroy",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".destroy()"
+      "norm_label": ".destroy()",
+      "id": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_destroy"
     },
     {
       "label": "Admin/ProductController.php",
@@ -625,10 +1164,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/ProductController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_productcontroller",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "admin/productcontroller.php"
+      "norm_label": "admin/productcontroller.php",
+      "id": "e_commerce_app_http_controllers_admin_productcontroller"
     },
     {
       "label": "ProductController",
@@ -636,10 +1175,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/ProductController.php",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "productcontroller"
+      "norm_label": "productcontroller",
+      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller"
     },
     {
       "label": ".index()",
@@ -647,10 +1186,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/ProductController.php",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_index",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".index()"
+      "norm_label": ".index()",
+      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_index"
     },
     {
       "label": ".create()",
@@ -658,10 +1197,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/ProductController.php",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_create",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".create()"
+      "norm_label": ".create()",
+      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_create"
     },
     {
       "label": ".store()",
@@ -669,10 +1208,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/ProductController.php",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_store",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".store()"
+      "norm_label": ".store()",
+      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_store"
     },
     {
       "label": ".update()",
@@ -680,10 +1219,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/ProductController.php",
       "source_location": "L66",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_update",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".update()"
+      "norm_label": ".update()",
+      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_update"
     },
     {
       "label": ".destroy()",
@@ -691,10 +1230,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/ProductController.php",
       "source_location": "L101",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_destroy",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".destroy()"
+      "norm_label": ".destroy()",
+      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_destroy"
     },
     {
       "label": ".handleImageUpload()",
@@ -702,10 +1241,10 @@
       "source_file": "e-commerce/app/Http/Controllers/Admin/ProductController.php",
       "source_location": "L120",
       "_origin": "ast",
-      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".handleimageupload()"
+      "norm_label": ".handleimageupload()",
+      "id": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload"
     },
     {
       "label": "Products.php",
@@ -713,10 +1252,10 @@
       "source_file": "e-commerce/app/Models/Products.php",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "e_commerce_app_models_products",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "products.php"
+      "norm_label": "products.php",
+      "id": "e_commerce_app_models_products"
     },
     {
       "label": "Products",
@@ -724,10 +1263,10 @@
       "source_file": "e-commerce/app/Models/Products.php",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "e_commerce_app_models_products_products",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "products"
+      "norm_label": "products",
+      "id": "e_commerce_app_models_products_products"
     },
     {
       "label": ".category()",
@@ -735,10 +1274,10 @@
       "source_file": "e-commerce/app/Models/Products.php",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "e_commerce_app_models_products_products_category",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".category()"
+      "norm_label": ".category()",
+      "id": "e_commerce_app_models_products_products_category"
     },
     {
       "label": ".orderItems()",
@@ -746,10 +1285,10 @@
       "source_file": "e-commerce/app/Models/Products.php",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "e_commerce_app_models_products_products_orderitems",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".orderitems()"
+      "norm_label": ".orderitems()",
+      "id": "e_commerce_app_models_products_products_orderitems"
     },
     {
       "label": ".cartItems()",
@@ -757,10 +1296,10 @@
       "source_file": "e-commerce/app/Models/Products.php",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "e_commerce_app_models_products_products_cartitems",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": ".cartitems()"
+      "norm_label": ".cartitems()",
+      "id": "e_commerce_app_models_products_products_cartitems"
     },
     {
       "label": "product-categories/_modals.blade.php",
@@ -768,10 +1307,10 @@
       "source_file": "e-commerce/resources/views/dashboards/product-categories/_modals.blade.php",
       "source_location": null,
       "_origin": "ast",
-      "id": "e_commerce_resources_views_dashboards_product_categories_modals_blade",
       "community": 185,
       "community_name": "dashboard.blade.php",
-      "norm_label": "product-categories/_modals.blade.php"
+      "norm_label": "product-categories/_modals.blade.php",
+      "id": "e_commerce_resources_views_dashboards_product_categories_modals_blade"
     },
     {
       "label": "product-categories/index.blade.php",
@@ -779,10 +1318,10 @@
       "source_file": "e-commerce/resources/views/dashboards/product-categories/index.blade.php",
       "source_location": null,
       "_origin": "ast",
-      "id": "e_commerce_resources_views_dashboards_product_categories_index_blade",
       "community": 203,
       "community_name": "product-categories/index.blade.php",
-      "norm_label": "product-categories/index.blade.php"
+      "norm_label": "product-categories/index.blade.php",
+      "id": "e_commerce_resources_views_dashboards_product_categories_index_blade"
     },
     {
       "label": "dashboards.product-categories._modals",
@@ -790,10 +1329,10 @@
       "source_file": "e-commerce/resources/views/dashboards/product-categories/index.blade.php",
       "source_location": null,
       "_origin": "ast",
-      "id": "dashboards_product_categories_modals",
       "community": 203,
       "community_name": "product-categories/index.blade.php",
-      "norm_label": "dashboards.product-categories._modals"
+      "norm_label": "dashboards.product-categories._modals",
+      "id": "dashboards_product_categories_modals"
     },
     {
       "label": "App\\Http\\Controllers\\Controller",
@@ -801,10 +1340,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_http_controllers_controller",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "app\\http\\controllers\\controller"
+      "norm_label": "app\\http\\controllers\\controller",
+      "id": "app_http_controllers_controller"
     },
     {
       "label": "App\\Models\\ProductCategories",
@@ -812,10 +1351,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_models_productcategories",
       "community": 194,
       "community_name": "App\\Models\\ProductCategories",
-      "norm_label": "app\\models\\productcategories"
+      "norm_label": "app\\models\\productcategories",
+      "id": "app_models_productcategories"
     },
     {
       "label": "Illuminate\\Http\\Request",
@@ -823,10 +1362,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_http_request",
       "community": 200,
       "community_name": "VerifyEmailController.php",
-      "norm_label": "illuminate\\http\\request"
+      "norm_label": "illuminate\\http\\request",
+      "id": "illuminate_http_request"
     },
     {
       "label": "Illuminate\\Database\\Eloquent\\Model",
@@ -834,505 +1373,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "illuminate_database_eloquent_model",
       "community": 198,
       "community_name": "Order",
-      "norm_label": "illuminate\\database\\eloquent\\model"
-    },
-    {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "readme.md",
-      "id": "readme"
-    },
-    {
-      "label": "E-Commerce - Tugas Bootcamp",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "e-commerce - tugas bootcamp",
-      "id": "readme_e_commerce_tugas_bootcamp"
-    },
-    {
-      "label": "Sesi 13 - Database Migration & Dummy Data",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 13 - database migration & dummy data",
-      "id": "readme_sesi_13_database_migration_dummy_data"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L26",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan"
-    },
-    {
-      "label": "Struktur Database:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "struktur database:",
-      "id": "readme_struktur_database"
-    },
-    {
-      "label": "Sesi 14 - Display Product (Home Page) & Detail Product",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 14 - display product (home page) & detail product",
-      "id": "readme_sesi_14_display_product_home_page_detail_product"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L51",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan_51"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L73",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan_73"
-    },
-    {
-      "label": "Struktur Rute:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L86",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "struktur rute:",
-      "id": "readme_struktur_rute"
-    },
-    {
-      "label": "Sesi 15 - Penambahan Autentikasi (Laravel Breeze)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L95",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 15 - penambahan autentikasi (laravel breeze)",
-      "id": "readme_sesi_15_penambahan_autentikasi_laravel_breeze"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L97",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan_97"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L122",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan_122"
-    },
-    {
-      "label": "Struktur Rute Autentikasi:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L137",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "struktur rute autentikasi:",
-      "id": "readme_struktur_rute_autentikasi"
-    },
-    {
-      "label": "Verifikasi:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L149",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "verifikasi:",
-      "id": "readme_verifikasi"
-    },
-    {
-      "label": "Sesi 16 - Admin Product List & Edit Page",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L158",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 16 - admin product list & edit page",
-      "id": "readme_sesi_16_admin_product_list_edit_page"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L160",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan_160"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L187",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan_187"
-    },
-    {
-      "label": "Struktur Rute:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L198",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "struktur rute:",
-      "id": "readme_struktur_rute_198"
-    },
-    {
-      "label": "Verifikasi:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L210",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "verifikasi:",
-      "id": "readme_verifikasi_210"
-    },
-    {
-      "label": "Sesi 17 - Modal untuk CRUD Kategori & Edit Produk",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L219",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 17 - modal untuk crud kategori & edit produk",
-      "id": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L221",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan_221"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L254",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan_254"
-    },
-    {
-      "label": "Struktur Rute:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L265",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "struktur rute:",
-      "id": "readme_struktur_rute_265"
-    },
-    {
-      "label": "Verifikasi:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L277",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "verifikasi:",
-      "id": "readme_verifikasi_277"
-    },
-    {
-      "label": "Sesi 18 - Overview Dashboard",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L286",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 18 - overview dashboard",
-      "id": "readme_sesi_18_overview_dashboard"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L288",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan_288"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L317",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan_317"
-    },
-    {
-      "label": "Verifikasi:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L326",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "verifikasi:",
-      "id": "readme_verifikasi_326"
-    },
-    {
-      "label": "Sesi 19 - Role Admin & Dashboard Access Control",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L334",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 19 - role admin & dashboard access control",
-      "id": "readme_sesi_19_role_admin_dashboard_access_control"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L336",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan_336"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L367",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan_367"
-    },
-    {
-      "label": "Test Akses:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L380",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "test akses:",
-      "id": "readme_test_akses"
-    },
-    {
-      "label": "Struktur Rute:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L387",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "struktur rute:",
-      "id": "readme_struktur_rute_387"
-    },
-    {
-      "label": "Verifikasi:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L395",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "verifikasi:",
-      "id": "readme_verifikasi_395"
-    },
-    {
-      "label": "Sesi 20 - Add Product Form & Store ke Database",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L405",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 20 - add product form & store ke database",
-      "id": "readme_sesi_20_add_product_form_store_ke_database"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L407",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan_407"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L435",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan_435"
-    },
-    {
-      "label": "Struktur Rute:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L444",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "struktur rute:",
-      "id": "readme_struktur_rute_444"
-    },
-    {
-      "label": "Verifikasi:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L451",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "verifikasi:",
-      "id": "readme_verifikasi_451"
-    },
-    {
-      "label": "Sesi 21 - Croppie Image Crop & AVIF Conversion",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L459",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "sesi 21 - croppie image crop & avif conversion",
-      "id": "readme_sesi_21_croppie_image_crop_avif_conversion"
-    },
-    {
-      "label": "Yang sudah dikerjakan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L461",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "yang sudah dikerjakan:",
-      "id": "readme_yang_sudah_dikerjakan_461"
-    },
-    {
-      "label": "Cara menjalankan:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L481",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "cara menjalankan:",
-      "id": "readme_cara_menjalankan_481"
-    },
-    {
-      "label": "Struktur Storage:",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L492",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "struktur storage:",
-      "id": "readme_struktur_storage"
-    },
-    {
-      "label": "License",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L501",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Tugas 9 - TokoKu (E-Commerce)",
-      "norm_label": "license",
-      "id": "readme_license"
+      "norm_label": "illuminate\\database\\eloquent\\model",
+      "id": "illuminate_database_eloquent_model"
     },
     {
       "label": "Controller",
@@ -2275,8 +2319,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": "tugas_10/app/http/controllers/productcontroller.php",
       "id": "tugas_10_app_http_controllers_productcontroller"
     },
@@ -2286,8 +2330,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": "productcontroller",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller"
     },
@@ -2297,8 +2341,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": ".index()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_index"
     },
@@ -2308,8 +2352,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": ".store()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_store"
     },
@@ -2319,8 +2363,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": ".show()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_show"
     },
@@ -2330,8 +2374,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": ".update()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_update"
     },
@@ -2341,8 +2385,8 @@
       "source_file": "Tugas_10/app/Http/Controllers/ProductController.php",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": ".destroy()",
       "id": "tugas_10_app_http_controllers_productcontroller_productcontroller_destroy"
     },
@@ -2385,8 +2429,8 @@
       "source_file": "Tugas_10/app/Models/Product.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": "product.php",
       "id": "tugas_10_app_models_product"
     },
@@ -2396,8 +2440,8 @@
       "source_file": "Tugas_10/app/Models/Product.php",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": "product",
       "id": "tugas_10_app_models_product_product"
     },
@@ -2407,8 +2451,8 @@
       "source_file": "Tugas_10/app/Models/Product.php",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 122,
-      "community_name": "ProductCategories",
+      "community": 198,
+      "community_name": "Order",
       "norm_label": ".orders()",
       "id": "tugas_10_app_models_product_product_orders"
     },
@@ -8666,8 +8710,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": "cartitemscontroller.php",
       "id": "e_commerce_app_http_controllers_cartitemscontroller"
     },
@@ -8677,8 +8721,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": "cartitemscontroller",
       "id": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller"
     },
@@ -8688,8 +8732,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": ".index()",
       "id": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_index"
     },
@@ -8699,8 +8743,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": ".create()",
       "id": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_create"
     },
@@ -8710,8 +8754,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": ".store()",
       "id": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_store"
     },
@@ -8721,8 +8765,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": ".show()",
       "id": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_show"
     },
@@ -8732,8 +8776,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": ".edit()",
       "id": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_edit"
     },
@@ -8743,8 +8787,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": ".update()",
       "id": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_update"
     },
@@ -8754,8 +8798,8 @@
       "source_file": "e-commerce/app/Http/Controllers/CartItemsController.php",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": ".destroy()",
       "id": "e_commerce_app_http_controllers_cartitemscontroller_cartitemscontroller_destroy"
     },
@@ -9150,8 +9194,8 @@
       "source_file": "e-commerce/app/Models/CartItems.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": "cartitems.php",
       "id": "e_commerce_app_models_cartitems"
     },
@@ -9161,8 +9205,8 @@
       "source_file": "e-commerce/app/Models/CartItems.php",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 198,
-      "community_name": "Order",
+      "community": 122,
+      "community_name": "ProductCategories",
       "norm_label": "cartitems",
       "id": "e_commerce_app_models_cartitems_cartitems"
     },
@@ -9260,8 +9304,8 @@
       "source_file": "e-commerce/app/View/Components/GuestLayout.php",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 92,
-      "community_name": "Closure",
+      "community": 200,
+      "community_name": "VerifyEmailController.php",
       "norm_label": "guestlayout.php",
       "id": "e_commerce_app_view_components_guestlayout"
     },
@@ -9271,8 +9315,8 @@
       "source_file": "e-commerce/app/View/Components/GuestLayout.php",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 92,
-      "community_name": "Closure",
+      "community": 200,
+      "community_name": "VerifyEmailController.php",
       "norm_label": "guestlayout",
       "id": "e_commerce_app_view_components_guestlayout_guestlayout"
     },
@@ -9282,8 +9326,8 @@
       "source_file": "e-commerce/app/View/Components/GuestLayout.php",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 92,
-      "community_name": "Closure",
+      "community": 200,
+      "community_name": "VerifyEmailController.php",
       "norm_label": ".render()",
       "id": "e_commerce_app_view_components_guestlayout_guestlayout_render"
     },
@@ -12163,13 +12207,541 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "readme_e_commerce_tugas_bootcamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L559",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_13_database_migration_dummy_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_14_display_product_home_page_detail_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_16_admin_product_list_edit_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L219",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L286",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_18_overview_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L334",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_19_role_admin_dashboard_access_control",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L405",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_20_add_product_form_store_ke_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L459",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_21_croppie_image_crop_avif_conversion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L501",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_e_commerce_tugas_bootcamp",
+      "target": "readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_13_database_migration_dummy_data",
+      "target": "readme_cara_menjalankan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_13_database_migration_dummy_data",
+      "target": "readme_struktur_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_13_database_migration_dummy_data",
+      "target": "readme_yang_sudah_dikerjakan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_14_display_product_home_page_detail_product",
+      "target": "readme_cara_menjalankan_73",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_14_display_product_home_page_detail_product",
+      "target": "readme_struktur_rute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_14_display_product_home_page_detail_product",
+      "target": "readme_yang_sudah_dikerjakan_51",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
+      "target": "readme_cara_menjalankan_122",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
+      "target": "readme_struktur_rute_autentikasi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
+      "target": "readme_verifikasi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
+      "target": "readme_yang_sudah_dikerjakan_97",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_16_admin_product_list_edit_page",
+      "target": "readme_cara_menjalankan_187",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L198",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_16_admin_product_list_edit_page",
+      "target": "readme_struktur_rute_198",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L210",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_16_admin_product_list_edit_page",
+      "target": "readme_verifikasi_210",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_16_admin_product_list_edit_page",
+      "target": "readme_yang_sudah_dikerjakan_160",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L254",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
+      "target": "readme_cara_menjalankan_254",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L265",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
+      "target": "readme_struktur_rute_265",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L277",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
+      "target": "readme_verifikasi_277",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L221",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
+      "target": "readme_yang_sudah_dikerjakan_221",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L317",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_18_overview_dashboard",
+      "target": "readme_cara_menjalankan_317",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L326",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_18_overview_dashboard",
+      "target": "readme_verifikasi_326",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L288",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_18_overview_dashboard",
+      "target": "readme_yang_sudah_dikerjakan_288",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L367",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_19_role_admin_dashboard_access_control",
+      "target": "readme_cara_menjalankan_367",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L387",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_19_role_admin_dashboard_access_control",
+      "target": "readme_struktur_rute_387",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L380",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_19_role_admin_dashboard_access_control",
+      "target": "readme_test_akses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L395",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_19_role_admin_dashboard_access_control",
+      "target": "readme_verifikasi_395",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L336",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_19_role_admin_dashboard_access_control",
+      "target": "readme_yang_sudah_dikerjakan_336",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L435",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_20_add_product_form_store_ke_database",
+      "target": "readme_cara_menjalankan_435",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L444",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_20_add_product_form_store_ke_database",
+      "target": "readme_struktur_rute_444",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L451",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_20_add_product_form_store_ke_database",
+      "target": "readme_verifikasi_451",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L407",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_20_add_product_form_store_ke_database",
+      "target": "readme_yang_sudah_dikerjakan_407",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L481",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_21_croppie_image_crop_avif_conversion",
+      "target": "readme_cara_menjalankan_481",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L492",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_21_croppie_image_crop_avif_conversion",
+      "target": "readme_struktur_storage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L461",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_21_croppie_image_crop_avif_conversion",
+      "target": "readme_yang_sudah_dikerjakan_461",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L537",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
+      "target": "readme_cara_menjalankan_537",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L546",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
+      "target": "readme_struktur_rute_546",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L503",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
+      "target": "readme_yang_sudah_dikerjakan_503",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "e-commerce/README.md",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme",
-      "target": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_e_commerce_tugas_bootcamp"
     },
     {
       "relation": "contains",
@@ -12178,9 +12750,9 @@
       "source_location": "L559",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_license",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_license"
     },
     {
       "relation": "contains",
@@ -12189,9 +12761,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_13_database_migration_dummy_data",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_13_database_migration_dummy_data"
     },
     {
       "relation": "contains",
@@ -12200,9 +12772,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_14_display_product_home_page_detail_product"
     },
     {
       "relation": "contains",
@@ -12211,9 +12783,9 @@
       "source_location": "L95",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_15_penambahan_autentikasi_laravel_breeze"
     },
     {
       "relation": "contains",
@@ -12222,9 +12794,9 @@
       "source_location": "L158",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_16_admin_product_list_edit_page",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_16_admin_product_list_edit_page"
     },
     {
       "relation": "contains",
@@ -12233,9 +12805,9 @@
       "source_location": "L219",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_17_modal_untuk_crud_kategori_edit_produk"
     },
     {
       "relation": "contains",
@@ -12244,9 +12816,9 @@
       "source_location": "L286",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_18_overview_dashboard",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_18_overview_dashboard"
     },
     {
       "relation": "contains",
@@ -12255,9 +12827,9 @@
       "source_location": "L334",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control"
     },
     {
       "relation": "contains",
@@ -12266,9 +12838,9 @@
       "source_location": "L405",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_20_add_product_form_store_ke_database",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_20_add_product_form_store_ke_database"
     },
     {
       "relation": "contains",
@@ -12277,9 +12849,9 @@
       "source_location": "L459",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_21_croppie_image_crop_avif_conversion",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_21_croppie_image_crop_avif_conversion"
     },
     {
       "relation": "contains",
@@ -12288,9 +12860,9 @@
       "source_location": "L501",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_e_commerce_tugas_bootcamp",
-      "target": "e_commerce_readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy"
     },
     {
       "relation": "contains",
@@ -12299,9 +12871,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
-      "target": "e_commerce_readme_cara_menjalankan",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan"
     },
     {
       "relation": "contains",
@@ -12310,9 +12882,9 @@
       "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
-      "target": "e_commerce_readme_struktur_database",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_database"
     },
     {
       "relation": "contains",
@@ -12321,9 +12893,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_13_database_migration_dummy_data",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan"
     },
     {
       "relation": "contains",
@@ -12332,9 +12904,9 @@
       "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
-      "target": "e_commerce_readme_cara_menjalankan_73",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_73"
     },
     {
       "relation": "contains",
@@ -12343,9 +12915,9 @@
       "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
-      "target": "e_commerce_readme_struktur_rute",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_rute"
     },
     {
       "relation": "contains",
@@ -12354,9 +12926,9 @@
       "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_14_display_product_home_page_detail_product",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_51",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_51"
     },
     {
       "relation": "contains",
@@ -12365,9 +12937,9 @@
       "source_location": "L122",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "target": "e_commerce_readme_cara_menjalankan_122",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_122"
     },
     {
       "relation": "contains",
@@ -12376,9 +12948,9 @@
       "source_location": "L137",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "target": "e_commerce_readme_struktur_rute_autentikasi",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_rute_autentikasi"
     },
     {
       "relation": "contains",
@@ -12387,9 +12959,9 @@
       "source_location": "L149",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "target": "e_commerce_readme_verifikasi",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_verifikasi"
     },
     {
       "relation": "contains",
@@ -12398,9 +12970,9 @@
       "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_97",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_97"
     },
     {
       "relation": "contains",
@@ -12409,9 +12981,9 @@
       "source_location": "L187",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_16_admin_product_list_edit_page",
-      "target": "e_commerce_readme_cara_menjalankan_187",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_187"
     },
     {
       "relation": "contains",
@@ -12420,9 +12992,9 @@
       "source_location": "L198",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_16_admin_product_list_edit_page",
-      "target": "e_commerce_readme_struktur_rute_198",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_rute_198"
     },
     {
       "relation": "contains",
@@ -12431,9 +13003,9 @@
       "source_location": "L210",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_16_admin_product_list_edit_page",
-      "target": "e_commerce_readme_verifikasi_210",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_verifikasi_210"
     },
     {
       "relation": "contains",
@@ -12442,9 +13014,9 @@
       "source_location": "L160",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_16_admin_product_list_edit_page",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_160",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_160"
     },
     {
       "relation": "contains",
@@ -12453,9 +13025,9 @@
       "source_location": "L254",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "target": "e_commerce_readme_cara_menjalankan_254",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_254"
     },
     {
       "relation": "contains",
@@ -12464,9 +13036,9 @@
       "source_location": "L265",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "target": "e_commerce_readme_struktur_rute_265",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_rute_265"
     },
     {
       "relation": "contains",
@@ -12475,9 +13047,9 @@
       "source_location": "L277",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "target": "e_commerce_readme_verifikasi_277",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_verifikasi_277"
     },
     {
       "relation": "contains",
@@ -12486,9 +13058,9 @@
       "source_location": "L221",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_221",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_221"
     },
     {
       "relation": "contains",
@@ -12497,9 +13069,9 @@
       "source_location": "L317",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_18_overview_dashboard",
-      "target": "e_commerce_readme_cara_menjalankan_317",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_317"
     },
     {
       "relation": "contains",
@@ -12508,9 +13080,9 @@
       "source_location": "L326",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_18_overview_dashboard",
-      "target": "e_commerce_readme_verifikasi_326",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_verifikasi_326"
     },
     {
       "relation": "contains",
@@ -12519,9 +13091,9 @@
       "source_location": "L288",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_18_overview_dashboard",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_288",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_288"
     },
     {
       "relation": "contains",
@@ -12530,9 +13102,9 @@
       "source_location": "L367",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "e_commerce_readme_cara_menjalankan_367",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_367"
     },
     {
       "relation": "contains",
@@ -12541,9 +13113,9 @@
       "source_location": "L387",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "e_commerce_readme_struktur_rute_387",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_rute_387"
     },
     {
       "relation": "contains",
@@ -12552,9 +13124,9 @@
       "source_location": "L380",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "e_commerce_readme_test_akses",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_test_akses"
     },
     {
       "relation": "contains",
@@ -12563,9 +13135,9 @@
       "source_location": "L395",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "e_commerce_readme_verifikasi_395",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_verifikasi_395"
     },
     {
       "relation": "contains",
@@ -12574,9 +13146,9 @@
       "source_location": "L336",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_336",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_336"
     },
     {
       "relation": "contains",
@@ -12585,9 +13157,9 @@
       "source_location": "L435",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_20_add_product_form_store_ke_database",
-      "target": "e_commerce_readme_cara_menjalankan_435",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_435"
     },
     {
       "relation": "contains",
@@ -12596,9 +13168,9 @@
       "source_location": "L444",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_20_add_product_form_store_ke_database",
-      "target": "e_commerce_readme_struktur_rute_444",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_rute_444"
     },
     {
       "relation": "contains",
@@ -12607,9 +13179,9 @@
       "source_location": "L451",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_20_add_product_form_store_ke_database",
-      "target": "e_commerce_readme_verifikasi_451",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_verifikasi_451"
     },
     {
       "relation": "contains",
@@ -12618,9 +13190,9 @@
       "source_location": "L407",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_20_add_product_form_store_ke_database",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_407",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_407"
     },
     {
       "relation": "contains",
@@ -12629,9 +13201,9 @@
       "source_location": "L481",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_21_croppie_image_crop_avif_conversion",
-      "target": "e_commerce_readme_cara_menjalankan_481",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_481"
     },
     {
       "relation": "contains",
@@ -12640,9 +13212,9 @@
       "source_location": "L492",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_21_croppie_image_crop_avif_conversion",
-      "target": "e_commerce_readme_struktur_storage",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_storage"
     },
     {
       "relation": "contains",
@@ -12651,9 +13223,9 @@
       "source_location": "L461",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_21_croppie_image_crop_avif_conversion",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_461",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_461"
     },
     {
       "relation": "contains",
@@ -12662,9 +13234,9 @@
       "source_location": "L537",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
-      "target": "e_commerce_readme_cara_menjalankan_537",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_cara_menjalankan_537"
     },
     {
       "relation": "contains",
@@ -12673,9 +13245,9 @@
       "source_location": "L546",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
-      "target": "e_commerce_readme_struktur_rute_546",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_struktur_rute_546"
     },
     {
       "relation": "contains",
@@ -12684,9 +13256,9 @@
       "source_location": "L503",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_readme_sesi_22_penyederhanaan_controller_logika_edit_update_destroy",
-      "target": "e_commerce_readme_yang_sudah_dikerjakan_503",
-      "confidence_score": 1.0
+      "target": "e_commerce_readme_yang_sudah_dikerjakan_503"
     },
     {
       "relation": "imports",
@@ -12696,9 +13268,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller",
-      "target": "app_http_controllers_controller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_controller"
     },
     {
       "relation": "imports",
@@ -12708,9 +13280,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller",
-      "target": "app_models_productcategories",
-      "confidence_score": 1.0
+      "target": "app_models_productcategories"
     },
     {
       "relation": "contains",
@@ -12719,9 +13291,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller",
-      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller"
     },
     {
       "relation": "imports",
@@ -12731,9 +13303,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "imports",
@@ -12754,9 +13326,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller",
-      "target": "app_http_controllers_controller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_controller"
     },
     {
       "relation": "method",
@@ -12765,9 +13337,9 @@
       "source_location": "L68",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller",
-      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_destroy",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_destroy"
     },
     {
       "relation": "method",
@@ -12776,9 +13348,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller",
-      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_index",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_index"
     },
     {
       "relation": "method",
@@ -12787,9 +13359,9 @@
       "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller",
-      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_store",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_store"
     },
     {
       "relation": "method",
@@ -12798,9 +13370,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller",
-      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_update",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_update"
     },
     {
       "relation": "references",
@@ -12810,9 +13382,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_index",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "calls",
@@ -12822,9 +13394,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_index",
-      "target": "productcategories",
-      "confidence_score": 1.0
+      "target": "productcategories"
     },
     {
       "relation": "references",
@@ -12834,9 +13406,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_store",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "calls",
@@ -12846,9 +13418,9 @@
       "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_store",
-      "target": "productcategories",
-      "confidence_score": 1.0
+      "target": "productcategories"
     },
     {
       "relation": "references",
@@ -12858,9 +13430,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_update",
-      "target": "app_models_productcategories",
-      "confidence_score": 1.0
+      "target": "app_models_productcategories"
     },
     {
       "relation": "references",
@@ -12870,9 +13442,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_update",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "calls",
@@ -12882,9 +13454,9 @@
       "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_update",
-      "target": "productcategories",
-      "confidence_score": 1.0
+      "target": "productcategories"
     },
     {
       "relation": "calls",
@@ -12942,9 +13514,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_categorycontroller_categorycontroller_destroy",
-      "target": "app_models_productcategories",
-      "confidence_score": 1.0
+      "target": "app_models_productcategories"
     },
     {
       "relation": "imports",
@@ -12954,9 +13526,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller",
-      "target": "app_http_controllers_controller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_controller"
     },
     {
       "relation": "imports",
@@ -12966,9 +13538,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller",
-      "target": "app_models_productcategories",
-      "confidence_score": 1.0
+      "target": "app_models_productcategories"
     },
     {
       "relation": "contains",
@@ -12977,9 +13549,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller"
     },
     {
       "relation": "imports",
@@ -12989,9 +13561,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller",
-      "target": "e_commerce_app_models_products_products",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products"
     },
     {
       "relation": "imports",
@@ -13001,9 +13573,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "inherits",
@@ -13012,9 +13584,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
-      "target": "app_http_controllers_controller",
-      "confidence_score": 1.0
+      "target": "app_http_controllers_controller"
     },
     {
       "relation": "method",
@@ -13023,9 +13595,9 @@
       "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_create",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_create"
     },
     {
       "relation": "method",
@@ -13034,9 +13606,9 @@
       "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_destroy",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_destroy"
     },
     {
       "relation": "method",
@@ -13045,9 +13617,9 @@
       "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload"
     },
     {
       "relation": "method",
@@ -13056,9 +13628,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_index",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_index"
     },
     {
       "relation": "method",
@@ -13067,9 +13639,9 @@
       "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_store",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_store"
     },
     {
       "relation": "method",
@@ -13078,9 +13650,9 @@
       "source_location": "L66",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_update",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_update"
     },
     {
       "relation": "calls",
@@ -13090,9 +13662,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_index",
-      "target": "e_commerce_app_models_products_products",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products"
     },
     {
       "relation": "references",
@@ -13102,9 +13674,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_index",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "calls",
@@ -13114,9 +13686,9 @@
       "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_store",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload"
     },
     {
       "relation": "calls",
@@ -13126,9 +13698,9 @@
       "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_store",
-      "target": "e_commerce_app_models_products_products",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products"
     },
     {
       "relation": "references",
@@ -13138,9 +13710,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_store",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "calls",
@@ -13150,9 +13722,9 @@
       "source_location": "L77",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_update",
-      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload"
     },
     {
       "relation": "references",
@@ -13162,9 +13734,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_update",
-      "target": "e_commerce_app_models_products_products",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products"
     },
     {
       "relation": "references",
@@ -13174,9 +13746,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_update",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "references",
@@ -13186,9 +13758,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_destroy",
-      "target": "e_commerce_app_models_products_products",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products"
     },
     {
       "relation": "references",
@@ -13198,9 +13770,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_http_controllers_admin_productcontroller_productcontroller_handleimageupload",
-      "target": "illuminate_http_request",
-      "confidence_score": 1.0
+      "target": "illuminate_http_request"
     },
     {
       "relation": "contains",
@@ -13209,9 +13781,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_models_products",
-      "target": "e_commerce_app_models_products_products",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products"
     },
     {
       "relation": "imports",
@@ -13221,9 +13793,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_models_products",
-      "target": "illuminate_database_eloquent_model",
-      "confidence_score": 1.0
+      "target": "illuminate_database_eloquent_model"
     },
     {
       "relation": "method",
@@ -13232,9 +13804,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_models_products_products",
-      "target": "e_commerce_app_models_products_products_cartitems",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products_cartitems"
     },
     {
       "relation": "method",
@@ -13243,9 +13815,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_models_products_products",
-      "target": "e_commerce_app_models_products_products_category",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products_category"
     },
     {
       "relation": "method",
@@ -13254,9 +13826,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_models_products_products",
-      "target": "e_commerce_app_models_products_products_orderitems",
-      "confidence_score": 1.0
+      "target": "e_commerce_app_models_products_products_orderitems"
     },
     {
       "relation": "inherits",
@@ -13265,9 +13837,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "e_commerce_app_models_products_products",
-      "target": "illuminate_database_eloquent_model",
-      "confidence_score": 1.0
+      "target": "illuminate_database_eloquent_model"
     },
     {
       "relation": "includes",
@@ -13897,490 +14469,6 @@
       "confidence_score": 1.0,
       "source": "tugas_10_app_models_product_product",
       "target": "illuminate_database_eloquent_model"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme",
-      "target": "readme_e_commerce_tugas_bootcamp"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L501",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_license"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_13_database_migration_dummy_data"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_14_display_product_home_page_detail_product"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L95",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_15_penambahan_autentikasi_laravel_breeze"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L158",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_16_admin_product_list_edit_page"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L219",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L286",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_18_overview_dashboard"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L334",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_19_role_admin_dashboard_access_control"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L405",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_20_add_product_form_store_ke_database"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L459",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_e_commerce_tugas_bootcamp",
-      "target": "readme_sesi_21_croppie_image_crop_avif_conversion"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_13_database_migration_dummy_data",
-      "target": "readme_cara_menjalankan"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_13_database_migration_dummy_data",
-      "target": "readme_struktur_database"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_13_database_migration_dummy_data",
-      "target": "readme_yang_sudah_dikerjakan"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L73",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_14_display_product_home_page_detail_product",
-      "target": "readme_cara_menjalankan_73"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L86",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_14_display_product_home_page_detail_product",
-      "target": "readme_struktur_rute"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L51",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_14_display_product_home_page_detail_product",
-      "target": "readme_yang_sudah_dikerjakan_51"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L122",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "target": "readme_cara_menjalankan_122"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L137",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "target": "readme_struktur_rute_autentikasi"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L149",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "target": "readme_verifikasi"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L97",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_15_penambahan_autentikasi_laravel_breeze",
-      "target": "readme_yang_sudah_dikerjakan_97"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L187",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_16_admin_product_list_edit_page",
-      "target": "readme_cara_menjalankan_187"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L198",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_16_admin_product_list_edit_page",
-      "target": "readme_struktur_rute_198"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L210",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_16_admin_product_list_edit_page",
-      "target": "readme_verifikasi_210"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L160",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_16_admin_product_list_edit_page",
-      "target": "readme_yang_sudah_dikerjakan_160"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L254",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "target": "readme_cara_menjalankan_254"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L265",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "target": "readme_struktur_rute_265"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L277",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "target": "readme_verifikasi_277"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L221",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_17_modal_untuk_crud_kategori_edit_produk",
-      "target": "readme_yang_sudah_dikerjakan_221"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L317",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_18_overview_dashboard",
-      "target": "readme_cara_menjalankan_317"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L326",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_18_overview_dashboard",
-      "target": "readme_verifikasi_326"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L288",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_18_overview_dashboard",
-      "target": "readme_yang_sudah_dikerjakan_288"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L367",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "readme_cara_menjalankan_367"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L387",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "readme_struktur_rute_387"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L380",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "readme_test_akses"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L395",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "readme_verifikasi_395"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L336",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_19_role_admin_dashboard_access_control",
-      "target": "readme_yang_sudah_dikerjakan_336"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L435",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_20_add_product_form_store_ke_database",
-      "target": "readme_cara_menjalankan_435"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L444",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_20_add_product_form_store_ke_database",
-      "target": "readme_struktur_rute_444"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L451",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_20_add_product_form_store_ke_database",
-      "target": "readme_verifikasi_451"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L407",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_20_add_product_form_store_ke_database",
-      "target": "readme_yang_sudah_dikerjakan_407"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L481",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_21_croppie_image_crop_avif_conversion",
-      "target": "readme_cara_menjalankan_481"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L492",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_21_croppie_image_crop_avif_conversion",
-      "target": "readme_struktur_storage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L461",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "readme_sesi_21_croppie_image_crop_avif_conversion",
-      "target": "readme_yang_sudah_dikerjakan_461"
     },
     {
       "relation": "inherits",
@@ -26559,5 +26647,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "269b94fffecbcb3196bac019b6a63d3e56d164a0"
+  "built_at_commit": "f93a0629ce6bf1462d256c6b336bfd40ad6eedd8"
 }

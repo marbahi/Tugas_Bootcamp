@@ -15,12 +15,12 @@
     <title>{{ $headerTitle ? $headerTitle . ' | ' : '' }}{{ config('app.name', 'Laravel') }}</title>
 </head>
 <body class="d-flex flex-column min-vh-100 bg-paper">
-    @unless(request()->routeIs('dashboard', 'products.*', 'product-categories.*', 'profile.*'))
+    @unless(request()->routeIs('dashboard', 'products.*', 'product-categories.*', 'orders.*', 'profile.*'))
         <x-header></x-header>
     @endunless
 
     @auth
-        @if(request()->routeIs('dashboard', 'products.*', 'product-categories.*', 'profile.*'))
+        @if(request()->routeIs('dashboard', 'products.*', 'product-categories.*', 'orders.*', 'profile.*'))
             <div class="member-header">
                 <div class="container d-flex flex-wrap align-items-center gap-2 py-1">
                     <a href="{{ route('home') }}" class="brand-word brand-word--sm me-3">E-Commerce<span class="dot">.</span></a>
@@ -34,6 +34,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('products.*') ? 'active' : '' }}" href="{{ route('products.index') }}">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('orders.*') ? 'active' : '' }}" href="{{ route('orders.index') }}">Orders</a>
                         </li>
                     </ul>
 
@@ -65,8 +68,15 @@
 
     <main class="flex-fill container py-4">
         @if (session('success'))
-            <div class="alert alert-success alert-dismissible fade show py-2" role="alert">
-                {{ session('success') }}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <span>{{ session('success') }}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
+        @if ($errors->has('error'))
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <span>{{ $errors->first('error') }}</span>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif

@@ -13,6 +13,20 @@
 <body class="d-flex flex-column min-vh-100 bg-paper">
     <x-header></x-header>
     <main class="flex-fill container my-5">
+        @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <span>{{ session('success') }}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
+        @if ($errors->has('error'))
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <span>{{ $errors->first('error') }}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
         @yield('content')
     </main>
     <x-footer></x-footer>
