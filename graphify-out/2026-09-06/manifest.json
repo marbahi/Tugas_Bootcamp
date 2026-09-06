@@ -924,6 +924,11 @@
     "ast_hash": "0f7280c9d64efe042166ba2f39187a06",
     "semantic_hash": ""
   },
+  "e-commerce/app/Http/Controllers/ProductCategoriesController.php": {
+    "mtime": 1788355376.9449117,
+    "ast_hash": "c4d78854b5511511d596f83dea38bb09",
+    "semantic_hash": ""
+  },
   "e-commerce/app/Http/Controllers/ProductsController.php": {
     "mtime": 1788355376.9689744,
     "ast_hash": "db46c1a34d7f4133296e47cfde05a964",
@@ -950,8 +955,8 @@
     "semantic_hash": ""
   },
   "e-commerce/app/Models/Products.php": {
-    "mtime": 1788684490.9586227,
-    "ast_hash": "578b993d60f65c0ef14d4a61375fc80a",
+    "mtime": 1785950824.1892934,
+    "ast_hash": "4766ad6fbd5d2e671da4a1b85dbd3502",
     "semantic_hash": ""
   },
   "e-commerce/app/Models/User.php": {
@@ -1145,8 +1150,8 @@
     "semantic_hash": ""
   },
   "e-commerce/README.md": {
-    "mtime": 1788684883.752062,
-    "ast_hash": "c28e9752b1f6ed30912885d2d638bca3",
+    "mtime": 1788357674.0944881,
+    "ast_hash": "156d8eb8070d9b7e01f56596eab072f3",
     "semantic_hash": ""
   },
   "e-commerce/public/robots.txt": {
@@ -1450,13 +1455,13 @@
     "semantic_hash": ""
   },
   "e-commerce/app/Http/Controllers/Admin/CategoryController.php": {
-    "mtime": 1788680957.8588102,
-    "ast_hash": "f7309449f0f50b0dcf1648820c756dc8",
+    "mtime": 1788355376.8258593,
+    "ast_hash": "a7ffee1e65159931ac7e9d65e4f37df5",
     "semantic_hash": ""
   },
   "e-commerce/app/Http/Controllers/Admin/ProductController.php": {
-    "mtime": 1788684489.8702593,
-    "ast_hash": "bf230d3ecfdd137fd3d422e4b81c7c4e",
+    "mtime": 1788355376.8986719,
+    "ast_hash": "5de848aa98e31d1cbee621d1ffd8604a",
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/index.blade.php": {
@@ -1465,8 +1470,8 @@
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/product-categories/index.blade.php": {
-    "mtime": 1788683867.0782533,
-    "ast_hash": "857e30a4364624a0232829e200cf2686",
+    "mtime": 1786624561.115116,
+    "ast_hash": "45afa4a76c3c5656c8f9371c5ae23f4b",
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/products/_form.blade.php": {
@@ -1490,8 +1495,8 @@
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/product-categories/_modals.blade.php": {
-    "mtime": 1788683870.7065113,
-    "ast_hash": "8ec03942206fdad9cd67b81af3ed7c58",
+    "mtime": 1786622832.3605015,
+    "ast_hash": "a930930defb61de8a479a0ef0b1e8ddd",
     "semantic_hash": ""
   },
   "e-commerce/resources/views/dashboards/products/_modals.blade.php": {
@@ -1517,6 +1522,11 @@
   "e-commerce/database/seeders/UserSeeder.php": {
     "mtime": 1788355377.266387,
     "ast_hash": "ad0fbb5c78dfb58a5edee9e3d2cfcc5b",
+    "semantic_hash": ""
+  },
+  "e-commerce/resources/views/dashboards/product-categories/tambah.blade.php": {
+    "mtime": 1788250917.87016,
+    "ast_hash": "4a79187542e15f14b7b8128ff9a0dbc5",
     "semantic_hash": ""
   }
 }
