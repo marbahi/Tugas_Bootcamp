@@ -556,6 +556,94 @@ php artisan serve   # buka http://127.0.0.1:8000
 
 ---
 
+## Sesi 23 - Klik Produk, Orders Dashboard, Header Baru, Keranjang & Checkout
+
+### Yang sudah dikerjakan:
+
+1. **Click Produk (data real di Dashboard)**
+   - `Products.php`: tambah `'click'` ke `$fillable`
+   - `ProductsController@show`: increment `click` sekali per session (`product_clicks_{id}`)
+   - Dashboard menampilkan `Products::sum('click')` yang kini benar-benar bertambah saat produk dibuka
+
+2. **Dashboard & Tab Orders dari Database**
+   - Migration baru: tambah `order_id` ke `order_items` (relasi ke `orders`)
+   - Model `Orders` dan `OrderItems`: fillable + relasi (`user`, `items`, `order`, `product`)
+   - `OrderSeeder`: 25 order dummy (status bervariasi, 6 bulan terakhir untuk chart)
+   - `Admin\OrderController` baru: index (search + filter status + paginate), show, update status, destroy
+   - Route `orders.*` di prefix `/dashboard`; tab **Orders** di navigasi + tombol **Lihat Selengkapnya** di card Order Terbaru
+   - Chart penjualan bulanan, order terbaru, dan ringkasan (Total Order, Revenue, Pending, Completed, Cancelled) diambil dari database
+
+3. **Perbaikan Kecil Dashboard**
+   - Hilangkan double pesan sukses (alert duplikat di view orders dihapus, cukup dari layout)
+   - Hilangkan double header (tambah `orders.*` ke kondisi `@unless` di layout)
+   - Hapus tombol Kembali di orders index (tetap ada di show)
+   - Alert flex sejajar + badge status `processing`; flash error via `$errors`
+
+4. **Header Beranda Baru**
+   - Satu baris: logo kiri mentok, search besar di tengah, kanan keranjang + Dashboard + user (guest: keranjang + Login + Sign up)
+   - Hapus nav atas (Home, Products, FAQs)
+   - File `shopping-cart.png` dan `menu.png` dipindah ke `public/images/icons/`, diwarnai ulang pine `#1D5B41` (design system)
+   - Hover keranjang terbalik (button putih + ikon hijau ↔ button hijau + ikon putih)
+   - Keranjang jadi link teks seperti Dashboard (dengan badge jumlah)
+   - Responsif: search turun full-width di medium; hamburger + collapse menu di small
+   - Perbaikan bug: order flex logo di large + ParseError `@php` satu-baris di Laravel 13
+
+5. **Auth & Role**
+   - Tombol Dashboard di header hanya tampil untuk `role === 'admin'`
+   - Login: admin → `/dashboard`, user → beranda `/`; register → beranda `/`
+   - `AdminMiddleware`: non-admin diarahkan ke beranda (menutup 404 `/home`)
+
+6. **Keranjang Berfungsi**
+   - `CartController@store/update/destroy` + routes (upsert qty mentok stok, cek kepemilikan, guest diarahkan login)
+   - Stepper jumlah di halaman detail; ubah qty + hapus di halaman keranjang
+   - Tombol kembali di keranjang dan detail; flash message di `template.body`
+   - Card produk kembali tanpa tombol (Beli/Keranjang hanya di detail)
+
+7. **Checkout + Konfirmasi WhatsApp**
+   - `CheckoutController` 2 mode: isi keranjang dan buy-now (`?product_id=&quantity=`)
+   - Form: nama, no HP, alamat (nama terisi otomatis), pembayaran (Transfer Bank / COD / E-Wallet), ringkasan + total dari database
+   - Transaksi DB: buat order (nomor unik, status pending) + items, kurangi stok, kosongkan keranjang (mode cart)
+   - Sukses → redirect ke WA penjual dengan template berisi nomor order, rincian produk, total, metode, dan alamat
+   - Hapus tombol WA di admin order detail (konfirmasi pindah ke alur otomatis)
+   - Migration `customer_phone` INT → VARCHAR(20) + regex validasi (no HP 12 digit valid)
+
+### Cara menjalankan:
+
+```bash
+php artisan migrate --seed   # migration + 8 kategori, 80 produk, 25 order
+php artisan storage:link     # symlink gambar produk
+php artisan serve            # buka http://127.0.0.1:8000
+```
+
+- Buka produk → klik tercatat di dashboard; tambah ke keranjang → ubah qty → Beli → isi form → order tercatat + redirect WA
+- Login admin `admintest@example.com` / `password` → kelola Products, Categories, Orders
+- Login user `test@example.com` / `password` → belanja tanpa akses dashboard
+
+### Struktur Rute:
+
+| Metode | URL | Controller | Keterangan |
+|--------|-----|------------|------------|
+| `GET` | `/cart` | `CartController@index` | Halaman keranjang |
+| `POST` | `/cart` | `CartController@store` | Tambah ke keranjang |
+| `PUT` | `/cart/{cartItem}` | `CartController@update` | Ubah qty |
+| `DELETE` | `/cart/{cartItem}` | `CartController@destroy` | Hapus item |
+| `GET` | `/checkout` | `CheckoutController@create` | Form checkout (cart / buy-now) |
+| `POST` | `/checkout` | `CheckoutController@store` | Buat order + redirect WA |
+| `GET` | `/dashboard/orders` | `Admin\OrderController@index` | Daftar order + filter |
+| `GET` | `/dashboard/orders/{order}` | `Admin\OrderController@show` | Detail order |
+| `PUT` | `/dashboard/orders/{order}` | `Admin\OrderController@update` | Update status |
+| `DELETE` | `/dashboard/orders/{order}` | `Admin\OrderController@destroy` | Hapus order |
+
+### Verifikasi:
+
+```bash
+php artisan route:list   # cart, checkout, orders terdaftar
+php artisan view:cache   # semua view compile tanpa error
+php artisan test         # semua tes tetap lolos
+```
+
+---
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
