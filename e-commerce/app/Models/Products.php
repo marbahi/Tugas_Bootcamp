@@ -12,4 +12,14 @@ class Products extends Model
     {
         return $this->belongsTo(ProductCategories::class, 'product_category_id');
     }
+
+    public function orderItems()
+    {
+        return $this->hasMany(OrderItems::class);
+    }
+
+    public function cartItems()
+    {
+        return $this->hasMany(CartItems::class);
+    }
 }

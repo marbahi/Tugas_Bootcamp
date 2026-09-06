@@ -3,6 +3,20 @@
         <button type="button" class="btn btn-primary btn-pill btn-sm px-4" data-bs-toggle="modal" data-bs-target="#categoryCreateModal">+ Add Category</button>
     </x-slot>
 
+    @if (session('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
+    @if (session('error'))
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ session('error') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
     <div class="row justify-content-center">
         <div class="col-12">
             <div class="panel-card p-4">
@@ -39,7 +53,11 @@
                                     </td>
                                     <td class="text-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm btn-pill" data-bs-toggle="modal" data-bs-target="#editCategory{{ $category->id }}">Edit</button>
-                                        <button type="button" class="btn btn-outline-danger btn-sm btn-pill" data-bs-toggle="modal" data-bs-target="#deleteCategory{{ $category->id }}">Hapus</button>
+                                        @if ($category->products_count > 0)
+                                            <button type="button" class="btn btn-secondary btn-sm btn-pill" disabled title="Tidak bisa hapus kategori yang masih punya produk">Hapus</button>
+                                        @else
+                                            <button type="button" class="btn btn-outline-danger btn-sm btn-pill" data-bs-toggle="modal" data-bs-target="#deleteCategory{{ $category->id }}">Hapus</button>
+                                        @endif
                                     </td>
                                 </tr>
                             @empty

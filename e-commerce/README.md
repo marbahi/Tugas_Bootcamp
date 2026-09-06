@@ -498,6 +498,64 @@ php artisan serve          # buka http://127.0.0.1:8000
 
 ---
 
+## Sesi 22 - Penyederhanaan Controller & Logika Edit/Update/Destroy
+
+### Yang sudah dikerjakan:
+
+1. **Penyederhanaan Admin\ProductController**
+   - Dihapus method `validateData()`, `categorySlug()`, `resolveSlug()` (3 method)
+   - Simplify `store()` dan `update()` dengan validation inline
+   - Pertahankan `handleImageUpload()` untuk AVIF format
+
+2. **Penyederhanaan Admin\CategoryController**
+   - Dihapus method `validateData()` dan `resolveSlug()`
+   - Simplify `store()` dan `update()` dengan validation inline
+   - Validasi duplikat nama kategori secara inline
+
+3. **Guard Hapus Produk** (`Admin\ProductController@destroy`)
+   - Cek `orderItems()` sebelum hapus
+   - Jika ada pesanan terkait → error "Tidak dapat menghapus produk yang memiliki pesanan terkait."
+   - Jika ada `cartItems()` → hapus cart items dulu, lalu hapus produk
+
+4. **Guard Hapus Kategori** (`Admin\CategoryController@destroy`)
+   - Cek `products()` sebelum hapus
+   - Jika ada produk terkait → error "Tidak dapat menghapus kategori yang memiliki produk terkait."
+   - Tombol "Hapus" disabled di view jika kategori masih punya produk
+
+5. **Flash Messages**
+   - Alert success (hijau) dan error (merah) di halaman index produk dan kategori
+   - Auto-dismiss dengan tombol close
+
+6. **Model Relationships**
+   - `Products.php`: Tambah `orderItems()` dan `cartItems()` relationship
+   - `ProductCategories.php`: Sudah punya `products()` relationship
+
+7. **Hapus File Lama**
+   - `ProductCategoriesController.php` (controller lama)
+   - `tambah.blade.php` dan `edit.blade.php` (form standalone)
+
+### Cara menjalankan:
+
+```bash
+php artisan serve   # buka http://127.0.0.1:8000
+```
+
+- Login sebagai admin → **Products** → coba hapus produk yang punya pesanan → muncul error
+- Buka **Product Categories** → coba hapus kategori yang punya produk → tombol "Hapus" disabled
+
+### Struktur Rute:
+
+| Metode | URL | Controller | Keterangan |
+|--------|-----|------------|------------|
+| `POST` | `/dashboard/products` | `Admin\ProductController@store` | Simpan produk baru |
+| `PUT` | `/dashboard/products/{product}` | `Admin\ProductController@update` | Update produk |
+| `DELETE` | `/dashboard/products/{product}` | `Admin\ProductController@destroy` | Hapus produk (dengan guard) |
+| `POST` | `/dashboard/product-categories` | `Admin\CategoryController@store` | Simpan kategori |
+| `PUT` | `/dashboard/product-categories/{product_category}` | `Admin\CategoryController@update` | Update kategori |
+| `DELETE` | `/dashboard/product-categories/{product_category}` | `Admin\CategoryController@destroy` | Hapus kategori (dengan guard) |
+
+---
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

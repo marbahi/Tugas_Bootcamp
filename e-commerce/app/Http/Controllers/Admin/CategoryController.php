@@ -11,7 +11,8 @@ class CategoryController extends Controller
 {
     public function index(Request $request)
     {
-        $categories = ProductCategories::withCount('products');
+        $categories = ProductCategories::withCount('products')
+                        ->withSum('products', 'stock');
 
         if ($request->filled('search')) {
             $search = $request->search;
@@ -29,55 +30,48 @@ class CategoryController extends Controller
 
     public function store(Request $request)
     {
-        $data = $this->validateData($request);
-        $data['slug'] = $this->resolveSlug($data['slug'] ?: $data['name']);
+        $request->validate([
+            'name' => 'required|string|min:3|max:50',
+        ]);
 
-        ProductCategories::create($data);
+        if (ProductCategories::where('name', $request->name)->exists()) {
+            return back()->withErrors(['name' => 'Nama kategori sudah ada.'])->withInput();
+        }
+
+        ProductCategories::create([
+            'name' => $request->name,
+            'slug' => Str::slug($request->name),
+        ]);
 
         return redirect()->route('product-categories.index')->with('success', 'Kategori berhasil ditambahkan.');
     }
 
     public function update(Request $request, ProductCategories $productCategory)
     {
-        $data = $this->validateData($request, $productCategory->id);
-        $data['slug'] = $this->resolveSlug($data['slug'] ?: $data['name'], $productCategory->id);
+        $request->validate([
+            'name' => 'required|string|min:3|max:50',
+        ]);
 
-        $productCategory->update($data);
+        if (ProductCategories::where('name', $request->name)
+                ->where('id', '!=', $productCategory->id)->exists()) {
+            return back()->withErrors(['name' => 'Nama kategori "' . $request->name . '" sudah ada.'])->withInput();
+        }
+
+        $productCategory->update([
+            'name' => $request->name,
+            'slug' => Str::slug($request->name),
+        ]);
 
         return redirect()->route('product-categories.index')->with('success', 'Kategori berhasil diperbarui.');
     }
 
     public function destroy(ProductCategories $productCategory)
     {
+        if ($productCategory->products()->count() > 0) {
+            return redirect()->back()->withErrors(['error' => 'Tidak dapat menghapus kategori yang memiliki produk terkait.']);
+        }
+
         $productCategory->delete();
-
         return redirect()->route('product-categories.index')->with('success', 'Kategori berhasil dihapus.');
-    }
-
-    protected function validateData(Request $request, ?int $ignoreId = null): array
-    {
-        $slugRule = 'unique:product_categories,slug';
-
-        if ($ignoreId !== null) {
-            $slugRule = 'unique:product_categories,slug,'.$ignoreId;
-        }
-
-        return $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'slug' => ['nullable', 'string', 'max:255', $slugRule],
-        ]);
-    }
-
-    protected function resolveSlug(string $slug, ?int $ignoreId = null): string
-    {
-        $base = Str::slug($slug) ?: Str::slug('kategori');
-        $candidate = $base;
-        $i = 2;
-
-        while (ProductCategories::where('slug', $candidate)->where('id', '!=', $ignoreId)->exists()) {
-            $candidate = $base.'-'.$i++;
-        }
-
-        return $candidate;
     }
 }

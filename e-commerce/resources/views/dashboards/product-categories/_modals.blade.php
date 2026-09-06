@@ -83,18 +83,26 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Yakin ingin menghapus kategori <strong>{{ $category->name }}</strong>?
                     @if ($category->products_count > 0)
-                        <br><span class="text-danger small">{{ $category->products_count }} produk akan ikut terhapus.</span>
+                        <span class="text-danger">Kategori ini tidak dapat dihapus karena masih memiliki produk yang terhubung.</span>
+                        <br><strong>{{ $category->name }}</strong>
+                        <br><span class="text-muted small">{{ $category->products_count }} produk terhubung dengan kategori ini.</span>
+                    @else
+                        Apakah anda yakin menghapus kategori ini?
+                        <br><strong>{{ $category->name }}</strong>
                     @endif
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-primary btn-pill" data-bs-dismiss="modal">Batal</button>
-                    <form method="POST" action="{{ route('product-categories.destroy', $category) }}">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger btn-pill">Hapus</button>
-                    </form>
+                    @if ($category->products_count == 0)
+                        <form method="POST" action="{{ route('product-categories.destroy', $category) }}">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-pill">Hapus</button>
+                        </form>
+                    @else
+                        <button type="button" class="btn btn-secondary btn-pill" disabled>Tidak Bisa Dihapus</button>
+                    @endif
                 </div>
             </div>
         </div>
